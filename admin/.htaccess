@@ -1,0 +1,12 @@
+RewriteEngine on
+RewriteRule ^Home/?$ index.php [NC,L]
+RewriteRule ^Unapproved/?$ unapproved.php [NC,L]
+RewriteRule ^NewPropertyList/?$ approved_list.php [NC,L]
+RewriteRule ^ResalePropertyList/?$ featured_list.php [NC,L]
+RewriteRule ^UserList/?$ user_list.php [NC,L]
+RewriteRule ^Enquiries/?$ p_enq.php [NC,L]
+RewriteRule ^AdvertiseRequest/?$ adrequest.php [NC,L]
+RewriteRule ^PutAdvertise/?$ add_advertise.php [NC,L]
+RewriteRule ^ManageAdvertise/?$ adlist.php [NC,L]
+RewriteRule ^Authentication/?$ login.php [NC,L]
+RewriteRule ^EditAds/([0-9]+)?$ edit_ads.php?id=$1 [NC,L]

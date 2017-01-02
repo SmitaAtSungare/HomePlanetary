@@ -1,0 +1,337 @@
+
+
+/*-- products-page --*/
+.ads-list {
+	width:33.333%;
+	float:left;
+}
+
+.mymodal ul li a
+{
+	width:100%!important;
+}
+
+.mymodal ul li
+{
+	margin-right:5px!important;
+}
+
+.mymodal ul
+{
+	margin-bottom:10px!important;
+}
+
+
+.select-box {
+    background-color: #d3d3d3;
+    padding: 5px 0px 0px 0px;
+    margin: 40px 0;
+    height: 50px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+	box-shadow: 1px 2px 13px;
+}
+.ads-list label {
+	display: block;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 6px;
+}
+.ads-list select {
+	width: 70%;
+    outline: none;
+    color: #000;
+    font-size: 15px;
+    border: 1px solid #eee;
+    padding: 7px 8px;
+}
+.btn-group.bootstrap-select.show-tick button {
+    padding: 8px 10px;
+	margin-bottom: 15px;
+}
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width: 170px;
+}
+#custom-search-input {
+    padding: 3px;
+    border: solid 1px #c1c1c1;
+    border-radius: 0;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    background-color: #fff;
+    width: 100%;
+    color: #000;
+}
+
+#custom-search-input input{
+    border: 0;
+    box-shadow: none;
+}
+
+#custom-search-input button{
+    margin: 2px 0 0 0;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    color: #666666;
+    padding: 0 8px 0 10px;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input button:hover{
+    border: 0;
+    box-shadow: none;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input .glyphicon-search{
+    font-size: 23px;
+}
+.input-lg {
+    height: 29px;
+    padding: 0px 10px;
+    font-size: 15px;
+    line-height: 1.3333333;
+    border-radius: 0;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+}
+#custom-search-input .glyphicon-search {
+    font-size: 16px;
+}
+.btn-default {
+    border-color: #c1c1c1;
+}
+.btn {
+    display: inline-block;
+}
+.search-hotel input[type="text"] {
+  background:#fff;
+  border: none;
+  width: 81%;
+  outline: none;
+  padding: 11px 10px 10px 10px;
+  font-size: 13px;
+  color: #c4c4c4;
+}
+.search-hotel form input[type="submit"]{
+  background: url(../images/search.png) no-repeat 13px 11px rgb(255, 137, 137);
+  width: 44px;
+  height: 39px;
+  border: none;
+  padding:0;
+  margin-top: 0;
+  }
+.search-grid-left{
+  padding: 15px;
+  background:#f5f4f0;
+  }
+h3.agileits-sear-head {
+    color: rgba(255, 76, 76, 0.86);
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 400;
+}
+.search-hotel{
+padding: 15px 0;
+border-bottom: 1px solid #e5e3db; 
+}
+
+
+@media (max-width: 479px) and (min-width: 299px)
+{
+
+.select-box {
+    
+    padding: 15px 0px 15px 0px;
+    margin: 40px 0;
+    height: auto;
+    
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+	
+	box-shadow: 1px 2px 13px;
+	background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 6px;
+    outline: none;
+}	
+
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width: 100%;
+}
+
+	
+}
+
+
+
+
+
+
+
+@media (max-width: 767px) and (min-width: 480px)
+{
+	.recommendation {
+    margin-top: 11em!important;
+}
+
+
+#custom-search-input {
+    padding: 6px;
+    border: solid 1px #c1c1c1;
+    border-radius: 0;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    background-color: #fff;
+    width: 100%;
+    color: #000;
+}
+
+	
+	.btn {
+    display: inline-block;
+    padding: 3px 3px;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid rgb(193, 193, 193);
+    background: #fff;
+    margin-bottom: 4px;
+    width: 100%;
+}
+
+.select-box {
+    
+    padding: 15px 0px 15px 0px;
+    margin: 40px 0;
+    height: auto;
+    
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+	
+	
+	background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 6px;
+    outline: none;
+	box-shadow: 1px 2px 13px;
+}	
+
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width: 100%;
+}
+
+	
+}
+
+
+
+
+
+
+@media (max-width: 1023px) and (min-width: 640px)
+{
+.city-search2 {
+    float: left;
+    left: 10%;
+    position: absolute;
+    top: 150px;
+    width: 80%;
+}
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1100px) and (min-width: 1024px)
+{
+.city-search2 {
+    float: left;
+    left: 5%;
+    position: absolute;
+    top: 150px;
+    width: 90%;
+}
+
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width: 148px;
+}
+
+
+
+.city-search2 input {
+    background: #fff none repeat scroll 0 0;
+    border: medium none;
+    color: #666363;
+    height: 30px;
+    margin: 0;
+    outline: medium none;
+    padding: 5px;
+    position: relative;
+    width: 58%;
+}
+
+#custom-search-input {
+    padding: 3px;
+    border: solid 1px #c1c1c1;
+    border-radius: 0;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    background-color: #fff;
+    width: 100%;
+    color: #000;
+    margin-top: 1px;
+}
+
+.select-box {
+    
+    padding: 15px 0px 15px 0px;
+    margin: 40px 0;
+    height: auto;
+    
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+	
+	
+	background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 6px;
+    outline: none;
+	box-shadow: 1px 2px 13px;
+}
+
+}

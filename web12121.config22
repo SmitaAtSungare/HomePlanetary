@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <system.webServer>
+<rewrite> 
+<rules> 
+<rule name="rule 1W" stopProcessing="true">
+	<match url="^Home/?$"  ignoreCase="true" />
+	<action type="Rewrite" url="/index.php"  />
+</rule>
+<rule name="rule 2W" stopProcessing="true">
+	<match url="^PropertyList/?$"  ignoreCase="true" />
+	<action type="Rewrite" url="/property_listing.php"  />
+</rule>
+<rule name="rule 3W" stopProcessing="true">
+	<match url="^PropertyList/([a-zA-z0-9\-]+)?$"  ignoreCase="true" />
+	<action type="Rewrite" url="/property_listing.php?city={R:1}"  />
+</rule>
+<rule name="rule 4W" stopProcessing="true">
+	<match url="^PropertyList/([a-zA-z0-9\-]+)/([a-zA-z0-9\-\s|%20]+)?$"  ignoreCase="true" />
+	<action type="Rewrite" url="/property_listing.php?city={R:1}&amp;category={R:2}"  />
+</rule>
+<rule name="rule 5W" stopProcessing="true">
+	<match url="^PropertyList/([a-zA-z0-9\-]+)/([a-zA-z0-9\-\s|%20]+)?$"  ignoreCase="true" />
+	<action type="Rewrite" url="/property_listing.php?city={R:1}&amp;category={R:2}"  />
+</rule>
+<rule name="rule 6W" stopProcessing="true">
+	<match url="^PropertyList/([a-zA-z0-9\-]+)/([a-zA-z0-9\-\s|%20]+)/([a-zA-z0-9\-\s|%20]+)?$"  ignoreCase="true" />
+	<action type="Rewrite" url="/property_listing.php?city={R:1}&amp;category={R:2}&amp;price={R:3}"  />
+</rule>
+<rule name="rule 7W" stopProcessing="true">
+	<match url="^PropertyList/([a-zA-z0-9\-]+)/([a-zA-z0-9\-\s|%20]+)/([a-zA-z0-9\-\s|%20]+)/([a-zA-z0-9\-\s|%20]+)?$"  ignoreCase="true" />
+	<action type="Rewrite" url="/property_listing.php?city={R:1}&amp;category={R:2}&amp;price={R:3}&amp;propertyType={R:4}"  />
+</rule>
+<rule name="rule 8W" stopProcessing="true">
+	<match url="^PropertyList/([a-zA-z0-9\-]+)/([a-zA-z0-9\-\s|%20]+)/([a-zA-z0-9\-\s|%20]+)/([a-zA-z0-9\-\s|%20]+)/([a-zA-z0-9/\-\s|%20]+)?$"  ignoreCase="true" />
+	<action type="Rewrite" url="/property_listing.php?city={R:1}&amp;category={R:2}&amp;price={R:3}&amp;propertyType={R:4}&amp;subProperty={R:5}"  />
+</rule>
+<rule name="rule 9W" stopProcessing="true">
+	<match url="^Property/([a-zA-z0-9,/\-\s|%20]+)/([0-9]+)?$"  ignoreCase="true" />
+	<action type="Rewrite" url="/mainlisting_details.php?{R:1}&amp;id={R:2}"  />
+</rule>
+<rule name="rule 10W" stopProcessing="true">
+	<match url="^Post/?$"  ignoreCase="true" />
+	<action type="Rewrite" url="/addpost.php"  />
+</rule>
+<rule name="rule 11W" stopProcessing="true">
+	<match url="^SignUp/?$"  ignoreCase="true" />
+	<action type="Rewrite" url="/user_reg.php"  />
+</rule>
+<rule name="rule 12W" stopProcessing="true">
+	<match url="^Authentication/?$"  ignoreCase="true" />
+	<action type="Rewrite" url="/userlogin.php"  />
+</rule>
+<rule name="rule 13W" stopProcessing="true">
+	<match url="^Dashboard/?$"  ignoreCase="true" />
+	<action type="Rewrite" url="/dashboard.php"  />
+</rule>
+<rule name="rule 14W" stopProcessing="true">
+	<match url="^MyAds/?$"  ignoreCase="true" />
+	<action type="Rewrite" url="/my_ads.php"  />
+</rule>
+<rule name="rule 15W" stopProcessing="true">
+	<match url="^MyEnquiries/?$"  ignoreCase="true" />
+	<action type="Rewrite" url="/my_ads_replies.php"  />
+</rule>
+<rule name="rule 16W" stopProcessing="true">
+	<match url="^MyProfile/?$"  ignoreCase="true" />
+	<action type="Rewrite" url="/update_user_profile.php"  />
+</rule>
+<rule name="rule 17W" stopProcessing="true">
+	<match url="^About/?$"  ignoreCase="true" />
+	<action type="Rewrite" url="/aboutus.php"  />
+</rule>
+<rule name="rule 18W" stopProcessing="true">
+	<match url="^Contact/?$"  ignoreCase="true" />
+	<action type="Rewrite" url="/contact_us.php"  />
+</rule>
+<rule name="rule 19W" stopProcessing="true">
+	<match url="^AdvertiseWithUs/?$"  ignoreCase="true" />
+	<action type="Rewrite" url="/advertisewithus.php"  />
+</rule>
+<rule name="rule 20W" stopProcessing="true">
+	<match url="^PrivacyPolicy/?$"  ignoreCase="true" />
+	<action type="Rewrite" url="/privacy_policy.php"  />
+</rule>
+<rule name="rule 21W" stopProcessing="true">
+	<match url="^TermsOfUse/?$"  ignoreCase="true" />
+	<action type="Rewrite" url="/termsofuse.php"  />
+</rule>
+<rule name="rule 22W" stopProcessing="true">
+	<match url="^SiteMap/?$"  ignoreCase="true" />
+	<action type="Rewrite" url="/sitemap.xml"  />
+</rule>
+<rule name="rule 23W" stopProcessing="true">
+	<match url="^EditMyAds/([0-9]+)?$"  ignoreCase="true" />
+	<action type="Rewrite" url="/edit_my_ads.php?id={R:1}"  />
+</rule>
+<rule name="rule 24W" stopProcessing="true">
+	<match url="^EditMyEnquiry/([0-9]+)?$"  ignoreCase="true" />
+	<action type="Rewrite" url="/edit_my_ads_replies.php?id={R:1}"  />
+</rule>
+<rule name="rule 25w" stopProcessing="true">
+	<match url="^Verify/([a-zA-z0-9,/\-\s|%20]+)/([0-9]+)?$"  ignoreCase="true" />
+	<action type="Rewrite" url="/verify_user.php?type={R:1}&amp;id={R:2}"  />
+</rule>
+</rules> 
+</rewrite> 
+
+    </system.webServer>
+</configuration>

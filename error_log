@@ -1,0 +1,233 @@
+[13-Sep-2016 03:23:36 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/index.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[13-Sep-2016 03:23:47 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/index.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[13-Sep-2016 03:24:32 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/index.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[13-Sep-2016 03:27:37 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/index.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[13-Sep-2016 03:28:31 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/index.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[13-Sep-2016 03:29:07 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/index.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[13-Sep-2016 03:29:52 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/index.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[13-Sep-2016 03:29:58 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/index.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[13-Sep-2016 03:31:00 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/index.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[13-Sep-2016 03:31:09 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/index.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[13-Sep-2016 03:33:30 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/index.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[13-Sep-2016 03:38:01 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/advertisewithus.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[13-Sep-2016 03:38:25 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/userlogin.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[13-Sep-2016 03:39:08 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/index.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[13-Sep-2016 03:40:59 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/userlogin.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[13-Sep-2016 03:50:25 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/index.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[13-Sep-2016 03:50:33 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/index.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[13-Sep-2016 03:50:40 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/index.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[13-Sep-2016 03:50:44 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/index.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[13-Sep-2016 03:50:45 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/index.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[13-Sep-2016 03:51:13 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/index.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[13-Sep-2016 03:51:27 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/index.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[13-Sep-2016 03:51:40 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/index.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[13-Sep-2016 03:51:42 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/index.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[13-Sep-2016 03:54:10 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/userlogin.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[13-Sep-2016 04:03:18 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/index.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[14-Sep-2016 02:44:56 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/contact_us.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[14-Sep-2016 02:56:33 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/userlogin.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[14-Sep-2016 02:56:34 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/contact_us.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[14-Sep-2016 02:56:37 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/termsofuse.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[14-Sep-2016 04:41:15 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/homeplanetary/public_html/index.php:3) in /home/homeplanetary/public_html/login.php on line 2
+[14-Sep-2016 04:41:15 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/homeplanetary/public_html/index.php:3) in /home/homeplanetary/public_html/login.php on line 2
+[14-Sep-2016 04:41:49 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/homeplanetary/public_html/index.php:3) in /home/homeplanetary/public_html/login.php on line 2
+[14-Sep-2016 04:42:15 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/homeplanetary/public_html/index.php:3) in /home/homeplanetary/public_html/login.php on line 2
+[14-Sep-2016 14:55:11 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/userlogin.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[14-Sep-2016 14:57:05 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/userlogin.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[14-Sep-2016 15:27:45 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/contact_us.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[14-Sep-2016 15:31:09 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/contact_us.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[14-Sep-2016 15:57:13 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/termsofuse.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[14-Sep-2016 15:57:17 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/termsofuse.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[14-Sep-2016 18:23:03 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/advertisewithus.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[14-Sep-2016 18:23:18 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/property_listing.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[14-Sep-2016 18:23:32 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/mainlisting_details.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[14-Sep-2016 18:23:47 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/mainlisting_details.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[14-Sep-2016 18:24:02 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/mainlisting_details.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[14-Sep-2016 18:24:17 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/mainlisting_details.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[14-Sep-2016 18:24:33 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/mainlisting_details.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[14-Sep-2016 18:24:49 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/mainlisting_details.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[14-Sep-2016 18:25:07 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/mainlisting_details.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[14-Sep-2016 18:32:43 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/addpost.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[14-Sep-2016 20:50:50 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/advertisewithus.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[14-Sep-2016 21:00:23 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/property_listing.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[14-Sep-2016 23:42:50 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/homeplanetary/public_html/mainlisting_details.php on line 576
+[14-Sep-2016 23:44:55 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/homeplanetary/public_html/mainlisting_details.php on line 577
+[15-Sep-2016 00:44:19 America/Chicago] PHP Warning:  mysqli::query(): Empty query in /home/homeplanetary/public_html/property_listing.php on line 443
+[15-Sep-2016 00:54:31 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/mainlisting_details.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[15-Sep-2016 00:54:42 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/mainlisting_details.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[15-Sep-2016 06:22:17 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/mainlisting_details.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[15-Sep-2016 17:39:14 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/mainlisting_details.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[15-Sep-2016 20:56:03 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/userlogin.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[15-Sep-2016 20:57:23 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/termsofuse.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[15-Sep-2016 20:57:23 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/contact_us.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[15-Sep-2016 20:57:30 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/privacy_policy.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[15-Sep-2016 20:57:38 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/advertisewithus.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[15-Sep-2016 20:57:46 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/property_listing.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[15-Sep-2016 20:57:55 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/mainlisting_details.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[15-Sep-2016 20:58:06 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/mainlisting_details.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[15-Sep-2016 20:58:24 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/mainlisting_details.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[15-Sep-2016 20:58:42 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/mainlisting_details.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[15-Sep-2016 20:59:00 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/mainlisting_details.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[15-Sep-2016 20:59:18 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/mainlisting_details.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[15-Sep-2016 20:59:37 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/mainlisting_details.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[15-Sep-2016 20:59:58 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/mainlisting_details.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[15-Sep-2016 21:01:22 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/addpost.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[15-Sep-2016 22:59:57 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/contact_us.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[15-Sep-2016 22:59:57 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/contact_us.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[16-Sep-2016 03:54:37 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/contact_us.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[16-Sep-2016 04:04:53 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/homeplanetary/public_html/property_listing.php:7) in /home/homeplanetary/public_html/login.php on line 2
+[16-Sep-2016 04:07:07 America/Chicago] PHP Notice:  Undefined variable: pname in /home/homeplanetary/public_html/mainlisting_details.php on line 35
+[16-Sep-2016 04:07:07 America/Chicago] PHP Notice:  Undefined variable: bed in /home/homeplanetary/public_html/mainlisting_details.php on line 35
+[16-Sep-2016 04:07:07 America/Chicago] PHP Notice:  Undefined variable: ptype in /home/homeplanetary/public_html/mainlisting_details.php on line 35
+[16-Sep-2016 04:07:07 America/Chicago] PHP Notice:  Undefined variable: add in /home/homeplanetary/public_html/mainlisting_details.php on line 35
+[16-Sep-2016 04:07:07 America/Chicago] PHP Notice:  Undefined variable: pname in /home/homeplanetary/public_html/mainlisting_details.php on line 36
+[16-Sep-2016 04:07:07 America/Chicago] PHP Notice:  Undefined variable: ptype in /home/homeplanetary/public_html/mainlisting_details.php on line 36
+[16-Sep-2016 04:07:07 America/Chicago] PHP Notice:  Undefined variable: bed in /home/homeplanetary/public_html/mainlisting_details.php on line 36
+[16-Sep-2016 04:07:07 America/Chicago] PHP Notice:  Undefined variable: add in /home/homeplanetary/public_html/mainlisting_details.php on line 36
+[16-Sep-2016 04:07:07 America/Chicago] PHP Notice:  Undefined index: id in /home/homeplanetary/public_html/mainlisting_details.php on line 248
+[16-Sep-2016 04:07:07 America/Chicago] PHP Notice:  Undefined index: id in /home/homeplanetary/public_html/mainlisting_details.php on line 520
+[16-Sep-2016 04:08:08 America/Chicago] PHP Notice:  Undefined index: s_phno in /home/homeplanetary/public_html/my_ads.php on line 9
+[16-Sep-2016 04:09:26 America/Chicago] PHP Notice:  Undefined index: s_phno in /home/homeplanetary/public_html/my_ads.php on line 3
+[16-Sep-2016 04:09:30 America/Chicago] PHP Notice:  Undefined index: s_phno in /home/homeplanetary/public_html/my_ads.php on line 3
+[16-Sep-2016 04:10:27 America/Chicago] PHP Notice:  Undefined index: s_phno in /home/homeplanetary/public_html/my_ads.php on line 3
+[16-Sep-2016 04:10:27 America/Chicago] PHP Notice:  Undefined index: s_phno in /home/homeplanetary/public_html/my_ads.php on line 3
+[19-Sep-2016 06:29:21 America/Chicago] PHP Warning:  mysqli::query(): Empty query in /home/homeplanetary/public_html/property_listing.php on line 437
+[19-Sep-2016 06:29:54 America/Chicago] PHP Warning:  mysqli::query(): Empty query in /home/homeplanetary/public_html/property_listing.php on line 437
+[19-Sep-2016 06:30:35 America/Chicago] PHP Warning:  mysqli::query(): Empty query in /home/homeplanetary/public_html/property_listing.php on line 437
+[20-Sep-2016 02:30:30 America/Chicago] PHP Parse error:  syntax error, unexpected '"\r\n"' (T_CONSTANT_ENCAPSED_STRING) in /home/homeplanetary/public_html/property_listing.php on line 1014
+[20-Sep-2016 04:52:02 America/Chicago] PHP Notice:  Undefined variable: message in /home/homeplanetary/public_html/mainlisting_details.php on line 1012
+[21-Sep-2016 06:49:50 America/Chicago] PHP Notice:  Undefined variable: result2 in /home/homeplanetary/public_html/confirmation.php on line 92
+[23-Sep-2016 05:29:44 America/Chicago] PHP Warning:  mysqli::query(): Empty query in /home/homeplanetary/public_html/property_listing.php on line 457
+[24-Sep-2016 00:56:56 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/homeplanetary/public_html/mainlisting_details.php on line 18
+[24-Sep-2016 01:10:37 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/homeplanetary/public_html/mainlisting_details.php on line 18
+[24-Sep-2016 01:10:38 America/Chicago] PHP Notice:  Undefined variable: pname in /home/homeplanetary/public_html/mainlisting_details.php on line 29
+[24-Sep-2016 01:10:38 America/Chicago] PHP Notice:  Undefined variable: bed in /home/homeplanetary/public_html/mainlisting_details.php on line 29
+[24-Sep-2016 01:10:38 America/Chicago] PHP Notice:  Undefined variable: ptype in /home/homeplanetary/public_html/mainlisting_details.php on line 29
+[24-Sep-2016 01:10:38 America/Chicago] PHP Notice:  Undefined variable: add in /home/homeplanetary/public_html/mainlisting_details.php on line 29
+[24-Sep-2016 01:10:38 America/Chicago] PHP Notice:  Undefined variable: pname in /home/homeplanetary/public_html/mainlisting_details.php on line 30
+[24-Sep-2016 01:10:38 America/Chicago] PHP Notice:  Undefined variable: ptype in /home/homeplanetary/public_html/mainlisting_details.php on line 30
+[24-Sep-2016 01:10:38 America/Chicago] PHP Notice:  Undefined variable: bed in /home/homeplanetary/public_html/mainlisting_details.php on line 30
+[24-Sep-2016 01:10:38 America/Chicago] PHP Notice:  Undefined variable: add in /home/homeplanetary/public_html/mainlisting_details.php on line 30
+[24-Sep-2016 01:10:40 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/homeplanetary/public_html/mainlisting_details.php on line 18
+[24-Sep-2016 01:10:40 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/homeplanetary/public_html/mainlisting_details.php on line 18
+[24-Sep-2016 01:10:41 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/homeplanetary/public_html/mainlisting_details.php on line 18
+[24-Sep-2016 01:10:42 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/homeplanetary/public_html/mainlisting_details.php on line 18
+[24-Sep-2016 01:10:42 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/homeplanetary/public_html/mainlisting_details.php on line 18
+[24-Sep-2016 01:10:43 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/homeplanetary/public_html/mainlisting_details.php on line 18
+[24-Sep-2016 01:10:44 America/Chicago] PHP Notice:  Undefined variable: pname in /home/homeplanetary/public_html/mainlisting_details.php on line 29
+[24-Sep-2016 01:10:44 America/Chicago] PHP Notice:  Undefined variable: bed in /home/homeplanetary/public_html/mainlisting_details.php on line 29
+[24-Sep-2016 01:10:44 America/Chicago] PHP Notice:  Undefined variable: ptype in /home/homeplanetary/public_html/mainlisting_details.php on line 29
+[24-Sep-2016 01:10:44 America/Chicago] PHP Notice:  Undefined variable: add in /home/homeplanetary/public_html/mainlisting_details.php on line 29
+[24-Sep-2016 01:10:44 America/Chicago] PHP Notice:  Undefined variable: pname in /home/homeplanetary/public_html/mainlisting_details.php on line 30
+[24-Sep-2016 01:10:44 America/Chicago] PHP Notice:  Undefined variable: ptype in /home/homeplanetary/public_html/mainlisting_details.php on line 30
+[24-Sep-2016 01:10:44 America/Chicago] PHP Notice:  Undefined variable: bed in /home/homeplanetary/public_html/mainlisting_details.php on line 30
+[24-Sep-2016 01:10:44 America/Chicago] PHP Notice:  Undefined variable: add in /home/homeplanetary/public_html/mainlisting_details.php on line 30
+[24-Sep-2016 01:10:45 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/homeplanetary/public_html/mainlisting_details.php on line 18
+[24-Sep-2016 01:10:46 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/homeplanetary/public_html/mainlisting_details.php on line 18
+[24-Sep-2016 01:10:47 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/homeplanetary/public_html/mainlisting_details.php on line 18
+[24-Sep-2016 01:10:48 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/homeplanetary/public_html/mainlisting_details.php on line 18
+[24-Sep-2016 01:10:49 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/homeplanetary/public_html/mainlisting_details.php on line 18
+[24-Sep-2016 01:10:49 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/homeplanetary/public_html/mainlisting_details.php on line 18
+[24-Sep-2016 01:10:50 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/homeplanetary/public_html/mainlisting_details.php on line 18
+[24-Sep-2016 01:10:51 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/homeplanetary/public_html/mainlisting_details.php on line 18
+[24-Sep-2016 01:10:52 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/homeplanetary/public_html/mainlisting_details.php on line 18
+[24-Sep-2016 01:10:53 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/homeplanetary/public_html/mainlisting_details.php on line 18
+[24-Sep-2016 01:10:54 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/homeplanetary/public_html/mainlisting_details.php on line 18
+[24-Sep-2016 01:10:55 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/homeplanetary/public_html/mainlisting_details.php on line 18
+[24-Sep-2016 01:10:55 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/homeplanetary/public_html/mainlisting_details.php on line 18
+[24-Sep-2016 01:10:56 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/homeplanetary/public_html/mainlisting_details.php on line 18
+[24-Sep-2016 01:10:56 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/homeplanetary/public_html/mainlisting_details.php on line 18
+[24-Sep-2016 01:10:57 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/homeplanetary/public_html/mainlisting_details.php on line 18
+[24-Sep-2016 01:10:58 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/homeplanetary/public_html/mainlisting_details.php on line 18
+[24-Sep-2016 01:10:59 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/homeplanetary/public_html/mainlisting_details.php on line 18
+[24-Sep-2016 01:11:00 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/homeplanetary/public_html/mainlisting_details.php on line 18
+[24-Sep-2016 01:11:01 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/homeplanetary/public_html/mainlisting_details.php on line 18
+[24-Sep-2016 01:11:01 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/homeplanetary/public_html/mainlisting_details.php on line 18
+[24-Sep-2016 01:11:02 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/homeplanetary/public_html/mainlisting_details.php on line 18
+[24-Sep-2016 01:11:02 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/homeplanetary/public_html/mainlisting_details.php on line 18
+[24-Sep-2016 01:11:03 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/homeplanetary/public_html/mainlisting_details.php on line 18
+[24-Sep-2016 01:11:03 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/homeplanetary/public_html/mainlisting_details.php on line 18
+[24-Sep-2016 01:11:04 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/homeplanetary/public_html/mainlisting_details.php on line 18
+[24-Sep-2016 01:11:04 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/homeplanetary/public_html/mainlisting_details.php on line 18
+[24-Sep-2016 01:11:05 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/homeplanetary/public_html/mainlisting_details.php on line 18
+[24-Sep-2016 01:11:06 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/homeplanetary/public_html/mainlisting_details.php on line 18
+[24-Sep-2016 01:11:08 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/homeplanetary/public_html/mainlisting_details.php on line 18
+[24-Sep-2016 01:11:08 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/homeplanetary/public_html/mainlisting_details.php on line 18
+[24-Sep-2016 01:11:09 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/homeplanetary/public_html/mainlisting_details.php on line 18
+[24-Sep-2016 01:11:10 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/homeplanetary/public_html/mainlisting_details.php on line 18
+[24-Sep-2016 01:11:10 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/homeplanetary/public_html/mainlisting_details.php on line 18
+[24-Sep-2016 01:11:46 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/homeplanetary/public_html/mainlisting_details.php on line 18
+[24-Sep-2016 01:11:47 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/homeplanetary/public_html/mainlisting_details.php on line 18
+[24-Sep-2016 01:11:48 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/homeplanetary/public_html/mainlisting_details.php on line 18
+[24-Sep-2016 01:11:49 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/homeplanetary/public_html/mainlisting_details.php on line 18
+[24-Sep-2016 01:11:50 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/homeplanetary/public_html/mainlisting_details.php on line 18
+[24-Sep-2016 01:11:50 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/homeplanetary/public_html/mainlisting_details.php on line 18
+[24-Sep-2016 01:11:51 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/homeplanetary/public_html/mainlisting_details.php on line 18
+[24-Sep-2016 01:11:52 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/homeplanetary/public_html/mainlisting_details.php on line 18
+[24-Sep-2016 01:11:53 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/homeplanetary/public_html/mainlisting_details.php on line 18
+[24-Sep-2016 01:11:53 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/homeplanetary/public_html/mainlisting_details.php on line 18
+[24-Sep-2016 01:11:54 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/homeplanetary/public_html/mainlisting_details.php on line 18
+[26-Sep-2016 00:20:18 America/Chicago] PHP Notice:  Undefined index: property_type in /home/homeplanetary/public_html/addpost.php on line 943
+[26-Sep-2016 00:20:18 America/Chicago] PHP Notice:  Undefined index: transaction_type in /home/homeplanetary/public_html/addpost.php on line 944
+[26-Sep-2016 00:20:18 America/Chicago] PHP Notice:  Undefined index: bedroom in /home/homeplanetary/public_html/addpost.php on line 945
+[26-Sep-2016 00:20:18 America/Chicago] PHP Warning:  implode(): Invalid arguments passed in /home/homeplanetary/public_html/addpost.php on line 945
+[26-Sep-2016 00:20:18 America/Chicago] PHP Notice:  Undefined index: amenities in /home/homeplanetary/public_html/addpost.php on line 952
+[26-Sep-2016 00:20:18 America/Chicago] PHP Warning:  implode(): Invalid arguments passed in /home/homeplanetary/public_html/addpost.php on line 952
+[26-Sep-2016 00:30:14 America/Chicago] PHP Notice:  Undefined index: transaction_type in /home/homeplanetary/public_html/addpost.php on line 944
+[26-Sep-2016 00:30:14 America/Chicago] PHP Notice:  Undefined index: bedroom in /home/homeplanetary/public_html/addpost.php on line 945
+[26-Sep-2016 00:30:14 America/Chicago] PHP Warning:  implode(): Invalid arguments passed in /home/homeplanetary/public_html/addpost.php on line 945
+[26-Sep-2016 00:30:14 America/Chicago] PHP Notice:  Undefined index: amenities in /home/homeplanetary/public_html/addpost.php on line 952
+[26-Sep-2016 00:30:14 America/Chicago] PHP Warning:  implode(): Invalid arguments passed in /home/homeplanetary/public_html/addpost.php on line 952
+[26-Sep-2016 01:30:58 America/Chicago] PHP Parse error:  syntax error, unexpected 'exampleInputEmail3' (T_STRING) in /home/homeplanetary/public_html/mainlisting_details.php on line 302
+[26-Sep-2016 01:31:13 America/Chicago] PHP Parse error:  syntax error, unexpected 'exampleInputEmail3' (T_STRING) in /home/homeplanetary/public_html/mainlisting_details.php on line 302
+[26-Sep-2016 01:31:16 America/Chicago] PHP Parse error:  syntax error, unexpected 'exampleInputEmail3' (T_STRING) in /home/homeplanetary/public_html/mainlisting_details.php on line 302
+[26-Sep-2016 01:31:49 America/Chicago] PHP Parse error:  syntax error, unexpected '?' in /home/homeplanetary/public_html/mainlisting_details.php on line 302
+[27-Sep-2016 06:45:39 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/homeplanetary/public_html/my_ads.php on line 150
+[27-Sep-2016 06:46:16 America/Chicago] PHP Fatal error:  Call to a member function fetch_array() on boolean in /home/homeplanetary/public_html/my_ads.php on line 150
+[28-Sep-2016 00:05:00 America/Chicago] PHP Parse error:  syntax error, unexpected 'Homeplanetary' (T_STRING), expecting ')' in /home/homeplanetary/public_html/seo.php on line 45
+[28-Sep-2016 00:24:53 America/Chicago] PHP Notice:  Undefined index: aboutus in /home/homeplanetary/public_html/seo.php on line 83
+[28-Sep-2016 00:24:53 America/Chicago] PHP Notice:  Undefined index: aboutus in /home/homeplanetary/public_html/seo.php on line 84
+[28-Sep-2016 00:26:07 America/Chicago] PHP Notice:  Undefined index: addpost in /home/homeplanetary/public_html/seo.php on line 131
+[28-Sep-2016 00:26:07 America/Chicago] PHP Notice:  Undefined index: addpost in /home/homeplanetary/public_html/seo.php on line 132
+[28-Sep-2016 00:27:52 America/Chicago] PHP Notice:  Undefined index: addpost in /home/homeplanetary/public_html/seo.php on line 131
+[28-Sep-2016 00:27:52 America/Chicago] PHP Notice:  Undefined index: addpost in /home/homeplanetary/public_html/seo.php on line 132
+[28-Sep-2016 00:28:32 America/Chicago] PHP Notice:  Undefined index: my_ads in /home/homeplanetary/public_html/seo.php on line 144
+[28-Sep-2016 00:28:32 America/Chicago] PHP Notice:  Undefined index: my_ads in /home/homeplanetary/public_html/seo.php on line 145
+[28-Sep-2016 00:28:36 America/Chicago] PHP Notice:  Undefined index: update_user_profile in /home/homeplanetary/public_html/seo.php on line 162
+[28-Sep-2016 00:28:36 America/Chicago] PHP Notice:  Undefined index: update_user_profile in /home/homeplanetary/public_html/seo.php on line 163
+[28-Sep-2016 00:29:23 America/Chicago] PHP Notice:  Undefined index: addpost in /home/homeplanetary/public_html/seo.php on line 131
+[28-Sep-2016 00:29:23 America/Chicago] PHP Notice:  Undefined index: addpost in /home/homeplanetary/public_html/seo.php on line 132
+[28-Sep-2016 00:41:38 America/Chicago] PHP Notice:  Undefined index: contact_us in /home/homeplanetary/public_html/seo.php on line 94
+[28-Sep-2016 00:41:38 America/Chicago] PHP Notice:  Undefined index: contact_us in /home/homeplanetary/public_html/seo.php on line 95
+[28-Sep-2016 00:44:19 America/Chicago] PHP Notice:  Undefined index: advertisewithus in /home/homeplanetary/public_html/seo.php on line 105
+[28-Sep-2016 00:44:19 America/Chicago] PHP Notice:  Undefined index: advertisewithus in /home/homeplanetary/public_html/seo.php on line 106
+[28-Sep-2016 01:00:59 America/Chicago] PHP Notice:  Undefined index: addpost in /home/homeplanetary/public_html/seo.php on line 166
+[28-Sep-2016 01:00:59 America/Chicago] PHP Notice:  Undefined index: addpost in /home/homeplanetary/public_html/seo.php on line 167
+[28-Sep-2016 01:55:22 America/Chicago] PHP Notice:  Undefined index: s_phno in /home/homeplanetary/public_html/my_ads.php on line 3
+[30-Sep-2016 01:32:49 America/Chicago] PHP Warning:  mysqli::query(): Empty query in /home/homeplanetary/public_html/property_listing.php on line 306
+[30-Sep-2016 01:33:14 America/Chicago] PHP Warning:  mysqli::query(): Empty query in /home/homeplanetary/public_html/property_listing.php on line 306
+[30-Sep-2016 03:14:22 America/Chicago] PHP Parse error:  syntax error, unexpected 'sitemap' (T_STRING), expecting ')' in /home/homeplanetary/public_html/seo.php on line 71
+[30-Sep-2016 04:44:29 America/Chicago] PHP Warning:  session_start(): open(/tmp/sess_be840710434ce88e3b1f20ee5a9cd040, O_RDWR) failed: Permission denied (13) in /home/homeplanetary/public_html/login.php on line 2
+[30-Sep-2016 04:44:29 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/homeplanetary/public_html/login.php:2) in /home/homeplanetary/public_html/login.php on line 2
+[30-Sep-2016 04:44:29 America/Chicago] PHP Warning:  Unknown: open(/tmp/sess_be840710434ce88e3b1f20ee5a9cd040, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[30-Sep-2016 04:44:29 America/Chicago] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[30-Sep-2016 04:44:50 America/Chicago] PHP Warning:  session_start(): open(/tmp/sess_53d25fa9e720020bcd7f58949655d712, O_RDWR) failed: Permission denied (13) in /home/homeplanetary/public_html/login.php on line 2
+[30-Sep-2016 04:44:50 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/homeplanetary/public_html/login.php:2) in /home/homeplanetary/public_html/login.php on line 2
+[30-Sep-2016 04:44:50 America/Chicago] PHP Warning:  Unknown: open(/tmp/sess_53d25fa9e720020bcd7f58949655d712, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[30-Sep-2016 04:44:50 America/Chicago] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[30-Sep-2016 04:45:46 America/Chicago] PHP Warning:  session_start(): open(/tmp/sess_53d25fa9e720020bcd7f58949655d712, O_RDWR) failed: Permission denied (13) in /home/homeplanetary/public_html/login.php on line 2
+[30-Sep-2016 04:45:46 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/homeplanetary/public_html/login.php:2) in /home/homeplanetary/public_html/login.php on line 2
+[30-Sep-2016 04:45:46 America/Chicago] PHP Warning:  Unknown: open(/tmp/sess_53d25fa9e720020bcd7f58949655d712, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[30-Sep-2016 04:45:46 America/Chicago] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[30-Sep-2016 04:46:55 America/Chicago] PHP Warning:  session_start(): open(/tmp/sess_53d25fa9e720020bcd7f58949655d712, O_RDWR) failed: Permission denied (13) in /home/homeplanetary/public_html/login.php on line 2
+[30-Sep-2016 04:46:55 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/homeplanetary/public_html/login.php:2) in /home/homeplanetary/public_html/login.php on line 2
+[30-Sep-2016 04:46:55 America/Chicago] PHP Warning:  Unknown: open(/tmp/sess_53d25fa9e720020bcd7f58949655d712, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[30-Sep-2016 04:46:55 America/Chicago] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[30-Sep-2016 04:46:59 America/Chicago] PHP Warning:  session_start(): open(/tmp/sess_53d25fa9e720020bcd7f58949655d712, O_RDWR) failed: Permission denied (13) in /home/homeplanetary/public_html/login.php on line 2
+[30-Sep-2016 04:46:59 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/homeplanetary/public_html/login.php:2) in /home/homeplanetary/public_html/login.php on line 2
+[30-Sep-2016 04:46:59 America/Chicago] PHP Warning:  Unknown: open(/tmp/sess_53d25fa9e720020bcd7f58949655d712, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[30-Sep-2016 04:46:59 America/Chicago] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[30-Sep-2016 04:47:54 America/Chicago] PHP Warning:  session_start(): open(/tmp/sess_53d25fa9e720020bcd7f58949655d712, O_RDWR) failed: Permission denied (13) in /home/homeplanetary/public_html/login.php on line 2
+[30-Sep-2016 04:47:54 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/homeplanetary/public_html/login.php:2) in /home/homeplanetary/public_html/login.php on line 2
+[30-Sep-2016 04:47:54 America/Chicago] PHP Warning:  Unknown: open(/tmp/sess_53d25fa9e720020bcd7f58949655d712, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[30-Sep-2016 04:47:54 America/Chicago] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
