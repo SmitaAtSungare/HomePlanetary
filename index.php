@@ -247,7 +247,7 @@ include_once("analyticstracking.php");
 		
 		
 		
-        <!--<div class="city-search2">
+       <div class="city-search2">
             <div class="row" style="margin-right: -144px;margin-left: 11px;">
                 <div class="col-lg-12">
                 <div class="col-sm-1" style="width: 147px; margin-left: -24px;">
@@ -359,7 +359,7 @@ include_once("analyticstracking.php");
                 </div>
                 </div>
             </div>
-        </div>-->
+        </div>
 		
 		
     </form>

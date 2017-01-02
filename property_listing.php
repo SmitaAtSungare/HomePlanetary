@@ -4,7 +4,7 @@ if(isset($_SESSION['login_user'])){
 }
 include('header.php');
 ?>
-<link rel="stylesheet" href="admin/plugins/select2/select2.min1.css">
+<link rel="stylesheet" href="admin/plugins/select2/select2.min1.css" xmlns="http://www.w3.org/1999/html">
 <body xmlns="http://www.w3.org/1999/html">
 <?php //include_once("analyticstracking.php")?>
 <!-- header -->
@@ -325,8 +325,10 @@ include('header.php');
 </ol>
  </div>
 
+<form name="filterfrm" method="post" id="filterfrm">
 
-<div class="opti">
+	<div class="opti">
+
 	<div class="container">
 		<nav class="navbar navbar-default">
 			<div class="container-fluid">
@@ -340,83 +342,70 @@ include('header.php');
 					</button>
 				</div>
 				<ul class="nav navbar-nav">
-					<li class="dropdown" style="width: 220px;">
+					<li class="dropdown" style="width: 200px;">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Budget <span class="caret"></span></a>
 						<ul class="dropdown-menu">
-							<li><a href="#"><input type="checkbox" value="25-40 Lakh">&nbsp;&nbsp;&nbsp;&nbsp;25-40 Lakh</a></li>
-							<li><a href="#"><input type="checkbox" value="30-40 Lakh">&nbsp;&nbsp;&nbsp;&nbsp;30-40 Lakh</a></li>
-							<li><a href="#"><input type="checkbox" value="40-60 Lakh">&nbsp;&nbsp;&nbsp;&nbsp;40-60 Lakh</a></li>
-							<li><a href="#"><input type="checkbox" value="50-70 Lakh">&nbsp;&nbsp;&nbsp;&nbsp;50-70 Lakh</a></li>
-							<li><a href="#"><input type="checkbox" value="70-90 Lakh">&nbsp;&nbsp;&nbsp;&nbsp;70-90 Lakh</a></li>
-							<li><a href="#"><input type="checkbox" value="80-120 Lakh">&nbsp;&nbsp;&nbsp;&nbsp;80-120 Lakh</a></li>
+							<li><a href="javascript:"><input type="checkbox" id="budget1" name="budget" value="5 to 10 Lakh">&nbsp;&nbsp;&nbsp;&nbsp;5 to 10 Lakh</a></li>
+							<li><a href="javascript:"><input type="checkbox" id="budget2" name="budget" value="11 to 15 Lakh">&nbsp;&nbsp;&nbsp;&nbsp;11 to 15 Lakh</a></li>
+							<li><a href="javascript:"><input type="checkbox" id="budget3" name="budget" value="15 to 20 Lakh">&nbsp;&nbsp;&nbsp;&nbsp;15 to 20 Lakh</a></li>
+							<li><a href="javascript:"><input type="checkbox" id="budget4" name="budget" value="21 to 25 Lakh">&nbsp;&nbsp;&nbsp;&nbsp;21 to 25 Lakh</a></li>
+							<li><a href="javascript:"><input type="checkbox" id="budget5" name="budget" value="25 to 30 Lakh">&nbsp;&nbsp;&nbsp;&nbsp;25 to 30 Lakh</a></li>
+							<li><a href="javascript:"><input type="checkbox" id="budget6" name="budget" value="31 to 35 Lakh">&nbsp;&nbsp;&nbsp;&nbsp;31 to 35 Lakh</a></li>
+							<li><a href="javascript:"><input type="checkbox" id="budget7" name="budget" value="35 to 40 Lakh">&nbsp;&nbsp;&nbsp;&nbsp;35 to 40 Lakh</a></li>
+							<li><a href="javascript:"><input type="checkbox" id="budget8" name="budget" value="41 to 45 Lakh">&nbsp;&nbsp;&nbsp;&nbsp;41 to 45 Lakh</a></li>
+							<li><a href="javascript:"><input type="checkbox" id="budget9" name="budget" value="45 to 50 Lakh">&nbsp;&nbsp;&nbsp;&nbsp;45 to 50 Lakh</a></li>
+							<li><a href="javascript:"><input type="checkbox" id="budget10" name="budget" value="51 to 55 Lakh">&nbsp;&nbsp;&nbsp;&nbsp;51 to 55 Lakh</a></li>
+							<li><a href="javascript:"><input type="checkbox" id="budget11" name="budget" value="55 to 60 Lakh">&nbsp;&nbsp;&nbsp;&nbsp;55 to 60 Lakh</a></li>
+							<li><a href="javascript:"><input type="checkbox" id="budget12" name="budget" value="61 to 65 Lakh">&nbsp;&nbsp;&nbsp;&nbsp;61 to 65 Lakh</a></li>
+							<li><a href="javascript:"><input type="checkbox" id="budget13" name="budget" value="65 to 70 Lakh">&nbsp;&nbsp;&nbsp;&nbsp;65 to 70 Lakh</a></li>
+							<li><a href="javascript:"><input type="checkbox" id="budget14" name="budget" value="71 to 75 Lakh">&nbsp;&nbsp;&nbsp;&nbsp;71 to 75 Lakh</a></li>
+							<li><a href="javascript:"><input type="checkbox" id="budget15" name="budget" value="75 to 80 Lakh">&nbsp;&nbsp;&nbsp;&nbsp;75 to 80 Lakh</a></li>
+							<li><a href="javascript:"><input type="checkbox" id="budget16" name="budget" value="81 to 85 Lakh">&nbsp;&nbsp;&nbsp;&nbsp;81 to 85 Lakh</a></li>
+							<li><a href="javascript:"><input type="checkbox" id="budget17" name="budget" value="85 to 90 Lakh">&nbsp;&nbsp;&nbsp;&nbsp;85 to 90 Lakh</a></li>
+							<li><a href="javascript:"><input type="checkbox" id="budget18" name="budget" value="91 to 95 Lakh">&nbsp;&nbsp;&nbsp;&nbsp;91 to 95 Lakh</a></li>
+							<li><a href="javascript:"><input type="checkbox" id="budget19" name="budget" value="95 to 99 lakh">&nbsp;&nbsp;&nbsp;&nbsp;95 to 99 lakh</a></li>
+							<li><a href="javascript:"><input type="checkbox" id="budget20" name="budget" value="1 to 2 Cr">&nbsp;&nbsp;&nbsp;&nbsp;1 to 2 Cr</a></li>
+							<li><a href="javascript:"><input type="checkbox" id="budget21" name="budget" value="2 to 3 Cr">&nbsp;&nbsp;&nbsp;&nbsp;2 to 3 Cr</a></li>
+							<li><a href="javascript:"><input type="checkbox" id="budget22" name="budget" value="3 to 4 Cr">&nbsp;&nbsp;&nbsp;&nbsp;3 to 4 Cr</a></li>
+							<li><a href="javascript:"><input type="checkbox" id="budget23" name="budget" value="4 to 5 Cr">&nbsp;&nbsp;&nbsp;&nbsp;4 to 5 Cr</a></li>
 						</ul>
 					</li>
 				</ul>
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
-						<li class="dropdown" style="width: 220px;">
+						<li class="dropdown" style="width: 200px;">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sale Type<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="#"><input type="checkbox" value="Sell">&nbsp;&nbsp;&nbsp;&nbsp;New</a></li>
-								<li><a href="#"><input type="checkbox" value="Buy">&nbsp;&nbsp;&nbsp;&nbsp;Resale</a></li>
+								<li><a href="javascript:"><input type="checkbox" id="saletype1" name="saletype" value="New">&nbsp;&nbsp;&nbsp;&nbsp;New</a></li>
+								<li><a href="javascript:"><input type="checkbox" id="saletype2" name="saletype" value="Resale">&nbsp;&nbsp;&nbsp;&nbsp;Resale</a></li>
 							</ul>
 						</li>
 					</ul>
 					<ul class="nav navbar-nav">
-						<li class="dropdown" style="width: 220px;">
+						<li class="dropdown" style="width: 200px;">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Availability<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="#"><input type="checkbox" value="Sell">&nbsp;&nbsp;&nbsp;&nbsp;Under Construction</a></li>
-								<li><a href="#"><input type="checkbox" value="Buy">&nbsp;&nbsp;&nbsp;&nbsp;Ready For Use</a></li>
+								<li><a href="javascript:"><input type="checkbox" id="availability1" name="availability" value="Under Construction">&nbsp;&nbsp;&nbsp;&nbsp;Under Construction</a></li>
+								<li><a href="javascript:"><input type="checkbox" id="availability2" name="availability" value="Ready For Use">&nbsp;&nbsp;&nbsp;&nbsp;Ready For Use</a></li>
 							</ul>
 						</li>
 					</ul>
 
 					<ul class="nav navbar-nav">
-						<li class="dropdown" style="width: 220px;">
+						<li class="dropdown" style="width: 200px;">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Property Type<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="#"><input type="checkbox" value="Sell">&nbsp;&nbsp;&nbsp;&nbsp;Sell</a></li>
-								<li><a href="#"><input type="checkbox" value="Buy">&nbsp;&nbsp;&nbsp;&nbsp;Buy</a></li>
+								<li><a href="javascript:setsubProperty('Residential')"><input type="checkbox" id="property_type1" name="property_type" value="Residential">&nbsp;&nbsp;&nbsp;&nbsp;Residential</a></li>
+								<li><a href="javascript:setsubProperty('Commercial')"><input type="checkbox" id="property_type2" name="property_type" value="Commercial">&nbsp;&nbsp;&nbsp;&nbsp;Commercial</a></li>
+								<li><a href="javascript:setsubProperty('Other')"><input type="checkbox" id="property_type3" name="property_type" value="Other">&nbsp;&nbsp;&nbsp;&nbsp;Other</a></li>
 							</ul>
 						</li>
 					</ul>
 					<ul class="nav navbar-nav">
-						<li class="dropdown" style="width: 220px;">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sub Property<span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li><a href="#"><input type="checkbox" value="1 RK">&nbsp;&nbsp;&nbsp;&nbsp;1 RK</a></li>
-								<li><a href="#"><input type="checkbox" value="1 BHK">&nbsp;&nbsp;&nbsp;&nbsp;1 BHK</a></li>
-								<li><a href="#"><input type="checkbox" value="2 BHK">&nbsp;&nbsp;&nbsp;&nbsp;2 BHK</a></li>
-								<li><a href="#"><input type="checkbox" value="3 BHK">&nbsp;&nbsp;&nbsp;&nbsp;3 BHK</a></li>
-								<li><a href="#"><input type="checkbox" value="4 BHK">&nbsp;&nbsp;&nbsp;&nbsp;4 BHK</a></li>
-								<li><a href="#"><input type="checkbox" value="5 BHK">&nbsp;&nbsp;&nbsp;&nbsp;5 BHK</a></li>
-							</ul>
-						</li>
-					</ul>
-					<ul class="nav navbar-nav">
-						<li class="dropdown" style="width: 220px;">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">BHK<span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li><a href="#"><input type="checkbox" value="1 RK">&nbsp;&nbsp;&nbsp;&nbsp;1 RK</a></li>
-								<li><a href="#"><input type="checkbox" value="1 BHK">&nbsp;&nbsp;&nbsp;&nbsp;1 BHK</a></li>
-								<li><a href="#"><input type="checkbox" value="2 BHK">&nbsp;&nbsp;&nbsp;&nbsp;2 BHK</a></li>
-								<li><a href="#"><input type="checkbox" value="3 BHK">&nbsp;&nbsp;&nbsp;&nbsp;3 BHK</a></li>
-								<li><a href="#"><input type="checkbox" value="4 BHK">&nbsp;&nbsp;&nbsp;&nbsp;4 BHK</a></li>
-								<li><a href="#"><input type="checkbox" value="5 BHK">&nbsp;&nbsp;&nbsp;&nbsp;5 BHK</a></li>
-							</ul>
-						</li>
-					</ul>
-					<ul class="nav navbar-nav">
-						<li class="dropdown" style="width: 220px;">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">BHK<span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li><a href="#"><input type="checkbox" value="1 RK">&nbsp;&nbsp;&nbsp;&nbsp;1 RK</a></li>
-								<li><a href="#"><input type="checkbox" value="1 BHK">&nbsp;&nbsp;&nbsp;&nbsp;1 BHK</a></li>
-								<li><a href="#"><input type="checkbox" value="2 BHK">&nbsp;&nbsp;&nbsp;&nbsp;2 BHK</a></li>
-								<li><a href="#"><input type="checkbox" value="3 BHK">&nbsp;&nbsp;&nbsp;&nbsp;3 BHK</a></li>
-								<li><a href="#"><input type="checkbox" value="4 BHK">&nbsp;&nbsp;&nbsp;&nbsp;4 BHK</a></li>
-								<li><a href="#"><input type="checkbox" value="5 BHK">&nbsp;&nbsp;&nbsp;&nbsp;5 BHK</a></li>
+						<li class="dropdown" style="width: 200px;">
+							<a href="javascript:" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sub Property<span class="caret"></span></a>
+							<ul class="dropdown-menu" id="subPropertyul">
+
 							</ul>
 						</li>
 					</ul>
@@ -426,7 +415,7 @@ include('header.php');
 	</div>
 </div>
 
-
+</form>
 
 
 <div class="container" style="display: -moz-inline-stack;" onclick="hidesuggetionBoxes()">
@@ -612,5 +601,48 @@ include('header.php');
 				showmessage("error","Ajax Call Error");
 			}
 		});
+	}
+	function setsubProperty(property)
+	{
+		var str='';
+		if((document.getElementById("property_type1").checked=true) && (document.getElementById("property_type2").checked = true) && (document.getElementById("property_type3").checked = true))
+		{
+			str = str+"<li><a href='javascript:'><input type='checkbox' id='subproperty1' name='subproperty' value='1 RK'>&nbsp;&nbsp;&nbsp;&nbsp;1 RK</a></li><li><a href='javascript:'><input type='checkbox' id='subproperty2' name='subproperty' value='1 BHK'>&nbsp;&nbsp;&nbsp;&nbsp;1 BHK</a></li><li><a href='javascript:'><input type='checkbox' id='subproperty3' name='subproperty' value='2 BHK'>&nbsp;&nbsp;&nbsp;&nbsp;2 BHK</a></li><li><a href='javascript:'><input type='checkbox' id='subproperty4' name='subproperty' value='3 BHK'>&nbsp;&nbsp;&nbsp;&nbsp;3 BHK</a></li><li><a href='javascript:'><input type='checkbox' id='subproperty5' name='subproperty' value='4 BHK'>&nbsp;&nbsp;&nbsp;&nbsp;4 BHK</a></li><li><a href='javascript:'><input type='checkbox' id='subproperty6' name='subproperty' value='5 BHK'>&nbsp;&nbsp;&nbsp;&nbsp;5 BHK</a></li><li><a href='javascript:'><input type='checkbox' id='subproperty7' name='subproperty' value='House/Villa'>&nbsp;&nbsp;&nbsp;&nbsp;House/Villa</a></li><li><a href='javascript:'><input type='checkbox' id='subproperty8' name='subproperty' value='Plot/Land'>&nbsp;&nbsp;&nbsp;&nbsp;Plot/Land</a></li>";
+			str = str+"<li><a href='javascript:'><input type='checkbox' id='subproperty1' name='subproperty' value='Office Space'>&nbsp;&nbsp;&nbsp;&nbsp;Office Space</a></li><li><a href='javascript:'><input type='checkbox' id='subproperty2' name='subproperty' value='Shop/Showroom'>&nbsp;&nbsp;&nbsp;&nbsp;Shop/Showroom</a></li><li><a href='javascript:'><input type='checkbox' id='subproperty3' name='subproperty' value='Commercial Land'>&nbsp;&nbsp;&nbsp;&nbsp;Commercial Land</a></li><li><a href='javascript:'><input type='checkbox' id='subproperty4' name='subproperty' value='Warehouse/Godown'>&nbsp;&nbsp;&nbsp;&nbsp;Warehouse/Godown</a></li><li><a href='javascript:'><input type='checkbox' id='subproperty5' name='subproperty' value='Industrial Building'>&nbsp;&nbsp;&nbsp;&nbsp;Industrial Building</a></li><li><a href='javascript:'><input type='checkbox' id='subproperty6' name='subproperty' value='Industrial Shed'>&nbsp;&nbsp;&nbsp;&nbsp;Industrial Shed</a></li>";
+			str = str+"<li><a href='javascript:'><input type='checkbox' id='subproperty1' name='subproperty' value='Agriculture Land'>&nbsp;&nbsp;&nbsp;&nbsp;Agriculture Land</a></li><li><a href='javascript:'><input type='checkbox' id='subproperty2' name='subproperty' value='Farm House'>&nbsp;&nbsp;&nbsp;&nbsp;Farm House</a></li>";
+
+		}
+		else if((document.getElementById("property_type1").checked = true) && (document.getElementById("property_type2").checked = true))
+		{
+		   str = str+"<li><a href='javascript:'><input type='checkbox' id='subproperty1' name='subproperty' value='1 RK'>&nbsp;&nbsp;&nbsp;&nbsp;1 RK</a></li><li><a href='javascript:'><input type='checkbox' id='subproperty2' name='subproperty' value='1 BHK'>&nbsp;&nbsp;&nbsp;&nbsp;1 BHK</a></li><li><a href='javascript:'><input type='checkbox' id='subproperty3' name='subproperty' value='2 BHK'>&nbsp;&nbsp;&nbsp;&nbsp;2 BHK</a></li><li><a href='javascript:'><input type='checkbox' id='subproperty4' name='subproperty' value='3 BHK'>&nbsp;&nbsp;&nbsp;&nbsp;3 BHK</a></li><li><a href='javascript:'><input type='checkbox' id='subproperty5' name='subproperty' value='4 BHK'>&nbsp;&nbsp;&nbsp;&nbsp;4 BHK</a></li><li><a href='javascript:'><input type='checkbox' id='subproperty6' name='subproperty' value='5 BHK'>&nbsp;&nbsp;&nbsp;&nbsp;5 BHK</a></li><li><a href='javascript:'><input type='checkbox' id='subproperty7' name='subproperty' value='House/Villa'>&nbsp;&nbsp;&nbsp;&nbsp;House/Villa</a></li><li><a href='javascript:'><input type='checkbox' id='subproperty8' name='subproperty' value='Plot/Land'>&nbsp;&nbsp;&nbsp;&nbsp;Plot/Land</a></li>";
+		   str = str+"<li><a href='javascript:'><input type='checkbox' id='subproperty1' name='subproperty' value='Office Space'>&nbsp;&nbsp;&nbsp;&nbsp;Office Space</a></li><li><a href='javascript:'><input type='checkbox' id='subproperty2' name='subproperty' value='Shop/Showroom'>&nbsp;&nbsp;&nbsp;&nbsp;Shop/Showroom</a></li><li><a href='javascript:'><input type='checkbox' id='subproperty3' name='subproperty' value='Commercial Land'>&nbsp;&nbsp;&nbsp;&nbsp;Commercial Land</a></li><li><a href='javascript:'><input type='checkbox' id='subproperty4' name='subproperty' value='Warehouse/Godown'>&nbsp;&nbsp;&nbsp;&nbsp;Warehouse/Godown</a></li><li><a href='javascript:'><input type='checkbox' id='subproperty5' name='subproperty' value='Industrial Building'>&nbsp;&nbsp;&nbsp;&nbsp;Industrial Building</a></li><li><a href='javascript:'><input type='checkbox' id='subproperty6' name='subproperty' value='Industrial Shed'>&nbsp;&nbsp;&nbsp;&nbsp;Industrial Shed</a></li>";
+
+		}
+		else if((document.getElementById("property_type1").checked = true) && (document.getElementById("property_type3").checked = true))
+		{
+			str = str+"<li><a href='javascript:'><input type='checkbox' id='subproperty1' name='subproperty' value='1 RK'>&nbsp;&nbsp;&nbsp;&nbsp;1 RK</a></li><li><a href='javascript:'><input type='checkbox' id='subproperty2' name='subproperty' value='1 BHK'>&nbsp;&nbsp;&nbsp;&nbsp;1 BHK</a></li><li><a href='javascript:'><input type='checkbox' id='subproperty3' name='subproperty' value='2 BHK'>&nbsp;&nbsp;&nbsp;&nbsp;2 BHK</a></li><li><a href='javascript:'><input type='checkbox' id='subproperty4' name='subproperty' value='3 BHK'>&nbsp;&nbsp;&nbsp;&nbsp;3 BHK</a></li><li><a href='javascript:'><input type='checkbox' id='subproperty5' name='subproperty' value='4 BHK'>&nbsp;&nbsp;&nbsp;&nbsp;4 BHK</a></li><li><a href='javascript:'><input type='checkbox' id='subproperty6' name='subproperty' value='5 BHK'>&nbsp;&nbsp;&nbsp;&nbsp;5 BHK</a></li><li><a href='javascript:'><input type='checkbox' id='subproperty7' name='subproperty' value='House/Villa'>&nbsp;&nbsp;&nbsp;&nbsp;House/Villa</a></li><li><a href='javascript:'><input type='checkbox' id='subproperty8' name='subproperty' value='Plot/Land'>&nbsp;&nbsp;&nbsp;&nbsp;Plot/Land</a></li>";
+			str = str+"<li><a href='javascript:'><input type='checkbox' id='subproperty1' name='subproperty' value='Agriculture Land'>&nbsp;&nbsp;&nbsp;&nbsp;Agriculture Land</a></li><li><a href='javascript:'><input type='checkbox' id='subproperty2' name='subproperty' value='Farm House'>&nbsp;&nbsp;&nbsp;&nbsp;Farm House</a></li>";
+		}
+		else if((document.getElementById("property_type2").checked = true) && (document.getElementById("property_type3").checked = true))
+		{
+			str = str+"<li><a href='javascript:'><input type='checkbox' id='subproperty1' name='subproperty' value='Office Space'>&nbsp;&nbsp;&nbsp;&nbsp;Office Space</a></li><li><a href='javascript:'><input type='checkbox' id='subproperty2' name='subproperty' value='Shop/Showroom'>&nbsp;&nbsp;&nbsp;&nbsp;Shop/Showroom</a></li><li><a href='javascript:'><input type='checkbox' id='subproperty3' name='subproperty' value='Commercial Land'>&nbsp;&nbsp;&nbsp;&nbsp;Commercial Land</a></li><li><a href='javascript:'><input type='checkbox' id='subproperty4' name='subproperty' value='Warehouse/Godown'>&nbsp;&nbsp;&nbsp;&nbsp;Warehouse/Godown</a></li><li><a href='javascript:'><input type='checkbox' id='subproperty5' name='subproperty' value='Industrial Building'>&nbsp;&nbsp;&nbsp;&nbsp;Industrial Building</a></li><li><a href='javascript:'><input type='checkbox' id='subproperty6' name='subproperty' value='Industrial Shed'>&nbsp;&nbsp;&nbsp;&nbsp;Industrial Shed</a></li>";
+			str = str+"<li><a href='javascript:'><input type='checkbox' id='subproperty1' name='subproperty' value='Agriculture Land'>&nbsp;&nbsp;&nbsp;&nbsp;Agriculture Land</a></li><li><a href='javascript:'><input type='checkbox' id='subproperty2' name='subproperty' value='Farm House'>&nbsp;&nbsp;&nbsp;&nbsp;Farm House</a></li>";
+		}
+		else if((document.getElementById("property_type1").checked = true))
+		{
+			str = str+"<li><a href='javascript:'><input type='checkbox' id='subproperty1' name='subproperty' value='1 RK'>&nbsp;&nbsp;&nbsp;&nbsp;1 RK</a></li><li><a href='javascript:'><input type='checkbox' id='subproperty2' name='subproperty' value='1 BHK'>&nbsp;&nbsp;&nbsp;&nbsp;1 BHK</a></li><li><a href='javascript:'><input type='checkbox' id='subproperty3' name='subproperty' value='2 BHK'>&nbsp;&nbsp;&nbsp;&nbsp;2 BHK</a></li><li><a href='javascript:'><input type='checkbox' id='subproperty4' name='subproperty' value='3 BHK'>&nbsp;&nbsp;&nbsp;&nbsp;3 BHK</a></li><li><a href='javascript:'><input type='checkbox' id='subproperty5' name='subproperty' value='4 BHK'>&nbsp;&nbsp;&nbsp;&nbsp;4 BHK</a></li><li><a href='javascript:'><input type='checkbox' id='subproperty6' name='subproperty' value='5 BHK'>&nbsp;&nbsp;&nbsp;&nbsp;5 BHK</a></li><li><a href='javascript:'><input type='checkbox' id='subproperty7' name='subproperty' value='House/Villa'>&nbsp;&nbsp;&nbsp;&nbsp;House/Villa</a></li><li><a href='javascript:'><input type='checkbox' id='subproperty8' name='subproperty' value='Plot/Land'>&nbsp;&nbsp;&nbsp;&nbsp;Plot/Land</a></li>";
+
+		}
+		else if((document.getElementById("property_type2").checked = true))
+		{
+			str = str+"<li><a href='javascript:'><input type='checkbox' id='subproperty1' name='subproperty' value='Office Space'>&nbsp;&nbsp;&nbsp;&nbsp;Office Space</a></li><li><a href='javascript:'><input type='checkbox' id='subproperty2' name='subproperty' value='Shop/Showroom'>&nbsp;&nbsp;&nbsp;&nbsp;Shop/Showroom</a></li><li><a href='javascript:'><input type='checkbox' id='subproperty3' name='subproperty' value='Commercial Land'>&nbsp;&nbsp;&nbsp;&nbsp;Commercial Land</a></li><li><a href='javascript:'><input type='checkbox' id='subproperty4' name='subproperty' value='Warehouse/Godown'>&nbsp;&nbsp;&nbsp;&nbsp;Warehouse/Godown</a></li><li><a href='javascript:'><input type='checkbox' id='subproperty5' name='subproperty' value='Industrial Building'>&nbsp;&nbsp;&nbsp;&nbsp;Industrial Building</a></li><li><a href='javascript:'><input type='checkbox' id='subproperty6' name='subproperty' value='Industrial Shed'>&nbsp;&nbsp;&nbsp;&nbsp;Industrial Shed</a></li>";
+
+		}
+		else if((document.getElementById("property_type3").checked = true))
+		{
+			str = str+"<li><a href='javascript:'><input type='checkbox' id='subproperty1' name='subproperty' value='Agriculture Land'>&nbsp;&nbsp;&nbsp;&nbsp;Agriculture Land</a></li><li><a href='javascript:'><input type='checkbox' id='subproperty2' name='subproperty' value='Farm House'>&nbsp;&nbsp;&nbsp;&nbsp;Farm House</a></li>";
+		}
+			$("#subPropertyul").append(str);
+		}
 	}
 </script>
