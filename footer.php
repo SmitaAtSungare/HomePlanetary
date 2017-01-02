@@ -174,7 +174,7 @@ address their needs in the simplest and fastest way. Want to buy yours first dre
 </div>
 	 <div class="container">
 		 <div class="ftr-grids">
-			 <div class="col-md-3 ftr-grid">
+			 <div class="col-md-3 col-xs-12 ftr-grid">
 				 <h4>Information</h4>
 				 <ul>
 					<li><span><a href="About/">About Us</a></span></li>
@@ -182,7 +182,7 @@ address their needs in the simplest and fastest way. Want to buy yours first dre
    				    <li><a href="AdvertiseWithUs/">Advertise with us</a></li>
 				 </ul>
 			 </div>
-			 <div class="col-md-3 ftr-grid">
+			 <div class="col-md-3 col-xs-12 ftr-grid">
 		 		<h4>Terms & Conditions</h4>
 				 <ul>
 					<li><span><a href="PrivacyPolicy/">Privacy Policy</a></span></li>
@@ -190,18 +190,18 @@ address their needs in the simplest and fastest way. Want to buy yours first dre
 					<li><span><a href="SiteMap/">Sitemap</a></span></li>
 				 </ul>
 			 </div>
-			 <div class="col-md-3 ftr-grid">
+			 <div class="col-md-3 col-xs-12 ftr-grid">
 				 <h4>Contact Us</h4>
 				 <ul>
 					<li><span><a href="">info@homeplanetary.com</a></span></li>
 					<li><span><a href="">support@homeplanetary.com</a></span></li>
 				 </ul>
 			 </div>
-			 <div class="col-md-3 ftr-grid">
+			 <div class="col-md-3 col-xs-12 ftr-grid">
 				 <div class="follow">
 			 		<h4>Follow Us</h4>
 				 	<ul>
-						<li><a href="https://www.facebook.com/homeplanetary/"><i class="fa fa-facebook" aria-hidden="true"></a></i></li>
+						<li><a href="https://www.facebook.com/homeplanetary/"><span class="social social-facebook"></span></a></li>
 						<li><a href="https://plus.google.com/111873557022197321661"><i class="fa fa-google" aria-hidden="true"></a></i></li>
 						<li><i class="fa fa-twitter" aria-hidden="true"></i></li>
 					</ul>
@@ -227,7 +227,9 @@ address their needs in the simplest and fastest way. Want to buy yours first dre
 </div>
 <a href="#" id="toTop">To Top</a>
 <script type='text/javascript' src="js/jquery-1.11.1.min.js"></script>
-<script type='text/javascript' src="js/bootstrap.min.js"></script>
+<!--<script type='text/javascript' src="js/bootstrap.min.js"></script>-->
+<script src="js/bootstrap.js"></script>
+<script src="js/bootstrap-select.js"></script>
 <script src="js/classie.js"></script>
 <script src="js/modalEffects.js"></script>
 <script type="text/javascript" src="js/paging.js"></script>
@@ -242,8 +244,6 @@ address their needs in the simplest and fastest way. Want to buy yours first dre
 <script type="text/javascript" src="js/jquery.validate.min.js"></script>
 <script type="text/javascript" src="js/additional-methods.min.js"></script>
 <script type="text/javascript" src="admin/plugins/select2/select2.min.js"></script>
-<script type="text/javascript" src="js/moment.min.js"></script>
-<script type="text/javascript" src="js/bootstrap-datepicker.min.js"></script>
 <script type="text/javascript">
 
 			$(document).ready(function() {

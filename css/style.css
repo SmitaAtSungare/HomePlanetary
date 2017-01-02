@@ -3,6 +3,22 @@
 	position: fixed;
 }
 
+.btn-new
+{
+background-color:#dd0a16;
+color:#fff;
+border: medium none;
+height: 50px;
+margin: 0;
+outline: medium none;
+padding: 6px 10px 6px 10px;
+position: relative;
+width: 59%;
+float:right;
+	
+}
+
+
 .banner12 {
     background: rgba(0, 0, 0, 0) url("../images/banner.jpg") no-repeat scroll 0 0 / cover ;
     min-height: 430px;
@@ -308,7 +324,7 @@ html, body{
 }
 
 .row{
-	margin:0;
+	margin:10px;
 }
 /*.breadcrumb{
 margin: 10px 0;
@@ -415,13 +431,17 @@ span.item_price {
   display: block;
 }
 .box_1 {
-	text-align:center;
+    text-align: center;
+    float: left;
+    background-color: #846600;
+    height: 34px;
+	border-radius: 4px;
 }
 .box_1 h3 {
-	text-align: center;
-    /* margin-top: 1em; */
+    text-align: center;
+    margin-top: 0em;
     padding: 10px;
-    color: #fff; 
+    color: #fff;
 }
 .box_1 h3 img{
 	margin-left: 5px;
@@ -469,7 +489,6 @@ select.item_Size {
 .header_right {
      float: right;
     margin-top: 15px;
-    background: #846600 ;
 }
 
 
@@ -2591,7 +2610,7 @@ a i.google:hover{
     display: block;
     padding-bottom: 5px;
     text-transform: uppercase;
-    font-size: 7px;
+    font-size: 9px;
     /* display: none; */
     padding-left: 11px;
 }
@@ -2970,7 +2989,7 @@ a.order{
 }
 .header_right {
     float: right;
-    margin-top: -95px;
+    margin-top: 5px;
     height: 30px;
 }
 }
@@ -4012,7 +4031,7 @@ ul.p_n-list li a:hover{
     padding-left: 3%;
 }
 	.recommendation {
-    margin-top: -3em;
+    margin-top: 0em;
 }
 	.ad2 img {
     margin-top: 10px;
@@ -4644,7 +4663,7 @@ width: 70%;
     float: right;
     height: 30px;
     margin-right: 8px;
-    margin-top: -82px;
+    margin-top: 12px;
 }
 .respons-menu
 {
@@ -6313,7 +6332,6 @@ width:100%;
     float: left;
     font-weight: normal;
     color: #F90606;
-    padding: 6px;
 }
 .form-control-realestate2 {
     display: block;
@@ -8160,7 +8178,6 @@ width:100%;
     float: left;
     font-weight: normal;
     color: #F90606;
-    padding: 6px;
 }
 .form-control-realestate2 {
     display: block;
@@ -9946,7 +9963,6 @@ width:100%;
     float: left;
     font-weight: normal;
     color: #F90606;
-    padding: 6px;
 }
 .form-control-realestate2 {
     display: block;
@@ -11761,7 +11777,6 @@ width:100%;
     float: left;
     font-weight: normal;
     color: #F90606;
-    padding: 6px;
 }
 .form-control-realestate2 {
     display: block;
@@ -11963,7 +11978,7 @@ nav.main-nav {
 }
 .header_right {
     position: relative;
-    margin-top: -91px;
+    margin-top: 12px;
 }
 
 .respons-menu
@@ -12213,9 +12228,9 @@ width:100%;
 }
 
 .logo {
-     float: left;
+    float: left;
     width: 34%;
-    margin-top: -15px;
+    margin-top: 5px;
 }
 .logo img{
 	width:100%;
@@ -13604,7 +13619,6 @@ width:100%;
     float: left;
     font-weight: normal;
     color: #F90606;
-    padding: 6px;
 }
 .form-control-realestate2 {
     display: block;
@@ -15400,7 +15414,6 @@ width:100%;
     float: left;
     font-weight: normal;
     color: #F90606;
-    padding: 6px;
 }
 .form-control-realestate2 {
     display: block;
@@ -17212,7 +17225,6 @@ width:100%;
     float: left;
     font-weight: normal;
     color: #F90606;
-    padding: 6px;
 }
 .form-control-realestate2 {
     display: block;
@@ -18923,12 +18935,28 @@ color:#fff;
     cursor: pointer;
 }
 
+
+#blur-div
+
+{
+	-webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
+  z-index:999;
+	
+}
+
+
 .slider
 {
 width:100%;
 height:400px;
 background:	#fff;
 overflow:hidden;
+
+
 }
 .slider figure img{
 width:20%;
@@ -20341,7 +20369,6 @@ width:100%;
     float: left;
     font-weight: normal;
     color: #F90606;
-    padding: 6px;
 }
 .form-control-realestate2 {
     display: block;
@@ -21193,7 +21220,8 @@ margin-right:4px;
     font-size: 14px;
     font-weight: bold;
     padding: 2px 2px 2px 10px;
-    width: 40%;
+    width: 69%;
+   
 }
 
 

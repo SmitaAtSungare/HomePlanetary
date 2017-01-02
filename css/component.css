@@ -1148,7 +1148,7 @@ input[type="checkbox"], input[type="radio"] {
 
 
 .withlogin {
-     width: 18%;
+    width: 100%;
     /* float: right; */
     /* margin-top: 15px; */
     line-height: 30px;
@@ -1158,8 +1158,8 @@ input[type="checkbox"], input[type="radio"] {
     border-bottom-right-radius: 6px;
     padding: 4px;
     position: absolute;
-    left: 82%;
-	top:72px;
+    left: 0%;
+    top: 36px;
     z-index: 9999;
     box-shadow: 0px 0px 11px #3E9DCC;
 }
@@ -2920,6 +2920,7 @@ background:#ccc;
     padding: 4px;
     position: absolute;
     left: 46%;
+	top: 76px;
     z-index: 9999;
     box-shadow: 0px 0px 11px #3E9DCC;
 }
@@ -3398,10 +3399,10 @@ fieldset {
 	background: #fff none repeat scroll 0 0;
     border: medium none;
     color: #666363;
-   
+    height: 50px;
     margin: 0;
     outline: medium none;
-   
+    padding: 6px 10px 6px 10px;
     position: relative;
     width: 58%;
 }
@@ -4024,8 +4025,7 @@ background:#eee;
 {
 	background: #fff none repeat scroll 0 0;
     border: medium none;
-    color: #666363;
-    height: 50px;
+    color: #666363;    
     margin: 0;
     outline: medium none;
     padding: 5px;
@@ -4133,25 +4133,14 @@ background:#eee;
 
 
 .city-search2 {
-    /* float: left; */
-    left: 8%;
+   
     position: absolute;
     top: 242px;
-    width: 82%;
-    /* background: #efefef; */
-    /* border-radius: 5px; */
+    width: 100%;
 }
 
 .city-search2 input {
-    background: #fff none repeat scroll 0 0;
-    border: medium none;
-    color: #666363;
-    /* height: 50px; */
-    margin: 0;
-    outline: medium none;
-    padding: 4px 10px 5px 10px;
-    position: relative;
-    width: 59%;
+    
 }
 
 
@@ -4352,18 +4341,20 @@ background:#eee;
 	padding:10px;
 }
 
-.city-search2 input {
-    background: #fff none repeat scroll 0 0;
+.city-search2 input
+{
+	 background: #fff none repeat scroll 0 0;
     border: medium none;
     color: #666363;
-    /* height: 50px; */
-    /* margin-bottom: 15px; */
+    height: 50px;
+    margin-bottom: 15px;
     outline: medium none;
-    /* padding: 6px 10px 6px 10px; */
+    padding: 6px 10px 6px 10px;
     position: relative;
     width: 100%;
-    border-radius: 5px;
+	border-radius:5px;
 }
+
 .header_right2 {
 	background: #dd0a16 none repeat scroll 0 0;
     float: left;

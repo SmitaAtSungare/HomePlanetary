@@ -8,6 +8,8 @@ include('header.php');
 include_once("analyticstracking.php");
 ?>
 <link rel="stylesheet" href="admin/plugins/select2/select2.min1.css">
+ <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700&subset=latin-ext" rel="stylesheet">
+
 <!-- header start -->
 <div class="top_bg">
     <div class="container">
@@ -15,7 +17,7 @@ include_once("analyticstracking.php");
             <a href=""><img src="images/logo1.png" alt=""/></a>
         </div>
         <div class="header_top-sec">
-            <div class="header_right" style="background-color:#17101b"; >
+            <div class="header_right" >
                 <?php
                 if(isset($_SESSION['logged'])){
                     if($_SESSION['logged'] == "true")
@@ -56,12 +58,11 @@ include_once("analyticstracking.php");
                 }
                 else
                 {
-                    echo '&nbsp;&nbsp;<button class="btn btn-default" data-toggle="modal" data-target="#LoginRegister">Login / Registration</button>';
+                    echo '&nbsp;&nbsp;<button class="btn btn-default mybtn" data-toggle="modal" data-target="#LoginRegister">Login / Registration</button>';
 
                 }
                 ?>
-            </div>
-            <div class="header_right" >
+            
                 <?php
                 if($_SESSION['user_type']!='Customer')
                 {
@@ -81,13 +82,15 @@ include_once("analyticstracking.php");
 <div id="sticky-anchor"></div>
 <!--header end-->
 <div class="slider"  onclick="hidesuggetionBoxes()" >
-    <figure>
-        <img src="images/banner.jpg" alt="">
-        <img src="images/banner1.png" alt="">
-        <img src="images/banner2.jpg" alt="">
-        <img src="images/banner4.jpg" alt="">
-        <img src="images/banner5.jpg" alt="">
-    </figure>
+	<div id="blur-div">
+		<figure>
+			<img src="images/banner.jpg" alt="">
+			<img src="images/banner1.png" alt="">
+			<img src="images/banner2.jpg" alt="">
+			<img src="images/banner4.jpg" alt="">
+			<img src="images/banner5.jpg" alt="">
+		</figure>
+	</div>
     <form name="search" action="property_listing.php" method="post" id="search" class="f-right">
         <?php
         $cty = "";
@@ -136,7 +139,115 @@ include_once("analyticstracking.php");
             $broom = $_GET['bedroom'];
         }
         ?>
-        <div class="city-search2">
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<div class="city-search2">	
+			<div class="total-ads main-grid-border">
+				<div class="container">
+					<div class="select-box">
+						<div class="browse-category col-md-2">
+							
+							<select class="selectpicker show-tick" data-live-search="true">
+							  <option data-tokens="Real Estate">one</option>
+							  <option data-tokens="Mobiles">Mobiles</option>
+							  <option data-tokens="Electronics & Appliances">Electronics & Appliances</option>
+							  <option data-tokens="Cars">Cars</option>
+							  <option data-tokens="Bikes">Bikes</option>					 
+							</select>
+						</div>
+						
+						
+						
+						<div class="browse-category col-md-2">
+							
+							<select class="selectpicker show-tick" data-live-search="true">
+							  <option data-tokens="Real Estate">two</option>
+							  <option data-tokens="Mobiles">Mobiles</option>
+							  <option data-tokens="Electronics & Appliances">Electronics & Appliances</option>
+							  <option data-tokens="Cars">Cars</option>
+							  <option data-tokens="Bikes">Bikes</option>					 
+							</select>
+						</div>
+						
+						
+						
+						<div class="browse-category col-md-2">
+							
+							<select class="selectpicker show-tick" data-live-search="true">
+							  <option data-tokens="Real Estate">three</option>
+							  <option data-tokens="Mobiles">Mobiles</option>
+							  <option data-tokens="Electronics & Appliances">Electronics & Appliances</option>
+							  <option data-tokens="Cars">Cars</option>
+							  <option data-tokens="Bikes">Bikes</option>					 
+							</select>
+						</div>
+						
+						
+						
+						
+						
+						
+						
+						<div class="browse-category col-md-2">
+							
+							<select class="selectpicker show-tick" data-live-search="true">
+							  <option data-tokens="Real Estate">four</option>
+							  <option data-tokens="Mobiles">Mobiles</option>
+							  <option data-tokens="Electronics & Appliances">Electronics & Appliances</option>
+							  <option data-tokens="Cars">Cars</option>
+							  <option data-tokens="Bikes">Bikes</option>					 
+							</select>
+						</div>
+						
+						
+						
+						<div class="search-product col-md-4">
+							
+							<div class="search232">
+								<div id="custom-search-input">
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Buscar" />
+									<span class="input-group-btn">
+										<button class="btn btn-info btn-lg" type="button">
+											 <span class="glyphicon glyphicon-search"></span>
+										</button>
+									</span>
+								</div>
+							</div>
+							</div>
+						</div>
+						
+						
+						<div class="clearfix"></div>
+					</div>
+					
+				</div>
+			</div>
+		</div>	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+        <!--<div class="city-search2">
             <div class="row" style="margin-right: -144px;margin-left: 11px;">
                 <div class="col-lg-12">
                 <div class="col-sm-1" style="width: 147px; margin-left: -24px;">
@@ -248,11 +359,114 @@ include_once("analyticstracking.php");
                 </div>
                 </div>
             </div>
-        </div>
+        </div>-->
+		
+		
     </form>
 </div>
 <div class="clearfix"></div>
-<div class="recommendation" onclick="hidesuggetionBoxes()">
+
+
+
+
+
+
+
+
+<div class="container">
+  <div class="row" id="slider-text">
+    <div class="col-md-6" >
+      <h2>Latest Featured Properties</h2>
+    </div>
+  </div>
+</div>
+
+<!-- Item slider-->
+<div class="container-fluid">
+
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12">
+      <div class="carousel carousel-showmanymoveone slide" id="itemslider">
+        <div class="carousel-inner">
+
+          <div class="item active">
+            <div class="col-xs-12 col-sm-6 col-md-2">
+              <a href="#"><img src="https://s12.postimg.org/655583bx9/item_1_180x200.png" class="img-responsive center-block"></a>
+              <h4 class="text-center">MAYORAL SUKNJA</h4>
+              <h5 class="text-center">4000,00 RSD</h5>
+			   <h4 class="text-center">MAYORAL SUKNJA</h4>
+              <h5 class="text-center">4000,00 RSD</h5>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="col-xs-12 col-sm-6 col-md-2">
+              <a href="#"><img src="https://s12.postimg.org/41uq0fc4d/item_2_180x200.png" class="img-responsive center-block"></a>
+              <h4 class="text-center">MAYORAL KOŠULJA</h4>
+              <h5 class="text-center">4000,00 RSD</h5>
+			   <h4 class="text-center">MAYORAL SUKNJA</h4>
+              <h5 class="text-center">4000,00 RSD</h5>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="col-xs-12 col-sm-6 col-md-2">
+              <a href="#"><img src="https://s12.postimg.org/dawwajl0d/item_3_180x200.png" class="img-responsive center-block"></a>
+              <span class="badge">10%</span>
+              <h4 class="text-center">PANTALONE TERI 2</h4>
+              <h5 class="text-center">4000,00 RSD</h5>
+              <h6 class="text-center">5000,00 RSD</h6>
+			   <h4 class="text-center">MAYORAL SUKNJA</h4>
+              <h5 class="text-center">4000,00 RSD</h5>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="col-xs-12 col-sm-6 col-md-2">
+              <a href="#"><img src="https://s12.postimg.org/5w7ki5z4t/item_4_180x200.png" class="img-responsive center-block"></a>
+              <h4 class="text-center">CVETNA HALJINA</h4>
+              <h5 class="text-center">4000,00 RSD</h5>
+			   <h4 class="text-center">MAYORAL SUKNJA</h4>
+              <h5 class="text-center">4000,00 RSD</h5>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="col-xs-12 col-sm-6 col-md-2">
+              <a href="#"><img src="https://s12.postimg.org/e2zk9qp7h/item_5_180x200.png" class="img-responsive center-block"></a>
+              <h4 class="text-center">MAJICA FOTO</h4>
+              <h5 class="text-center">4000,00 RSD</h5>
+			   <h4 class="text-center">MAYORAL SUKNJA</h4>
+              <h5 class="text-center">4000,00 RSD</h5>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="col-xs-12 col-sm-6 col-md-2">
+              <a href="#"><img src="https://s12.postimg.org/46yha3jfh/item_6_180x200.png" class="img-responsive center-block"></a>
+              <h4 class="text-center">MAJICA MAYORAL</h4>
+              <h5 class="text-center">4000,00 RSD</h5>
+            </div>
+          </div>
+
+        </div>
+
+        <div id="slider-control">
+        <a class="left carousel-control" href="#itemslider" data-slide="prev"><img src="https://s12.postimg.org/uj3ffq90d/arrow_left.png" alt="Left" class="img-responsive"></a>
+        <a class="right carousel-control" href="#itemslider" data-slide="next"><img src="https://s12.postimg.org/djuh0gxst/arrow_right.png" alt="Right" class="img-responsive"></a>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<!--<div class="recommendation" onclick="hidesuggetionBoxes()">
     <form method="post" enctype="multipart/form-data">
 <?php
 $result = $mysqli->query("SELECT property_id,property_name,city,locality,property_type,bedroom,photos,price FROM add_posting");
@@ -281,9 +495,14 @@ $result = $mysqli->query("SELECT property_id,property_name,city,locality,propert
             </ul>
         </div>
     </div>
-</div>
+
 </form>
-<!-- Large modal -->
+</div>-->
+
+
+
+
+
 
 
 <?php include("footer.php"); ?>
@@ -314,5 +533,38 @@ $result = $mysqli->query("SELECT property_id,property_name,city,locality,propert
                             }
                         }
                     });
+					
+					
+					
+					
+					
+					
+					
+					
+					(function(){
+
+							  $('#itemslider').carousel({ interval: 3000 });
+							}());
+
+							(function(){
+							  $('.carousel-showmanymoveone .item').each(function(){
+								var itemToClone = $(this);
+
+								for (var i=1;i<6;i++) {
+								  itemToClone = itemToClone.next();
+
+
+								  if (!itemToClone.length) {
+									itemToClone = $(this).siblings(':first');
+								  }
+
+
+								  itemToClone.children(':first-child').clone()
+									.addClass("cloneditem-"+(i))
+									.appendTo($(this));
+								}
+							  });
+							}());
+
             });
 </script>
