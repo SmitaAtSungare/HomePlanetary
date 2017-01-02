@@ -432,6 +432,19 @@ address their needs in the simplest and fastest way. Want to buy yours first dre
                     }
                 });
             });
+            function setmainlistparameters(pid,pname,city,loc,ptype,subtype)
+            {
+                var property_id = pid;
+                var property_name =pname;
+                //   alert(pname);
+                var city = city;
+                var locality = loc;
+                var property_type = ptype;
+                var subProperty = subtype;
+                var url = "";
+                url = "mainlisting_details.php?"+property_name+" - "+locality+" , "+city+" - "+subProperty+" , "+property_type+" Property &id="+property_id;
+                window.location.href = url;
+            }
             function selectCity(val)
              {
                 $("#city").val(val);

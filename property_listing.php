@@ -324,7 +324,112 @@ include('header.php');
   <li class="active">List Property</li>
 </ol>
  </div>
-  <div class="container" style="display: -moz-inline-stack;" onclick="hidesuggetionBoxes()">
+
+
+<div class="opti">
+	<div class="container">
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<ul class="nav navbar-nav">
+					<li class="dropdown" style="width: 220px;">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Budget <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#"><input type="checkbox" value="25-40 Lakh">&nbsp;&nbsp;&nbsp;&nbsp;25-40 Lakh</a></li>
+							<li><a href="#"><input type="checkbox" value="30-40 Lakh">&nbsp;&nbsp;&nbsp;&nbsp;30-40 Lakh</a></li>
+							<li><a href="#"><input type="checkbox" value="40-60 Lakh">&nbsp;&nbsp;&nbsp;&nbsp;40-60 Lakh</a></li>
+							<li><a href="#"><input type="checkbox" value="50-70 Lakh">&nbsp;&nbsp;&nbsp;&nbsp;50-70 Lakh</a></li>
+							<li><a href="#"><input type="checkbox" value="70-90 Lakh">&nbsp;&nbsp;&nbsp;&nbsp;70-90 Lakh</a></li>
+							<li><a href="#"><input type="checkbox" value="80-120 Lakh">&nbsp;&nbsp;&nbsp;&nbsp;80-120 Lakh</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="dropdown" style="width: 220px;">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sale Type<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#"><input type="checkbox" value="Sell">&nbsp;&nbsp;&nbsp;&nbsp;New</a></li>
+								<li><a href="#"><input type="checkbox" value="Buy">&nbsp;&nbsp;&nbsp;&nbsp;Resale</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav">
+						<li class="dropdown" style="width: 220px;">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Availability<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#"><input type="checkbox" value="Sell">&nbsp;&nbsp;&nbsp;&nbsp;Under Construction</a></li>
+								<li><a href="#"><input type="checkbox" value="Buy">&nbsp;&nbsp;&nbsp;&nbsp;Ready For Use</a></li>
+							</ul>
+						</li>
+					</ul>
+
+					<ul class="nav navbar-nav">
+						<li class="dropdown" style="width: 220px;">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Property Type<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#"><input type="checkbox" value="Sell">&nbsp;&nbsp;&nbsp;&nbsp;Sell</a></li>
+								<li><a href="#"><input type="checkbox" value="Buy">&nbsp;&nbsp;&nbsp;&nbsp;Buy</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav">
+						<li class="dropdown" style="width: 220px;">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sub Property<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#"><input type="checkbox" value="1 RK">&nbsp;&nbsp;&nbsp;&nbsp;1 RK</a></li>
+								<li><a href="#"><input type="checkbox" value="1 BHK">&nbsp;&nbsp;&nbsp;&nbsp;1 BHK</a></li>
+								<li><a href="#"><input type="checkbox" value="2 BHK">&nbsp;&nbsp;&nbsp;&nbsp;2 BHK</a></li>
+								<li><a href="#"><input type="checkbox" value="3 BHK">&nbsp;&nbsp;&nbsp;&nbsp;3 BHK</a></li>
+								<li><a href="#"><input type="checkbox" value="4 BHK">&nbsp;&nbsp;&nbsp;&nbsp;4 BHK</a></li>
+								<li><a href="#"><input type="checkbox" value="5 BHK">&nbsp;&nbsp;&nbsp;&nbsp;5 BHK</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav">
+						<li class="dropdown" style="width: 220px;">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">BHK<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#"><input type="checkbox" value="1 RK">&nbsp;&nbsp;&nbsp;&nbsp;1 RK</a></li>
+								<li><a href="#"><input type="checkbox" value="1 BHK">&nbsp;&nbsp;&nbsp;&nbsp;1 BHK</a></li>
+								<li><a href="#"><input type="checkbox" value="2 BHK">&nbsp;&nbsp;&nbsp;&nbsp;2 BHK</a></li>
+								<li><a href="#"><input type="checkbox" value="3 BHK">&nbsp;&nbsp;&nbsp;&nbsp;3 BHK</a></li>
+								<li><a href="#"><input type="checkbox" value="4 BHK">&nbsp;&nbsp;&nbsp;&nbsp;4 BHK</a></li>
+								<li><a href="#"><input type="checkbox" value="5 BHK">&nbsp;&nbsp;&nbsp;&nbsp;5 BHK</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav">
+						<li class="dropdown" style="width: 220px;">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">BHK<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#"><input type="checkbox" value="1 RK">&nbsp;&nbsp;&nbsp;&nbsp;1 RK</a></li>
+								<li><a href="#"><input type="checkbox" value="1 BHK">&nbsp;&nbsp;&nbsp;&nbsp;1 BHK</a></li>
+								<li><a href="#"><input type="checkbox" value="2 BHK">&nbsp;&nbsp;&nbsp;&nbsp;2 BHK</a></li>
+								<li><a href="#"><input type="checkbox" value="3 BHK">&nbsp;&nbsp;&nbsp;&nbsp;3 BHK</a></li>
+								<li><a href="#"><input type="checkbox" value="4 BHK">&nbsp;&nbsp;&nbsp;&nbsp;4 BHK</a></li>
+								<li><a href="#"><input type="checkbox" value="5 BHK">&nbsp;&nbsp;&nbsp;&nbsp;5 BHK</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+	</div>
+</div>
+
+
+
+
+<div class="container" style="display: -moz-inline-stack;" onclick="hidesuggetionBoxes()">
         <div class="estate-property-div1" style="">
 		      <div class="col-md-9" style=" box-shadow: 0px 0px 0px #fff;">
 			  <form method="post" enctype="multipart/form-data">
