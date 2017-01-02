@@ -1015,7 +1015,7 @@ ul#flexiselDemo1 p{
 }
 .copywrite p {
      color: #A20404;
-    font-size: 0.8em;
+   
     text-align: center;
 }
 /*-- --*/
@@ -1036,27 +1036,30 @@ ul#flexiselDemo1 p{
   margin-right:5px;
 }
 .rsidebar {
- display: block;
+	display: block;
     float: left;
-  margin-top:10px;
-       width: 285px;
-	
-   
+	margin-top:10px;
+    width: 285px;  
 }
+
 .single-bottom {
   padding-left: 10px;
 }
+
 .single-bottom a p{
 	padding-bottom:1px;
 }
+
 ul.tabs-menu{
 	padding:0;
 	width: 33%;
 	float:right;
 }
+
 ul.tabs-menu li{
 	display:inline-block;
 }
+
 ul.tabs-menu li a{
 	font-size: 1em;
 	padding: 0.5em 2em;
@@ -1064,9 +1067,11 @@ ul.tabs-menu li a{
 	background: #fa558f;
 	color: #fff;
 }
+
 ul.tabs-menu li.active a{
 	background:#333;
 }
+
 .tabs-box{
 	width: 100%;
 	margin: 5em auto 1.5em auto;
