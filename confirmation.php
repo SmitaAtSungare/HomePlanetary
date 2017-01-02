@@ -51,14 +51,28 @@ $target1=$rows['logo'];
 $user_id=$rows['user_id'];
 $availability=$rows['availability'];
 $add_status='Featured';
-
+$property_list=$rows['property_list'];
 
     $sql2="INSERT INTO `add_posting` (`property_name`, `city`, `locality`, `address`, `landmark`, `property_type`, `transaction_type`,
  `bedroom`, `possession`, `price`, `area_sqft`, `rate_sqft`, `floor_no`, `amenities`, `airport`, `train`, `bustop`, `school`, `hospital`, `resto`, 
  `bank`, `property_details`, `photos`, `name`, `owner_type`, `email`, `mob`, `landline`, `about_builder`, `logo`, `date`, `user_id`, `add_status`, `availability`) VALUES('$property_name','$city','$locality','$address',
  '$landmark','$property_type','$transaction_type','$bed','$possession','$price','$area','$rate_sqft','$floor_no','$ameny','$airport','$train','$bustop',
  '$school','$hospital','$resto','$bank','$property_details','$target','$uname','$type','$email','$mob','$landline','$about_builder','$target1',now(),'$user_id','$add_status','$availability')";
-    $result2=mysqli_query($mysqli,$sql2) or die(mysqli_error());
+    $result2=$mysqli->query($sql2);
+    $result = $mysqli->query("SELECT last_insert_id() AS pid");
+    while ($row = $result->fetch_array()) {
+        $property_id = $row[0];
+    }
+    $Rawjson=rawurldecode($property_list);
+    $Protable = json_decode($Rawjson, true);
+    //print_r($Protable);
+    foreach($Protable as $key => $value)
+    {
+        $save="INSERT INTO property_list(property_id,property_type,bedroom,transaction_type,price,possession,area,rate_sqft,floor_no,floor_plan)
+                        VALUES ($property_id,'$value[property_type]','$value[bedroom]','$value[transaction_type]','$value[price]','$value[possession]',
+                        '$value[area]','$value[rate_sqft]','$value[floor_no]','$value[floor_plan]')";
+        $stmt = $mysqli->query($save);
+    }
 }
 // if not found passkey, display message "Wrong Confirmation code" 
 else {

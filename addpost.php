@@ -969,7 +969,10 @@ $query="INSERT INTO `temp_members_db` (`confirm_code`, `property_name`, `city`, 
                 if(response.msgtype="success")
                 {
                     showmessage("success","Your Confirmation link Has Been Sent To Your Email Address.");
-                   // window.location.href="Home/";
+					setTimeout(function() {
+						window.location.href="Home/";
+					}, 6000);
+
                 }
                 else if(response.msgtype="error")
                 {

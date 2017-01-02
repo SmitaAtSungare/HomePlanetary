@@ -1,138 +1,61 @@
 
 <?php
 /*
-$Rawjson=rawurldecode($_POST['hfprotable']);
-$Protable = json_decode($Rawjson, true);
-$property_type='';
-$bedroom='';
-$transaction_type='';
-$price='';
-$possession='';
-$area='';
-$rate_sqft='';
-floor_no='';
-floor_plan='';
-foreach($Protable as $key => $value)
+
+$result = $mysqli->query("SELECT * FROM property_list WHERE property_id=$id");
+$pcount = $result->num_rows;
+if($pcount>0)
 {
-$property_type=$property_type.$value[property_type].",";
-$bedroom=$bedroom.$value[bedroom].",";
-$transaction_type=$transaction_type.$value[transaction_type].",";
-$price=$price.$value[price].",";
-$possession=$transaction_type.$value[possession].",";
-$area=$area.$value[area].",";
-$rate_sqft=$rate_sqft.$value[rate_sqft].",";
-floor_no=$floor_no.$value[floor_no].",";
-floor_plan=$floor_plan.$value[floor_plan].",";
-}
 
-$stmt = $db->query("SELECT last_insert_id() AS pid");
-while ($row = $stmt->fetch(PDO::FETCH_NUM)) {
-      $property_id= $row[0];
 }
-$Rawjson=rawurldecode($_POST['hfprotable']);
-$Protable = json_decode($Rawjson, true);
-
-//print_r($Protable);
-foreach($Protable as $key => $value)
+else
 {
-$save="INSERT INTO property_list(property_id,property_type,bedroom,transaction_type,price,possession,area,rate_sqft,floor_no,floor_plan)
- VALUES ($property_id,'$value[property_type]','$value[bedroom]','$value[transaction_type]','$value[price]','$value[possession]',
-'$value[area]','$value[rate_sqft]','$value[floor_no]','$value[floor_plan]')";
- $stmt = $db->query($save);
+
 }
 
-<script>
+                        <table class="table table-bordered"  >
+                        <thead>
+                        <tr>
+                            <th>Type</th>
+                            <th>Area (in sq.ft)</th>
+                            <th>Sell Price</th>
+                            <th>Floor Number</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr class="">
+                            <td><?php echo $row['bedroom']; ?> Apartments</td>
+                            <td><?php echo $row['area_sqft']; ?> Sq. Ft.</td>
+                            <td> ₹  <?php echo $row['price']; ?></td>
+                            <td><?php echo $row['floor_no']; ?></td>
+                        </tr>
+                        </tbody>
+                        </table>
 
-var Protable=[];
-function AddProperty()
-{
-var property_type=$("#property_type").val();
-var bedroom=$("#bedroom").val();
-var transaction_type=$("#transaction_type").val();
-var price=$("#price").val();
-var possession=$("#possession").val();
-var area=$("#area").val();
-var rate_sqft=$("#rate_sqft").val();
-var floor_no=$("#floor_no").val();
-uploadimage();
-var floor_plan="property_images/floor_plan"+$("#floorpath").val();
-
-if(property_type =="" && bedroom =="" && transaction_type =="" && price =="" && possession =="" && area =="" && rate_sqft =="" && floor_no =="" && floor_plan =="")
-{
-showmessage("warning","Please FIll Up Property Information");
-}
-if(property_type !="" && bedroom !="" && transaction_type !="" && price !="" && possession !="" && area !="" && rate_sqft !="" && floor_no !="" && floor_plan !="")
-{
-var jsonstr='{"property_type":"'+property_type+'","bedroom":"'+bedroom+'","transaction_type":"'+transaction_type+'","price":"'+price+'","possession":"'+possession+'","area":"'+area+'","rate_sqft":"'+rate_sqft+'","floor_no":"'+floor_no+'","floor_plan":"'+floor_plan+'"}';
-clearproperty();
-$("#property-popup").modal("hide");
-}
-var jsonobj=JSON.parse(jsonstr);
-Protable.push(jsonobj);
-RefreshGrid();
-}
-function RemoveProduct(rowindex)
-{
-//var r = bootbox.confirm("sure to delte")
-var r = confirm("Sure to delete");
-if (r == true) {
-    Protable.splice(rowindex,1);
-    RefreshGrid();
-}
-}
-function removeimage()
-{
-var frmdata = new FormData();
-frmdata.append('act','removefloorplan')
-frmdata.append('path',path);
-var varurl="ajaxwebapi/service.php";
-
-$.ajax({
-     url:varurl,
-     type:"POST",
-     data:frmdata,
-     contentType:false,
-     processData:false,
-     cache:false,
-     success:function(response){
-       if(response.msgtype="success")
-       {
-
-       }
-       else if(response.msgtype="error")
-       {
-        showmessage("error","Error Occured!");
-        }
-       },
-      error:function(xhr){
-       showmessage("error","Ajax Call Error");
-      }
-});
-}
-
-function RefreshGrid()
-{
-var str=escape(JSON.stringify(Protable));
-$("#hfprotable").val(str);
-$("#tblProd > tbody").html("");
-var total=0;
-for(i=0;i<Protable.length;i++)
-{
-var trcontent='<tr><td><img id="avatar" name="avatar" alt="Floor Plan Image" src="'+Protable[i].floor_plan+'" style="width: 12px;height: 12px;"/></td><td>'+Protable[i].property_type+'</td><td>'+Protable[i].bedroom+'</td><td>'+Protable[i].transaction_type+'</td><td>'+Protable[i].price+'</td><td>'+Protable[i].possession+'</td><td>'+Protable[i].area+'</td><td>'+Protable[i].rate_sqft+'</td><td>'+Protable[i].floor_no+'</td><td align="center"><a href="javascript:RemoveProduct('+i+')" class="btnlink btn-red"><i class="fa fa-remove"></i></a></td> </tr>';
-$('#tblProd > tbody:last').append(trcontent);
-}
-}
-
-
-</script>
-
-
-
-
-
-
-
-
+                     <table class="table table-bordered"  >
+                        <thead>
+                        <tr>
+                            <th>Floor Plan</th>
+                            <th>Property Type</th>
+                            <th>SubProperty</th>
+                            <th>Tranasaction</th>
+                            <th>Price</th>
+                            <th>Possession</th>
+                            <th>Size</th>
+                            <th>Rate Sqft.</th>
+                            <th>Floor No.</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <?php
+                            $result1 = $mysqli->query("SELECT property_type,bedroom,transaction_type,price,possession,area,rate_sqft,floor_no,floor_plan FROM property_list WHERE property_id=$id");
+                            while ($row1 = $result1->fetch_array())
+                            {
+                                echo "<tr><td><img id='avatar' name='avatar' alt='Floor Plan Image' src='".$row1['floor_plan']."' style='width: 58px;height: 40px;'/></td><td>".$row1['property_type']."</td><td>".$row1['bedroom']." Apartments</td><td>".$row1['transaction_type']."</td><td> ₹  ".$row1['price']."</td><td>".$row1['possession']."</td><td>".$row1['area']." Sq. Ft.</td><td>".$row1['rate_sqft']."</td><td>".$row1['floor_no']."</td></tr>";
+                            }
+                            ?>
+                        </tbody>
+                        </table>
 
 
 

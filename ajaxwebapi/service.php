@@ -78,6 +78,7 @@ if($_SERVER['REQUEST_METHOD']=="POST") {
         $landline = $_POST['landline'];
         $about_builder = $_POST['about_builder'];
         $availability = $_POST['availability'];
+        $property_list=$_POST['hfprotable'];
         $file = $_POST['file'];
         $file1 = $_POST['file1'];
         $user_id = $_POST['user_id'];
@@ -106,52 +107,44 @@ if($_SERVER['REQUEST_METHOD']=="POST") {
                 }
             }
             $Rawjson=rawurldecode($_POST['hfprotable']);
+
             $Protable = json_decode($Rawjson, true);
             $property_type='';$ptypearr=array();
-            $bedroom='';
-            $transaction_type='';
-            $price='';
-            $possession='';
-            $area='';
-            $rate_sqft='';
-            $floor_no='';
+            $bedroom='';$bdarr=array();
+            $transaction_type='';$trtypearr=array();
+            $price='';$prarr=array();
+            $possession='';$poarr=array();
+            $area='';$arearr=array();
+            $rate_sqft='';$rsarr=array();
+            $floor_no='';$floorarr=array();
+  //          print_r($Protable);
             foreach($Protable as $key => $value)
             {
-                $property_type=$property_type.$value[property_type].",";
-                $bedroom=$bedroom.$value[bedroom].",";
-                $transaction_type=$transaction_type.$value[transaction_type].",";
-                $price=$price.$value[price].",";
-                $possession=$possession.$value[possession].",";
-                $area=$area.$value[area].",";
-                $rate_sqft=$rate_sqft.$value[rate_sqft].",";
-                $floor_no=$floor_no.$value[floor_no].",";
+                array_push($ptypearr,$value[property_type]);
+                array_push($bdarr,$value[bedroom]);
+                array_push($trtypearr,$value[transaction_type]);
+                array_push($prarr,$value[price]);
+                array_push($poarr,$value[possession]);
+                array_push($arearr,$value[area]);
+                array_push($rsarr,$value[rate_sqft]);
+                array_push($floorarr,$value[floor_no]);
             }
-            /*
-            $property_type = implode (", ", $arr);
+//            print_r($ptypearr);
+            $property_type = implode (" ,", $ptypearr);
+            $bedroom = implode (" ,", $bdarr);
+            $transaction_type = implode (" ,", $trtypearr);
+            $price = implode (" ,", $prarr);
+            $possession = implode (" ,", $poarr);
+            $area = implode (" ,", $arearr);
+            $rate_sqft = implode (" ,", $rsarr);
+            $floor_no = implode (" ,", $floorarr);
 
-            */
             $confirm_code=md5(uniqid(rand()));
-            $sql = "INSERT INTO temp_members_db (confirm_code,property_name,city,locality,address,landmark,property_type,transaction_type,bedroom,
-possesion,price,area_sqft,rate_sqft,floor_no,amenities,airport,train,bustop,school,hospital,resto,bank,property_details,name,
-owner_type,email,mob,landline,about_builder,date,photos,logo,user_id,availability)
-VALUES ('$confirm_code',$property_name','$city','$locality','$address','$landmark','$property_type','$transaction_type','$bedroom','$possesion_date',
-'$price','$area','$rate_sqft','$floor_no','$amenities','$airport','$train','$bustop','$school','$hospital','$resto','$bank',
-'$property_details','$builder_name','$type','$email','$mobile','$landline','$about_builder',now(),'$path','$path1','$availability')";
+            $sql = "INSERT INTO temp_members_db (confirm_code,property_name,city,locality,address,landmark,property_type,transaction_type,bedroom,possession,price,area_sqft,rate_sqft,floor_no,amenities,airport,train,bustop,school,hospital,resto,bank,property_details,name,owner_type,email,mob,landline,about_builder,date,photos,logo,user_id,availability,property_list)
+VALUES ('$confirm_code','$property_name','$city','$locality','$address','$landmark','$property_type','$transaction_type','$bedroom','$possesion','$price','$area','$rate_sqft','$floor_no','$amenities','$airport','$train','$bustop','$school','$hospital','$resto','$bank','$property_details','$builder_name','$type','$email','$mobile','$landline','$about_builder',now(),'$path','$path1','$user_id','$availability','$property_list')";
+         //  echo $sql;
             $stmt = $db->query($sql);
-            $stmt = $db->query("SELECT last_insert_id() AS pid");
-            while ($row = $stmt->fetch(PDO::FETCH_NUM)) {
-                $property_id= $row[0];
-            }
-            $Rawjson=rawurldecode($_POST['hfprotable']);
-            $Protable = json_decode($Rawjson, true);
-            //print_r($Protable);
-            foreach($Protable as $key => $value)
-            {
-                $save="INSERT INTO property_list(property_id,property_type,bedroom,transaction_type,price,possession,area,rate_sqft,floor_no,floor_plan)
-                        VALUES ($property_id,'$value[property_type]','$value[bedroom]','$value[transaction_type]','$value[price]','$value[possession]',
-                        '$value[area]','$value[rate_sqft]','$value[floor_no]','$value[floor_plan]')";
-                $stmt = $db->query($save);
-            }
+
             $to=$_POST['email'];
             // Your subject
             $subject="Your confirmation link here";

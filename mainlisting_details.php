@@ -125,7 +125,7 @@ $user_id=$_SESSION['user_id'];
                         <div class="price-details2">
                          <div class="price-main">
                           <h4><i class="fa fa-inr" aria-hidden="true"></i> <?php echo $row['price']; ?></h4>
-                             <div id="contactdiv" style="margin-left: 370px;margin-top: -27px;"><a href="javascript:openenq()" style="color: #23507b;">&nbsp;&nbsp;&nbsp;<i class="fa fa-phone-square"></i>Contact Number</a></div>
+                             <br/><div id="contactdiv" style="margin-left: 370px;margin-top: -27px;"><a href="javascript:openenq()" style="color: #23507b;">&nbsp;&nbsp;&nbsp;<i class="fa fa-phone-square"></i>Contact Number</a></div>
 
                           <b> Apartments| Flats | <?php echo $row['bedroom']; ?>| <?php echo $row['area_sqft']; ?> sq.ft</b>
                             <div class="clearfix"></div>
@@ -203,24 +203,62 @@ $user_id=$_SESSION['user_id'];
                     </div>
                     <div class="nfree-estate">
                         <h2 id="p2">Unit Details</h2>
-                        <table class="table table-bordered"  >
-                        <thead>
-                        <tr>
-                            <th>Type</th>
-                            <th>Area (in sq.ft)</th>
-                            <th>Sell Price</th>
-                            <th>Floor Number</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr class="">
-                            <td><?php echo $row['bedroom']; ?> Apartments</td>
-                            <td><?php echo $row['area_sqft']; ?> Sq. Ft.</td>
-                            <td> ₹  <?php echo $row['price']; ?></td>
-                            <td><?php echo $row['floor_no']; ?></td>
-                        </tr>
-                        </tbody>
-                        </table>
+                        <?php
+                        $result2 = $mysqli->query("SELECT * FROM property_list WHERE property_id=$id");
+                        $pcount = $result2->num_rows;
+                        if($pcount>0)
+                        {
+                         ?>
+
+                            <table class="table table-bordered"  >
+                                <thead>
+                                <tr>
+                                    <th>Floor Plan</th>
+                                    <th>Property Type</th>
+                                    <th>SubProperty</th>
+                                    <th>Tranasaction</th>
+                                    <th>Price</th>
+                                    <th>Possession</th>
+                                    <th>Size</th>
+                                    <th>Rate Sqft.</th>
+                                    <th>Floor No.</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <?php
+                                $result1 = $mysqli->query("SELECT property_type,bedroom,transaction_type,price,possession,area,rate_sqft,floor_no,floor_plan FROM property_list WHERE property_id=$id");
+                                while ($row1 = $result1->fetch_array())
+                                {
+                                    echo "<tr><td><img id='avatar' name='avatar' alt='Floor Plan Image' src='".$row1['floor_plan']."' style='width: 58px;height: 40px;'/></td><td>".$row1['property_type']."</td><td>".$row1['bedroom']." Apartments</td><td>".$row1['transaction_type']."</td><td> ₹  ".$row1['price']."</td><td>".$row1['possession']."</td><td>".$row1['area']." Sq. Ft.</td><td>".$row1['rate_sqft']."</td><td>".$row1['floor_no']."</td></tr>";
+                                }
+                                ?>
+                                </tbody>
+                            </table>
+                        <?php
+                        }
+                        else
+                        {?>
+                            <table class="table table-bordered"  >
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Area (in sq.ft)</th>
+                                    <th>Sell Price</th>
+                                    <th>Floor Number</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr class="">
+                                    <td><?php echo $row['bedroom']; ?> Apartments</td>
+                                    <td><?php echo $row['area_sqft']; ?> Sq. Ft.</td>
+                                    <td> ₹  <?php echo $row['price']; ?></td>
+                                    <td><?php echo $row['floor_no']; ?></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        <?php
+                        }
+                        ?>
                     </div>
                     <div  class="nfree-estate">
                         <h2 id="p3">Amenities</h2>
