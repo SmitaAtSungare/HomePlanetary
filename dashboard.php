@@ -375,29 +375,27 @@ if(isset($_SESSION['login_user'])) {
                                                      id="<?php echo $row['property_name'] . ' - ' . $row['locality'] . ', ' . $row['city']; ?>"
                                                      style="border: none;">
                                                 </div>
-                                                <button type="button" class="badge"
-                                                        style="margin-left: 400px;font-size: 20px;"
-                                                        onclick="setmainlistparameters(<?php echo $row['property_id']; ?>,'<?php echo $row['property_name'];?>','<?php echo $row['city'];?>','<?php echo $row['locality'];?>','<?php echo $row['property_type'];?>','<?php echo $row['bedroom'];?>')">
-                                                    View Details
-                                                </button>
-                                                <button type="button" class="badge"
-                                                        style="margin-left: 400px;font-size: 20px;"
-                                                        onclick="<?php if ($row['total_enquiry'] != 0) { ?>showenquiries(<?php echo $row['property_id'];?>,'<?php echo $row['property_name'].' - '.$row['locality'].', '.$row['city']; ?>')<?php } ?>"> <?php
-                                                    if ($row['total_enquiry'] == 0) {
-                                                        echo "No Enquiry Found";
-                                                    } else {
-                                                        echo "Total Enquiries :" . $row['total_enquiry'];
-                                                    }
-                                                    ?>
-                                                </button>
-                                                <button type="button" class="badge" style="margin-left: 400px;font-size: 20px;" onclick="<?php if ($row['total_visits'] != 0) { ?>visitsdetails(<?php echo $row['property_id'];?>,<?php echo $row['total_visits'];?>)<?php } ?>"><?php
-                                                    if ($row['total_visits'] == 0) {
-                                                        echo "No Visits Found";
-                                                    } else {
-                                                        echo "Total Visits :" . $row['total_visits'];
-                                                    }
-                                                    ?>
-                                                </button>
+												<div class="col-md-12">
+													<button type="button" class="badge col-md-3 col-xs-12" onclick="setmainlistparameters(<?php echo $row['property_id']; ?>,'<?php echo $row['property_name'];?>','<?php echo $row['city'];?>','<?php echo $row['locality'];?>','<?php echo $row['property_type'];?>','<?php echo $row['bedroom'];?>')">
+														View Details
+													</button>
+													<button type="button" class="badge col-md-3 col-xs-12" onclick="<?php if ($row['total_enquiry'] != 0) { ?>showenquiries(<?php echo $row['property_id'];?>,'<?php echo $row['property_name'].' - '.$row['locality'].', '.$row['city']; ?>')<?php } ?>"> <?php
+														if ($row['total_enquiry'] == 0) {
+															echo "No Enquiry Found";
+														} else {
+															echo "Total Enquiries :" . $row['total_enquiry'];
+														}
+														?>
+													</button>
+													<button type="button" class="badge col-md-3 col-xs-12" onclick="<?php if ($row['total_visits'] != 0) { ?>visitsdetails(<?php echo $row['property_id'];?>,<?php echo $row['total_visits'];?>)<?php } ?>"><?php
+														if ($row['total_visits'] == 0) {
+															echo "No Visits Found";
+														} else {
+															echo "Total Visits :" . $row['total_visits'];
+														}
+														?>
+													</button>
+												</div>
                                             </div>
                                         </div>
                                     </a>

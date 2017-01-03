@@ -336,21 +336,7 @@ border-bottom: 1px solid #e5e3db;
   font-size: 10px;
   margin: 2px auto 5px;
 }
-.badge {
-  background: #b20c0c;
-  position: absolute;
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  line-height: 31px;
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 300;
-  font-size: 14px;
-  border: 2px solid #FFF;
-  box-shadow: 0 0 0 1px #b20c0c;
-  top: 5px;
-  right: 25%;
-}
+
 #slider-control img{
   padding-top: 60%;
   margin: 0 auto;
