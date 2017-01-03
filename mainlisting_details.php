@@ -106,15 +106,23 @@ $user_id=$_SESSION['user_id'];
       while( $row =  $result->fetch_array()) :
       ?>
 <div class="container">
-       <div class="list-head">
+       <div class="list-head col-md-12">
 	        <div class="place">
                 <input type="hidden" id="pid" name="pid" value="<?php echo $id;?>"/>
                 <input type="hidden" id="pname" name="pname" value="<?php echo $row['property_name'];?>"/>
                 <input type="hidden" id="pmob" name="pmob" value="<?php echo $row['mob'];?>"/>
-	         <h4><?php echo $row['property_name'].' - '.$row['locality'].', '.$row['city']; ?></h4>
-			 <p><i class="fa fa-map-marker" aria-hidden="true"></i> <b><?php echo $row['locality'].',  '.$row['city']; ?></b> | <?php echo $row['owner_type'].' '.$row['name']; ?>
-			 </p>
+				 <h4><?php echo $row['property_name'].' - '.$row['locality'].', '.$row['city']; ?></h4>
+					<div class="col-md-6">
+						 <p><i class="fa fa-map-marker" aria-hidden="true"></i> <b><?php echo $row['locality'].',  '.$row['city']; ?></b> | <?php echo $row['owner_type'].' '.$row['name']; ?>
+						 </p>
+					</div>
+					
+					<div class="col-md-6">
+						<div id="contactdiv"><a href="javascript:openenq()"><i class="fa fa-phone-square" style="margin-right:5px;"></i>Contact Number</a></div>
+					</div>
 			 </div>
+			 
+			  
 	   </div>
 </div>
 <div class="clearfix"></div>
@@ -124,13 +132,13 @@ $user_id=$_SESSION['user_id'];
                 <div class="col-md-8" style="box-shadow:0px 0px 0px #ccc; background:#fff; ">
                         <div class="price-details2">
                          <div class="price-main">
+							
                           <h4><i class="fa fa-inr" aria-hidden="true"></i> <?php echo $row['price']; ?></h4>
-                             <br/><div id="contactdiv" style="margin-left: 370px;margin-top: -27px;"><a href="javascript:openenq()" style="color: #23507b;">&nbsp;&nbsp;&nbsp;<i class="fa fa-phone-square"></i>Contact Number</a></div>
-
+                            
                           <b> Apartments| Flats | <?php echo $row['bedroom']; ?>| <?php echo $row['area_sqft']; ?> sq.ft</b>
                             <div class="clearfix"></div>
-                             <input type="button" class="btn" value="Possession : <?php echo $row['possession']; ?>">
-                             <input type="button" class="btn" value="Project Status : Available">
+                             <input type="button" class="btn btn-default" value="Possession : <?php echo $row['possession']; ?>">
+                             <input type="button" class="btn btn-default" value="Project Status : Available">
                          </div>
                         </div>
                         <div class="slider2">

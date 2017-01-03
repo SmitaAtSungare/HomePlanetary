@@ -233,12 +233,11 @@ address their needs in the simplest and fastest way. Want to buy yours first dre
 <script src="js/classie.js"></script>
 <script src="js/modalEffects.js"></script>
 <script type="text/javascript" src="js/paging.js"></script>
-<script src='https://www.google.com/recaptcha/api.js'></script>
 <script src="js/tinybox.js" type="text/javascript"></script>
 <script src="js/fixheader.js"></script>
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
-<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="js/jquery-ui.js"></script>
 <script src="js/tinybox.js" type="text/javascript"></script>
 <script type="text/javascript" src="js/simple-lightbox.js"></script>
 <script type="text/javascript" src="js/jquery.validate.min.js"></script>

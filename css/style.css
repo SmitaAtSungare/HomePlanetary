@@ -282,6 +282,7 @@ margin-top:10px;
   text-align: center;
   position: relative;
   z-index: 4;
+  color: #ccc;
 }
 .header_top {
 
@@ -5648,7 +5649,7 @@ background: rgba(221, 10, 22, 0.56);
     padding: 8px;
     border: 1px solid #ccc;
     margin-bottom: 10px;
-    height: 70px;
+    height: 125px;
 
 
 }
@@ -12944,7 +12945,7 @@ width: 100%;
     padding: 8px;
     border: 1px solid #ccc;
     margin-bottom: 10px;
-    height: 70px;
+    height: 125px;
 
 
 }
@@ -19677,7 +19678,7 @@ width: 100%;
     padding: 8px;
     border: 1px solid #ccc;
     margin-bottom: 10px;
-    height: 70px;
+    height: 80px;
 
 
 }
@@ -19693,8 +19694,7 @@ width: 100%;
    
 }
 .place p {
-    Font-size: 15px;
-    margin-top: 7px;
+    
     color: #DD0A16;
 }
 .place-img 

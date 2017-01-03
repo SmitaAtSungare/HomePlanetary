@@ -8,7 +8,7 @@ include('header.php');
 include_once("analyticstracking.php");
 ?>
 <link rel="stylesheet" href="admin/plugins/select2/select2.min1.css">
- <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700&subset=latin-ext" rel="stylesheet">
+
 
 <!-- header start -->
 <div class="top_bg">
@@ -202,16 +202,18 @@ include_once("analyticstracking.php");
 							<div class="search232">
 								<div id="custom-search-input">
 								<div class="input-group">
-                                    <select class="selectpicker show-tick" data-live-search="true">
+                                    <select class="selectpicker show-tick form-control" data-live-search="true">
                                         <option data-tokens="Real Estate">one</option>
                                         <option data-tokens="Mobiles">Mobiles</option>
                                         <option data-tokens="Electronics & Appliances">Electronics & Appliances</option>
                                         <option data-tokens="Cars">Cars</option>
                                         <option data-tokens="Bikes">Bikes</option>
                                     </select>
+									
+									
 									<span class="input-group-btn">
-										<button class="btn btn-info btn-lg" type="button">
-											 <span class="glyphicon glyphicon-search"></span>
+										<button class="btn btn-info btn-lg mysearch" type="button">
+											 <span class="fa fa-search"></span>
 										</button>
 									</span>
 								</div>
@@ -239,7 +241,7 @@ include_once("analyticstracking.php");
 		
 		
 		
-		
+		<!--
        <div class="city-search2">
             <div class="row" style="margin-right: -144px;margin-left: 11px;">
                 <div class="col-lg-12">
@@ -354,7 +356,7 @@ include_once("analyticstracking.php");
             </div>
         </div>
 		
-		
+		-->
     </form>
 </div>
 <div class="clearfix"></div>
@@ -385,12 +387,23 @@ include_once("analyticstracking.php");
           <div class="item active">
             <div class="col-xs-12 col-sm-6 col-md-2">
               <a href="#"><img src="https://s12.postimg.org/655583bx9/item_1_180x200.png" class="img-responsive center-block"></a>
-              <h4 class="text-center">MAYORAL SUKNJA</h4>
-              <h5 class="text-center">4000,00 RSD</h5>
-			   <h4 class="text-center">MAYORAL SUKNJA</h4>
-              <h5 class="text-center">4000,00 RSD</h5>
+              <h4 class="text-center"><a href="#">koltepatil  Appartment - pimple gurav , Pune</a> </h4>
+			  
+              <h5 class="text-center">5BHK Available In prime location of  Pune</h5>
+			   <div class="rupee">
+                    <img src="images/rupee.png">51 to 55 Lakh                     
+				</div>
             </div>
           </div>
+		  
+		  
+		
+		  
+		  
+		  
+		  
+		  
+		  
 
           <div class="item">
             <div class="col-xs-12 col-sm-6 col-md-2">
@@ -458,8 +471,8 @@ include_once("analyticstracking.php");
 
 
 
-
-<!--<div class="recommendation" onclick="hidesuggetionBoxes()">
+<!--
+<div class="recommendation" onclick="hidesuggetionBoxes()">
     <form method="post" enctype="multipart/form-data">
 <?php
 $result = $mysqli->query("SELECT property_id,property_name,city,locality,property_type,bedroom,photos,price FROM add_posting");
