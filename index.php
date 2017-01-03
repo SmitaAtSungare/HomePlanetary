@@ -155,27 +155,14 @@ include_once("analyticstracking.php");
 				<div class="container">
 					<div class="select-box">
 						<div class="browse-category col-md-2">
-							
-							<select class="selectpicker show-tick" data-live-search="true">
-							  <option data-tokens="Real Estate">one</option>
-							  <option data-tokens="Mobiles">Mobiles</option>
-							  <option data-tokens="Electronics & Appliances">Electronics & Appliances</option>
-							  <option data-tokens="Cars">Cars</option>
-							  <option data-tokens="Bikes">Bikes</option>					 
-							</select>
+                            <input type="text" class="form-control" placeholder="Buscar" />
+
 						</div>
 						
 						
 						
-						<div class="browse-category col-md-2">
-							
-							<select class="selectpicker show-tick" data-live-search="true">
-							  <option data-tokens="Real Estate">two</option>
-							  <option data-tokens="Mobiles">Mobiles</option>
-							  <option data-tokens="Electronics & Appliances">Electronics & Appliances</option>
-							  <option data-tokens="Cars">Cars</option>
-							  <option data-tokens="Bikes">Bikes</option>					 
-							</select>
+						<div class="browse-category col-md-4">
+                            <input type="text" class="form-control" placeholder="Buscar" />
 						</div>
 						
 						
@@ -207,15 +194,21 @@ include_once("analyticstracking.php");
 							  <option data-tokens="Bikes">Bikes</option>					 
 							</select>
 						</div>
-						
-						
-						
-						<div class="search-product col-md-4">
+
+
+
+						<div class="search-product col-md-2">
 							
 							<div class="search232">
 								<div id="custom-search-input">
 								<div class="input-group">
-									<input type="text" class="form-control" placeholder="Buscar" />
+                                    <select class="selectpicker show-tick" data-live-search="true">
+                                        <option data-tokens="Real Estate">one</option>
+                                        <option data-tokens="Mobiles">Mobiles</option>
+                                        <option data-tokens="Electronics & Appliances">Electronics & Appliances</option>
+                                        <option data-tokens="Cars">Cars</option>
+                                        <option data-tokens="Bikes">Bikes</option>
+                                    </select>
 									<span class="input-group-btn">
 										<button class="btn btn-info btn-lg" type="button">
 											 <span class="glyphicon glyphicon-search"></span>
