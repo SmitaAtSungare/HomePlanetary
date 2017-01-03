@@ -1,5 +1,22 @@
 
 <?php
+$budgetArray =Array("5 to 10 Lakh", "11 to 15 Lakh", "15 to 20 Lakh", "21 to 25 Lakh", "25 to 30 Lakh");
+$countbudget = count($budgetArray);
+        $budgetlistsearch = '(';
+        if($countbudget>=0)
+        {
+            for($i=0;$i<$countbudget;$i++)
+            {
+                $budgetlistsearch = $budgetlistsearch.'price LIKE %'.$budgetArray[$i].'%';
+
+                if($i != $countbudget-1)
+                {
+                    $budgetlistsearch=$budgetlistsearch.' OR ';
+                }
+            }
+        }
+        $budgetlistsearch=$budgetlistsearch.')';
+        echo $budgetlistsearch;
 /*
 
 $result = $mysqli->query("SELECT * FROM property_list WHERE property_id=$id");
