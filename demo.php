@@ -1,23 +1,329 @@
 
 <?php
-$budgetArray =Array("5 to 10 Lakh", "11 to 15 Lakh", "15 to 20 Lakh", "21 to 25 Lakh", "25 to 30 Lakh");
-$countbudget = count($budgetArray);
-        $budgetlistsearch = '(';
-        if($countbudget>=0)
-        {
-            for($i=0;$i<$countbudget;$i++)
-            {
-                $budgetlistsearch = $budgetlistsearch.'price LIKE %'.$budgetArray[$i].'%';
-
-                if($i != $countbudget-1)
-                {
-                    $budgetlistsearch=$budgetlistsearch.' OR ';
+if($act=="dynamic_search") {
+    $city = $_POST['city'];
+    if ($city != "") {
+        $citysearch ="city LIKE '%".$city."%'";
+    } else {
+        $citysearch = '';
+    }
+    $category = $_POST['category'];
+    if ($category != "") {
+        $categorysearch =" AND (locality LIKE '%".$category."%' OR name LIKE '%".$category."%' OR property_name LIKE '%".$category."%')";
+    } else {
+        $categorysearch = '';
+    }
+    $budget = $_POST['budget'];
+    if ($budget != "") {
+        $budgetsearch = " AND price LIKE '%".$budget."%'";
+    } else {
+        $budgetsearch = '';
+    }
+    $property_type = $_POST['property_type'];
+    if ($property_type != "") {
+        $property_typesearch = " AND property_type LIKE '%".$property_type."%'";
+    } else {
+        $property_typesearch = '';
+    }
+    $bedroom = $_POST['bedroom'];
+    if ($bedroom != "") {
+        $bedroomsearch = " AND bedroom LIKE '%".$bedroom."%'";
+    } else {
+        $bedroomsearch = '';
+    }
+    $budgetlist = $_POST['budgetlist'];
+    if($budgetlist!="")
+    {
+        $budgetArray = explode(',', $budgetlist);
+        $countbudget = count($budgetArray);
+        if ($countbudget >= 0) {
+            $budgetlistsearch = ' UNION ';
+            for ($i = 0; $i < $countbudget; $i++) {
+                $budgetlistsearch = $budgetlistsearch ."SELECT property_id,property_name,locality,city,photos,bedroom,price,possession,area_sqft,owner_type,name,mob,
+property_type FROM add_posting WHERE ".$citysearch." AND price LIKE '%".$budgetArray[$i]."%'";
+                if ($i != $countbudget - 1) {
+                    $budgetlistsearch = $budgetlistsearch . ' UNION ';
                 }
             }
+            $budgetlistsearch = $budgetlistsearch . '';
         }
-        $budgetlistsearch=$budgetlistsearch.')';
-        echo $budgetlistsearch;
+    }
+    else
+    {
+        $budgetlistsearch = '';
+    }
+
+    $saletypelist = $_POST['saletypelist'];
+    if($saletypelist!="")
+    {
+        $saletypeArray = explode(',', $saletypelist);
+        $countsaletype = count($saletypeArray);
+        if ($countsaletype >= 0) {
+            $saletypelistsearch = ' UNION  ';
+            for ($i = 0; $i < $countsaletype; $i++) {
+                $saletypelistsearch = $saletypelistsearch."SELECT property_id,property_name,locality,city,photos,bedroom,price,possession,area_sqft,owner_type,name,mob,
+property_type FROM add_posting WHERE ".$citysearch." AND transaction_type LIKE '%".$saletypeArray[$i]."%'";
+                if ($i != $countsaletype - 1) {
+                    $saletypelistsearch = $saletypelistsearch . ' UNION ';
+                }
+            }
+            $saletypelistsearch = $saletypelistsearch . '';
+        }
+    }
+    else
+    {
+        $saletypelistsearch='';
+    }
+
+    $availabilitylist = $_POST['availabilitylist'];
+    if($availabilitylist!="")
+    {
+        $availabilityArray = explode(',', $availabilitylist);
+        $countavailability = count($availabilityArray);
+        if ($countavailability >= 0) {
+            $availabilitylistsearch = ' UNION ';
+            for ($i = 0; $i < $countavailability; $i++) {
+                $availabilitylistsearch = $availabilitylistsearch."SELECT property_id,property_name,locality,city,photos,bedroom,price,possession,area_sqft,owner_type,name,mob,
+property_type FROM add_posting WHERE ".$citysearch." AND availability LIKE '%".$availabilityArray[$i]."%'";
+                if ($i != $countavailability - 1) {
+                    $availabilitylistsearch = $availabilitylistsearch . ' UNION ';
+                }
+            }
+            $availabilitylistsearch = $availabilitylistsearch . '';
+        }
+    }
+    else
+    {
+        $availabilitylistsearch='';
+    }
+
+    $property_typelist = $_POST['property_typelist'];
+    if($property_typelist!="")
+    {
+        $property_typeArray = explode(',', $property_typelist);
+        $countproperty_type = count($property_typeArray);
+        if ($countproperty_type >= 0) {
+            $property_typelistsearch = ' UNION ';
+            for ($i = 0; $i < $countproperty_type; $i++) {
+                $property_typelistsearch = $property_typelistsearch."SELECT property_id,property_name,locality,city,photos,bedroom,price,possession,area_sqft,owner_type,name,mob,
+property_type FROM add_posting WHERE ".$citysearch." AND property_type LIKE '%".$property_typeArray[$i]."%'";
+                if ($i != $countproperty_type - 1) {
+                    $property_typelistsearch = $property_typelistsearch . ' UNION ';
+                }
+            }
+            $property_typelistsearch = $property_typelistsearch . '';
+        }
+    }
+    else
+    {
+        $property_typelistsearch='';
+    }
+
+    $subpropertylist = $_POST['subpropertylist'];
+    if($subpropertylist!="")
+    {
+        $subpropertyArray = explode(',', $subpropertylist);
+        $countsubproperty = count($subpropertyArray);
+        if ($countsubproperty >= 0) {
+            $subpropertylistsearch = ' UNION ';
+            for ($i = 0; $i < $countsubproperty; $i++) {
+                $subpropertylistsearch = $subpropertylistsearch."SELECT property_id,property_name,locality,city,photos,bedroom,price,possession,area_sqft,owner_type,name,mob,
+property_type FROM add_posting WHERE ".$citysearch." AND bedroom LIKE '%".$subpropertyArray[$i]."%'";
+                if ($i != $countsubproperty - 1) {
+                    $subpropertylistsearch = $subpropertylistsearch . ' UNION ';
+                }
+            }
+            $subpropertylistsearch = $subpropertylistsearch . '';
+        }
+    }
+    else
+    {
+        $subpropertylistsearch='';
+    }
+    $searchparameters1=$budgetlistsearch.$saletypelistsearch.$availabilitylistsearch.$property_typelistsearch.$subpropertylistsearch;
+    $searchparameters=$citysearch.$categorysearch.$budgetsearch.$property_typesearch.$bedroomsearch.$searchparameters1;
+    try
+    {
+        $db = getDB();
+        $sql = "SELECT property_id,property_name,locality,city,photos,bedroom,price,possession,area_sqft,owner_type,name,mob,
+property_type FROM add_posting WHERE ".$searchparameters;
+//echo $sql;
+        $stmt = $db->query($sql);
+        $result = $stmt->fetchAll(PDO::FETCH_OBJ);
+        $db = null;
+        $jsonmsg->msgtype="success";
+        $jsonmsg->desc="";
+        $jsonmsg->result=$result;
+    }
+    catch (PDOException $e)
+    {
+        throw $e;
+    }
+}
+
+
 /*
+
+
+
+ if($act=="dynamic_search") {
+        $city = $_POST['city'];
+        if ($city != "") {
+            $citysearch ="city LIKE '%".$city."%'";
+        } else {
+            $citysearch = '';
+        }
+        $category = $_POST['category'];
+        if ($category != "") {
+            $categorysearch =" AND (locality LIKE '%".$category."%' OR name LIKE '%".$category."%' OR property_name LIKE '%".$category."%')";
+        } else {
+            $categorysearch = '';
+        }
+        $budget = $_POST['budget'];
+        if ($budget != "") {
+            $budgetsearch = " AND price LIKE '%".$budget."%'";
+        } else {
+            $budgetsearch = '';
+        }
+        $property_type = $_POST['property_type'];
+        if ($property_type != "") {
+            $property_typesearch = " AND property_type LIKE '%".$property_type."%'";
+        } else {
+            $property_typesearch = '';
+        }
+        $bedroom = $_POST['bedroom'];
+        if ($bedroom != "") {
+            $bedroomsearch = " AND bedroom LIKE '%".$bedroom."%'";
+        } else {
+            $bedroomsearch = '';
+        }
+        $budgetlist = $_POST['budgetlist'];
+        if($budgetlist!="")
+        {
+            $budgetArray = explode(',', $budgetlist);
+            $countbudget = count($budgetArray);
+            if ($countbudget >= 0) {
+                $budgetlistsearch = ' AND (';
+                for ($i = 0; $i < $countbudget; $i++) {
+                    $budgetlistsearch = $budgetlistsearch ."price LIKE '%".$budgetArray[$i]."%'";
+                    if ($i != $countbudget - 1) {
+                        $budgetlistsearch = $budgetlistsearch . ' OR ';
+                    }
+                }
+                $budgetlistsearch = $budgetlistsearch . ')';
+            }
+        }
+        else
+        {
+            $budgetlistsearch = '';
+        }
+
+        $saletypelist = $_POST['saletypelist'];
+         if($saletypelist!="")
+         {
+            $saletypeArray = explode(',', $saletypelist);
+            $countsaletype = count($saletypeArray);
+            if ($countsaletype >= 0) {
+                $saletypelistsearch = ' AND (';
+                for ($i = 0; $i < $countsaletype; $i++) {
+                    $saletypelistsearch = $saletypelistsearch."transaction_type LIKE '%".$saletypeArray[$i]."%'";
+                    if ($i != $countsaletype - 1) {
+                        $saletypelistsearch = $saletypelistsearch . ' OR ';
+                    }
+                }
+                $saletypelistsearch = $saletypelistsearch . ')';
+            }
+        }
+        else
+        {
+            $saletypelistsearch='';
+        }
+
+        $availabilitylist = $_POST['availabilitylist'];
+        if($availabilitylist!="")
+        {
+            $availabilityArray = explode(',', $availabilitylist);
+            $countavailability = count($availabilityArray);
+            if ($countavailability >= 0) {
+                $availabilitylistsearch = ' AND (';
+                for ($i = 0; $i < $countavailability; $i++) {
+                    $availabilitylistsearch = $availabilitylistsearch."availability LIKE '%".$availabilityArray[$i]."%'";
+                    if ($i != $countavailability - 1) {
+                        $availabilitylistsearch = $availabilitylistsearch . ' OR ';
+                    }
+                }
+                $availabilitylistsearch = $availabilitylistsearch . ')';
+            }
+        }
+        else
+        {
+            $availabilitylistsearch='';
+        }
+
+        $property_typelist = $_POST['property_typelist'];
+        if($property_typelist!="")
+        {
+            $property_typeArray = explode(',', $property_typelist);
+            $countproperty_type = count($property_typeArray);
+            if ($countproperty_type >= 0) {
+                $property_typelistsearch = ' AND (';
+                for ($i = 0; $i < $countproperty_type; $i++) {
+                    $property_typelistsearch = $property_typelistsearch."property_type LIKE '%".$property_typeArray[$i]."%'";
+                    if ($i != $countproperty_type - 1) {
+                        $property_typelistsearch = $property_typelistsearch . ' OR ';
+                    }
+                }
+                $property_typelistsearch = $property_typelistsearch . ')';
+            }
+        }
+        else
+        {
+            $property_typelistsearch='';
+        }
+
+        $subpropertylist = $_POST['subpropertylist'];
+        if($subpropertylist!="")
+        {
+            $subpropertyArray = explode(',', $subpropertylist);
+            $countsubproperty = count($subpropertyArray);
+            if ($countsubproperty >= 0) {
+                $subpropertylistsearch = ' AND (';
+                for ($i = 0; $i < $countsubproperty; $i++) {
+                    $subpropertylistsearch = $subpropertylistsearch."bedroom LIKE '%".$subpropertyArray[$i]."%'";
+                    if ($i != $countsubproperty - 1) {
+                        $subpropertylistsearch = $subpropertylistsearch . ' OR ';
+                    }
+                }
+                $subpropertylistsearch = $subpropertylistsearch . ')';
+            }
+        }
+        else
+        {
+            $subpropertylistsearch='';
+        }
+        $searchparameters=$citysearch.$categorysearch.$budgetsearch.$property_typesearch.$bedroomsearch.$budgetlistsearch.$saletypelistsearch.$availabilitylistsearch.$property_typelistsearch.$subpropertylistsearch;
+        try
+        {
+            $db = getDB();
+         $sql = "SELECT property_id,property_name,locality,city,photos,bedroom,price,possession,area_sqft,owner_type,name,mob,
+property_type FROM add_posting WHERE ".$searchparameters;
+//echo $sql;
+                  $stmt = $db->query($sql);
+                  $result = $stmt->fetchAll(PDO::FETCH_OBJ);
+            $db = null;
+            $jsonmsg->msgtype="success";
+            $jsonmsg->desc="";
+            $jsonmsg->result=$result;
+        }
+        catch (PDOException $e)
+        {
+            throw $e;
+        }
+    }
+
+
+
+
 
 $result = $mysqli->query("SELECT * FROM property_list WHERE property_id=$id");
 $pcount = $result->num_rows;
