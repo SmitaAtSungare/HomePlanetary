@@ -246,9 +246,6 @@ address their needs in the simplest and fastest way. Want to buy yours first dre
 <script type="text/javascript">
 
 			$(document).ready(function() {
-                $("#budget").select2();
-                $("#property_type").select2();
-                $("#bedroom").select2();
                 var usedNames = {};
                 $("select[name='budget'] > option").each(function () {
                     if(usedNames[this.text]) {
