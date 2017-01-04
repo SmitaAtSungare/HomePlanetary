@@ -151,118 +151,6 @@ $user_id=$_SESSION['user_id'];
 			</div>
 		</div>
 	</div>
-
-	<!--
-      <div class="col-md-12">
-	    <div class="row">
-	        <div class="form-group realestateform has-feedback">
-				<label for="title" class="col-sm-3 control-label">PROPERTY TYPE<span style="color:red">*</span></label>
-				<div class="col-xs-4">
-					<select id="property_type" name="property_type" class="form-control-realestate" onchange="setsubProperty()" required>
-						<option value="">SELECT</option>
-                        <option value="Residential">Residential</option>
-						<option value="Commercial">Commercial</option>
-                        <option value="Other">Other</option>
-					</select>
-				</div>
-			</div>
-		</div>
-
-          <div class="row" id="subPropertyDiv" style="display: none;">
-
-          </div>
-		<div class="row">
-	        <div class="form-group realestateform has-feedback">
-				<label for="title" class="col-sm-3 control-label">TRANSACTION TYPE<span style="color:red">*</span></label>
-				<div class="col-xs-4">
-					<select id="transaction_type" name="transaction_type" class="form-control-realestate" required>
-						<option value="">SELECT</option>
-                        <option value="New">New</option>
-                        <option value="Resale">Resale</option>
-					</select>
-				</div>
-			</div>
-		</div>
-        <div class="row">
-              <div class="form-group realestateform has-feedback">
-                  <label for="title" class="col-sm-3 control-label">PRICE<span style="color:red">*</span></label>
-                  <div class="col-xs-4">
-
-                          <select id="price" name="price" class="form-control-realestate"  required>
-                              <option value="">&nbsp;&nbsp;SELECT</option>
-                              <option value="5 to 10 Lakh">&nbsp;&nbsp;5 to 10 Lakh</option>
-                              <option value="11 to 15 Lakh">&nbsp;&nbsp;11 to 15 Lakh</option>
-                              <option value="15 to 20 Lakh">&nbsp;&nbsp;15 to 20 Lakh</option>
-                              <option value="21 to 25 Lakh">&nbsp;&nbsp;21 to 25 Lakh</option>
-                              <option value="25 to 30 Lakh">&nbsp;&nbsp;25 to 30 Lakh</option>
-                              <option value="31 to 35 Lakh">&nbsp;&nbsp;31 to 35 Lakh</option>
-                              <option value="35 to 40 Lakh">&nbsp;&nbsp;35 to 40 Lakh</option>
-                              <option value="41 to 45 Lakh">&nbsp;&nbsp;41 to 45 Lakh</option>
-                              <option value="45 to 50 Lakh">&nbsp;&nbsp;45 to 50 Lakh</option>
-                              <option value="51 to 55 Lakh">&nbsp;&nbsp;51 to 55 Lakh</option>
-                              <option value="55 to 60 Lakh">&nbsp;&nbsp;55 to 60 Lakh</option>
-                              <option value="61 to 65 Lakh">&nbsp;&nbsp;61 to 65 Lakh</option>
-                              <option value="65 to 70 Lakh">&nbsp;&nbsp;65 to 70 Lakh</option>
-                              <option value="71 to 75 Lakh">&nbsp;&nbsp;71 to 75 Lakh</option>
-                              <option value="75 to 80 Lakh">&nbsp;&nbsp;75 to 80 Lakh</option>
-                              <option value="81 to 85 Lakh">&nbsp;&nbsp;81 to 85 Lakh</option>
-                              <option value="85 to 90 Lakh">&nbsp;&nbsp;85 to 90 Lakh</option>
-                              <option value="91 to 95 Lakh">&nbsp;&nbsp;91 to 95 Lakh</option>
-                              <option value="95 to 99 lakh">&nbsp;&nbsp;95 to 99 lakh</option>
-                              <option value="1 to 2 Cr">&nbsp;&nbsp;1 to 2 Cr</option>
-                              <option value="2 to 3 Cr">&nbsp;&nbsp;2 to 3 Cr</option>
-                              <option value="3 to 4 Cr">&nbsp;&nbsp;3 to 4 Cr</option>
-                              <option value="4 to 5 Cr">&nbsp;&nbsp;4 to 5 Cr</option>
-                          </select>
-                  </div>
-              </div>
-          </div>
-		<div class="row">
-	        <div class="form-group realestateform has-feedback">
-					<label for="title" class="col-sm-3 control-label">POSSESSION DATE<span style="color:red">*</span></label>
-					<div class="col-xs-4">
-                    		 <input type="text" class="form-control-realestate" id="possession" name="possession" placeholder="Possession Date" required />
-					</div>
-			</div>
-		</div>
-
-     <div class="clearfix"></div>
-		<div class="form-group realestateform has-feedback">
-                <label for="Price" class="col-sm-3 control-label">AREA SIZE<span style="color:red;">*</span></label>
-			<div class="col-xs-8">
-				<div class="col-xs-12" style="margin-left: -12px;">
-					<input type="text" class="form-control-realestate" placeholder="Enter Size" id="area" name="area" required />
-				</div>
-					<div class="col-xs-1" style="margin-left: -230px;">
-					<select style="height: 31px;width: 62px;">
-						<option>Sq.feet</option>
-						<option>Sq.mtr</option>
-					</select>
-
-				</div>
-			</div>
-		</div>
-		<div class="clearfix"></div>
-		<div class="row">
-	        <div class="form-group realestateform has-feedback">
-					<label for="title" class="col-sm-3 control-label">RATE/SQ.FT<span style="color:red">*</span></label>
-					<div class="col-xs-4">
-						 <input type="text" class="form-control-realestate" id="rate_sqft" name="rate_sqft" placeholder="Rate Sq.Ft" required />
-					</div>
-			</div>
-		</div>
-		<div class="row">
-	        <div class="form-group realestateform has-feedback">
-					<label for="title" class="col-sm-3 control-label">NO OF FLOOR<span style="color:red"></span></label>
-					<div class="col-xs-4">
-						 <input type="text" class="form-control-realestate" id="floor_no" name="floor_no" placeholder="No Of Floor"/>
-					</div>
-			</div>
-		</div>
-     <div class="clearfix"></div>
-     </div>
-
-	-->
 	   <div class="col-md-12" style="border-bottom:1px solid #ccc; padding-bottom:10px; margin-bottom:10px;">
 		<div class="row">
 	        <div class="form-group realestateform has-feedback">
@@ -525,6 +413,7 @@ $user_id=$_SESSION['user_id'];
 
                     <form id="propertyfrm" name="propertyfrm" method="post" enctype="multipart/form-data">
                      <input type="hidden" id="floorpath" name="floorpath"/>
+                     <input type="hidden" id="budget" name="budget"/>
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="form-group">
@@ -562,32 +451,77 @@ $user_id=$_SESSION['user_id'];
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label class="control-label">Price</label>
-                                    <select id="price" name="price" class="form-control" style='width:255px;'  required>
-                                        <option value="">Price</option>
-                                        <option value="5 to 10 Lakh">&nbsp;&nbsp;5 to 10 Lakh</option>
-                                        <option value="11 to 15 Lakh">&nbsp;&nbsp;11 to 15 Lakh</option>
-                                        <option value="15 to 20 Lakh">&nbsp;&nbsp;15 to 20 Lakh</option>
-                                        <option value="21 to 25 Lakh">&nbsp;&nbsp;21 to 25 Lakh</option>
-                                        <option value="25 to 30 Lakh">&nbsp;&nbsp;25 to 30 Lakh</option>
-                                        <option value="31 to 35 Lakh">&nbsp;&nbsp;31 to 35 Lakh</option>
-                                        <option value="35 to 40 Lakh">&nbsp;&nbsp;35 to 40 Lakh</option>
-                                        <option value="41 to 45 Lakh">&nbsp;&nbsp;41 to 45 Lakh</option>
-                                        <option value="45 to 50 Lakh">&nbsp;&nbsp;45 to 50 Lakh</option>
-                                        <option value="51 to 55 Lakh">&nbsp;&nbsp;51 to 55 Lakh</option>
-                                        <option value="55 to 60 Lakh">&nbsp;&nbsp;55 to 60 Lakh</option>
-                                        <option value="61 to 65 Lakh">&nbsp;&nbsp;61 to 65 Lakh</option>
-                                        <option value="65 to 70 Lakh">&nbsp;&nbsp;65 to 70 Lakh</option>
-                                        <option value="71 to 75 Lakh">&nbsp;&nbsp;71 to 75 Lakh</option>
-                                        <option value="75 to 80 Lakh">&nbsp;&nbsp;75 to 80 Lakh</option>
-                                        <option value="81 to 85 Lakh">&nbsp;&nbsp;81 to 85 Lakh</option>
-                                        <option value="85 to 90 Lakh">&nbsp;&nbsp;85 to 90 Lakh</option>
-                                        <option value="91 to 95 Lakh">&nbsp;&nbsp;91 to 95 Lakh</option>
-                                        <option value="95 to 99 lakh">&nbsp;&nbsp;95 to 99 lakh</option>
-                                        <option value="1 to 2 Cr">&nbsp;&nbsp;1 to 2 Cr</option>
-                                        <option value="2 to 3 Cr">&nbsp;&nbsp;2 to 3 Cr</option>
-                                        <option value="3 to 4 Cr">&nbsp;&nbsp;3 to 4 Cr</option>
-                                        <option value="4 to 5 Cr">&nbsp;&nbsp;4 to 5 Cr</option>
-                                    </select>
+                                    <div class="dropdown">
+                                        <button id="min-max-price-range" class="btn btn-default dropdown-toggle" style="width: 161px;margin-left: -14px;" href="#" data-toggle="dropdown"><span id="bval">Budget</span><strong class="caret" style="margin-left: 80px;"></strong>
+                                        </button>
+                                        <div class="dropdown-menu col-sm-2" style="padding:10px;height: 340px;overflow-y: scroll;margin-left: -16px;width: 210px;">
+
+                                                <div class="col-xs-5">
+                                                    <input class="form-control price-label" placeholder="Min" id="minval" style="width: 87px;margin-left: -23px;" data-dropdown-id="price-min"/>
+                                                </div>
+                                                <div class="col-xs-2"> - </div>
+                                                <div class="col-xs-5">
+                                                    <input class="form-control price-label" placeholder="Max" id="maxval" style="width: 84px;margin-left: 7px;margin-top: -20px;" data-dropdown-id="price-max"/>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                                <ul id="price-min" class="col-sm-12 price-range list-unstyled">
+                                                    <li data-value="">Min</li>
+                                                    <li data-value="5 Lakh">5 Lakh</li>
+                                                    <li data-value="10 Lakh">10 Lakh</li>
+                                                    <li data-value="15 Lakh">15 Lakh</li>
+                                                    <li data-value="20 Lakh">20 Lakh</li>
+                                                    <li data-value="25 Lakh">25 Lakh</li>
+                                                    <li data-value="30 Lakh">30 Lakh</li>
+                                                    <li data-value="35 Lakh">35 Lakh</li>
+                                                    <li data-value="40 Lakh">40 Lakh</li>
+                                                    <li data-value="45 Lakh">45 Lakh</li>
+                                                    <li data-value="50 Lakh">50 Lakh</li>
+                                                    <li data-value="55 Lakh">55 Lakh</li>
+                                                    <li data-value="60 Lakh">60 Lakh</li>
+                                                    <li data-value="65 Lakh">65 Lakh</li>
+                                                    <li data-value="70 Lakh">70 Lakh</li>
+                                                    <li data-value="75 Lakh">75 Lakh</li>
+                                                    <li data-value="80 Lakh">80 Lakh</li>
+                                                    <li data-value="85 Lakh">85 Lakh</li>
+                                                    <li data-value="90 Lakh">90 Lakh</li>
+                                                    <li data-value="95 lakh">95 lakh</li>
+                                                    <li data-value="1 Cr">1 Cr</li>
+                                                    <li data-value="2 Cr">2 Cr</li>
+                                                    <li data-value="3 Cr">3 Cr</li>
+                                                    <li data-value="4 Cr">4 Cr</li>
+                                                    <li data-value="5 Cr">5 Cr</li>
+                                                </ul>
+                                                <ul id="price-max" class="col-sm-12 price-range text-right list-unstyled hide">
+                                                    <li data-value="">Max</li>
+                                                    <li data-value="5 Lakh">5 Lakh</li>
+                                                    <li data-value="10 Lakh">10 Lakh</li>
+                                                    <li data-value="15 Lakh">15 Lakh</li>
+                                                    <li data-value="20 Lakh">20 Lakh</li>
+                                                    <li data-value="25 Lakh">25 Lakh</li>
+                                                    <li data-value="30 Lakh">30 Lakh</li>
+                                                    <li data-value="35 Lakh">35 Lakh</li>
+                                                    <li data-value="40 Lakh">40 Lakh</li>
+                                                    <li data-value="45 Lakh">45 Lakh</li>
+                                                    <li data-value="50 Lakh">50 Lakh</li>
+                                                    <li data-value="55 Lakh">55 Lakh</li>
+                                                    <li data-value="60 Lakh">60 Lakh</li>
+                                                    <li data-value="65 Lakh">65 Lakh</li>
+                                                    <li data-value="70 Lakh">70 Lakh</li>
+                                                    <li data-value="75 Lakh">75 Lakh</li>
+                                                    <li data-value="80 Lakh">80 Lakh</li>
+                                                    <li data-value="85 Lakh">85 Lakh</li>
+                                                    <li data-value="90 Lakh">90 Lakh</li>
+                                                    <li data-value="95 lakh">95 lakh</li>
+                                                    <li data-value="1 Cr">1 Cr</li>
+                                                    <li data-value="2 Cr">2 Cr</li>
+                                                    <li data-value="3 Cr">3 Cr</li>
+                                                    <li data-value="4 Cr">4 Cr</li>
+                                                    <li data-value="5 Cr">5 Cr</li>
+                                                </ul>
+
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -629,7 +563,7 @@ $user_id=$_SESSION['user_id'];
                         <div class="row">
                             <div class="col-lg-6">
                                 <button type="button" id="Add" name="Add" class="btn btn-default" onclick="AddProperty()">Add</button>
-                                <button type="button" class="btn btn-default" data-dismiss="modal" onclick="clearproperty()">Close</button>
+                                <button type="reset" class="btn btn-default" data-dismiss="modal" onclick="clearproperty()">Close</button>
                             </div>
                         </div>
 
@@ -646,10 +580,66 @@ $user_id=$_SESSION['user_id'];
 <script type="text/javascript" src="admin/plugins/select2/select2.min.js"></script>
 
 <script>
+    $('#min-max-price-range').click(function (event) {
+        setTimeout(function(){ $('.price-label').first().focus();	},0);
+        var str= $("#minval").val()+" to "+$("#maxval").val();
+        if($("#minval").val() !="" && $("#maxval").val() !="")
+        {
+            $("#bval").html(str);
+            $("#budget").val(str);
+        }
+        else
+        {
+            $("#bval").html("Budget");
+        }
+    });
+    var priceLabelObj;
+    $('.price-label').focus(function (event) {
+        priceLabelObj=$(this);
+        $('.price-range').addClass('hide');
+        $('#'+$(this).data('dropdownId')).removeClass('hide');
+        var minval=$("#minval").val();
+        var res = minval.substring(0, 2);
+        var str= res+" to "+$("#maxval").val();
+        if($("#minval").val() !="" && $("#maxval").val() !="")
+        {
+            $("#bval").html(str);
+            $("#budget").val(str);
+        }
+        else
+        {
+            $("#bval").html("Budget");
+        }
+    });
+    $(".price-range li").click(function(){
+        priceLabelObj.attr('value', $(this).attr('data-value'));
+        var curElmIndex=$( ".price-label" ).index( priceLabelObj );
+        var nextElm=$( ".price-label" ).eq(curElmIndex+1);
+        if(nextElm.length){
+            $( ".price-label" ).eq(curElmIndex+1).focus();
+
+        }else{
+            $('#min-max-price-range').dropdown('toggle');
+        }
+        var minval=$("#minval").val();
+        var res = minval.substring(0, 2);
+        var str= res+" to "+$("#maxval").val();
+        if($("#minval").val() !="" && $("#maxval").val() !="")
+        {
+            $("#bval").html(str);
+            $("#budget").val(str);
+        }
+        else
+        {
+            $("#bval").html("Budget");
+        }
+    });
+
     $(document).ready(function () {
+
         $("#possession").datepicker({autoclose:true});
-        $("#price").select2();
         $("#property_type").select2();
+        $("#bedroom").select2();
         $("#transaction_type").select2();
         $("#type").select2();
         $("#availability").select2();
@@ -694,27 +684,30 @@ $user_id=$_SESSION['user_id'];
 	}
 	function clearproperty()
     {
-        $("#property_type").select2("val", "");
-        $("#bedroom").select2("val", "");
-        $("#transaction_type").select2("val", "");
-        $("#price").select2("val", "");
+        $("#property_type").val("").trigger("change");
+        $("#bedroom").val("").trigger("change");
+        $("#transaction_type").val("").trigger("change");
+      //  $("#price").val("").trigger("change");
+        $("#budget").val("");
+        $("#bval").html("Budget");
         $("#possession").val("");
         $("#area").val("");
         $("#rate_sqft").val("");
         $("#floor_no").val("");
         $("#floor_plan").val("");
-
     }
-
-
 	var Protable=[];
 	function AddProperty()
 	{
+	    if(!$("#propertyfrm").valid())
+        {
+            return;
+        }
 		var property_type=$("#property_type").val();
 		var bedroom=$("#bedroom").val();
 		var transaction_type=$("#transaction_type").val();
-		var price=$("#price").val();
-		var possession=$("#possession").val();
+		var price=$("#budget").val();
+	    var possession=$("#possession").val();
 		var area=$("#area").val();
 		var rate_sqft=$("#rate_sqft").val();
 		var floor_no=$("#floor_no").val();
@@ -722,46 +715,68 @@ $user_id=$_SESSION['user_id'];
 		frmdata.append('act','uploadfloorplan')
 		frmdata.append('input',$("#floor_plan").val());
 		frmdata.append('file', $("#floor_plan")[0].files[0]);
+        var floor_plan=$("#floor_plan").val();
+	if(floor_plan!="")
+    {
+        var varurl="ajaxwebapi/service.php";
 
-		var varurl="ajaxwebapi/service.php";
+        $.ajax({
+            url:varurl,
+            type:"POST",
+            data:frmdata,
+            contentType:false,
+            processData:false,
+            cache:false,
+            success:function(response){
+                if(response.msgtype="success")
+                {
+                    var list=JSON.parse(response);
+                    var imagepath=list.path;
+                    var floor_plan="property_images/floor_plan/"+imagepath;
 
-		$.ajax({
-			url:varurl,
-			type:"POST",
-			data:frmdata,
-			contentType:false,
-			processData:false,
-			cache:false,
-			success:function(response){
-				if(response.msgtype="success")
-				{
-					var list=JSON.parse(response);
-					var imagepath=list.path;
-					var floor_plan="property_images/floor_plan/"+imagepath;
+                    if(property_type =="" && bedroom =="" && transaction_type =="" && price =="" && possession =="" && area =="" && rate_sqft =="" && floor_no =="" && floor_plan =="")
+                    {
+                        showmessage("warning","Please FIll Up Property Information");
+                    }
+                    if(property_type !="" && bedroom !="" && transaction_type !="" && price !="" && possession !="" && area !="" && rate_sqft !="" && floor_no !="" && floor_plan !="")
+                    {
+                        var jsonstr='{"property_type":"'+property_type+'","bedroom":"'+bedroom+'","transaction_type":"'+transaction_type+'","price":"'+price+'","possession":"'+possession+'","area":"'+area+'","rate_sqft":"'+rate_sqft+'","floor_no":"'+floor_no+'","floor_plan":"'+floor_plan+'"}';
+                        clearproperty();
+                        $("#property-popup").modal("hide");
+                    }
+                    var jsonobj=JSON.parse(jsonstr);
+                    Protable.push(jsonobj);
+                    RefreshGrid();
+                }
+                else if(response.msgtype="error")
+                {
+                    showmessage("error","Error Occured!");
+                }
+            },
+            error:function(xhr){
+                showmessage("error","Ajax Call Error");
+            }
+        });
 
-					if(property_type =="" && bedroom =="" && transaction_type =="" && price =="" && possession =="" && area =="" && rate_sqft =="" && floor_no =="" && floor_plan =="")
-					{
-						showmessage("warning","Please FIll Up Property Information");
-					}
-					if(property_type !="" && bedroom !="" && transaction_type !="" && price !="" && possession !="" && area !="" && rate_sqft !="" && floor_no !="" && floor_plan !="")
-					{
-						var jsonstr='{"property_type":"'+property_type+'","bedroom":"'+bedroom+'","transaction_type":"'+transaction_type+'","price":"'+price+'","possession":"'+possession+'","area":"'+area+'","rate_sqft":"'+rate_sqft+'","floor_no":"'+floor_no+'","floor_plan":"'+floor_plan+'"}';
-						clearproperty();
-						$("#property-popup").modal("hide");
-					}
-					var jsonobj=JSON.parse(jsonstr);
-					Protable.push(jsonobj);
-					RefreshGrid();
-				}
-				else if(response.msgtype="error")
-				{
-					showmessage("error","Error Occured!");
-				}
-			},
-			error:function(xhr){
-				showmessage("error","Ajax Call Error");
-			}
-		});
+    }
+    else
+    {
+        var floor_plan="";
+
+        if(property_type =="" && bedroom =="" && transaction_type =="" && price =="" && possession =="" && area =="" && rate_sqft =="" && floor_no =="" && floor_plan =="")
+        {
+            showmessage("warning","Please FIll Up Property Information");
+        }
+        if(property_type !="" && bedroom !="" && transaction_type !="" && price !="" && possession !="" && area !="" && rate_sqft !="" && floor_no !="" && floor_plan !="")
+        {
+            var jsonstr='{"property_type":"'+property_type+'","bedroom":"'+bedroom+'","transaction_type":"'+transaction_type+'","price":"'+price+'","possession":"'+possession+'","area":"'+area+'","rate_sqft":"'+rate_sqft+'","floor_no":"'+floor_no+'","floor_plan":"'+floor_plan+'"}';
+            clearproperty();
+            $("#property-popup").modal("hide");
+        }
+        var jsonobj=JSON.parse(jsonstr);
+        Protable.push(jsonobj);
+        RefreshGrid();
+    }
 
 
 	}
@@ -830,7 +845,7 @@ $user_id=$_SESSION['user_id'];
         frmdata.append('property_type',$("#property_type").val());
         frmdata.append('bedroom',$("#bedroom").val());
         frmdata.append('possession_date',$("#possession").val());
-        frmdata.append('price',$("#price").val());
+        frmdata.append('price',$("#budget").val());
         frmdata.append('area',$("#area").val());
         frmdata.append('rate_sqft',$("#rate_sqft").val());
         frmdata.append('floor_no',$("#floor_no").val());

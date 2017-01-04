@@ -148,58 +148,99 @@ include_once("analyticstracking.php");
                             <input type="text" class="form-control" value="<?php echo $val = isset($_SESSION["Gcity"]) && $_SESSION["Gcity"] != '' ? $_SESSION["Gcity"] : ''; ?>" id="city" name="city" placeholder="Select City" autocomplete="off" required />
                             <div id="suggesstion-box" style="position: absolute; background-color: white; width: 125px; border: 3px none black;  height: 152px; overflow-y: scroll; margin-left: -17px; margin-top: 0px;display: none;"></div>
 						</div>
-						
-						
-						
+
 						<div class="browse-category col-md-4">
                             <input type="text" class="form-control" value="<?php echo $val = isset($_SESSION["Gcategory"]) && $_SESSION["Gcategory"] != '' ? $_SESSION["Gcategory"] : ''; ?>" name="searchid" id="searchid"  onfocus="check_box()" class="search-category" style="font-size: 16px;"  autocomplete="off" placeholder="Enter a Locality,Builder,Project" />
                             <div id="suggesstion-box1" style="position: absolute; background-color: white; width: 252px; border: 3px none black; margin-left: 0px; height: 146px; overflow-y: scroll; margin-top: 0px;display: none;"></div>
                         </div>
-						
-						
-						
+
 						<div class="browse-category col-md-2">
-							
-							<select class="selectpicker show-tick" data-live-search="true" id="budget" name="budget">
-                                <?php
-                                $val = isset($_SESSION["Gbudget"]) && $_SESSION["Gbudget"] != '' ? $_SESSION["Gbudget"] : '';
-                                if($val!="")
-                                {
-                                    echo "<option value='".$val."'>".$val."</option>";
-                                }
-                                ?>
-                                <option value="">Budget</option>
-                                <option value="5 to 10 Lakh">5 to 10 Lakh</option>
-                                <option value="11 to 15 Lakh">11 to 15 Lakh</option>
-                                <option value="15 to 20 Lakh">15 to 20 Lakh</option>
-                                <option value="21 to 25 Lakh">21 to 25 Lakh</option>
-                                <option value="25 to 30 Lakh">25 to 30 Lakh</option>
-                                <option value="31 to 35 Lakh">31 to 35 Lakh</option>
-                                <option value="35 to 40 Lakh">35 to 40 Lakh</option>
-                                <option value="41 to 45 Lakh">41 to 45 Lakh</option>
-                                <option value="45 to 50 Lakh">45 to 50 Lakh</option>
-                                <option value="51 to 55 Lakh">51 to 55 Lakh</option>
-                                <option value="55 to 60 Lakh">55 to 60 Lakh</option>
-                                <option value="61 to 65 Lakh">61 to 65 Lakh</option>
-                                <option value="65 to 70 Lakh">65 to 70 Lakh</option>
-                                <option value="71 to 75 Lakh">71 to 75 Lakh</option>
-                                <option value="75 to 80 Lakh">75 to 80 Lakh</option>
-                                <option value="81 to 85 Lakh">81 to 85 Lakh</option>
-                                <option value="85 to 90 Lakh">85 to 90 Lakh</option>
-                                <option value="91 to 95 Lakh">91 to 95 Lakh</option>
-                                <option value="95 to 99 lakh">95 to 99 lakh</option>
-                                <option value="1 to 2 Cr">1 to 2 Cr</option>
-                                <option value="2 to 3 Cr">2 to 3 Cr</option>
-                                <option value="3 to 4 Cr">3 to 4 Cr</option>
-                                <option value="4 to 5 Cr">4 to 5 Cr</option>
-							</select>
+
+                            <div class="container">
+                                <input type="hidden" id="budget" name="budget" value="<?php $val = isset($_SESSION["Gbudget"]) && $_SESSION["Gbudget"] != '' ? $_SESSION["Gbudget"] : '';if($val!=""){  echo $val;}?>"/>
+                                <div class="dropdown">
+                                    <button id="min-max-price-range" class="btn btn-default dropdown-toggle" style="width: 161px;margin-left: -14px;" href="#" data-toggle="dropdown"><span id="bval"><?php
+                                            $val = isset($_SESSION["Gbudget"]) && $_SESSION["Gbudget"] != '' ? $_SESSION["Gbudget"] : '';
+                                            if($val!="")
+                                            {
+                                                echo $val;
+                                            }
+                                            else
+                                            {
+                                                echo "Budget";
+                                            }
+                                            ?></span><strong class="caret" style="margin-left: 80px;"></strong>
+                                    </button>
+                                    <div class="dropdown-menu col-sm-2" style="padding:10px;height: 340px;overflow-y: scroll;margin-left: -16px;width: 210px;">
+                                        <form class="row">
+                                            <div class="col-xs-5">
+                                                <input class="form-control price-label" placeholder="Min" id="minval" style="width: 87px;margin-left: -23px;" data-dropdown-id="price-min"/>
+                                            </div>
+                                            <div class="col-xs-2"> - </div>
+                                            <div class="col-xs-5">
+                                                <input class="form-control price-label" placeholder="Max" id="maxval" style="width: 84px;margin-left: 7px;margin-top: -20px;" data-dropdown-id="price-max"/>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                            <ul id="price-min" class="col-sm-12 price-range list-unstyled">
+                                                <li data-value="">Min</li>
+                                                <li data-value="5 Lakh">5 Lakh</li>
+                                                <li data-value="10 Lakh">10 Lakh</li>
+                                                <li data-value="15 Lakh">15 Lakh</li>
+                                                <li data-value="20 Lakh">20 Lakh</li>
+                                                <li data-value="25 Lakh">25 Lakh</li>
+                                                <li data-value="30 Lakh">30 Lakh</li>
+                                                <li data-value="35 Lakh">35 Lakh</li>
+                                                <li data-value="40 Lakh">40 Lakh</li>
+                                                <li data-value="45 Lakh">45 Lakh</li>
+                                                <li data-value="50 Lakh">50 Lakh</li>
+                                                <li data-value="55 Lakh">55 Lakh</li>
+                                                <li data-value="60 Lakh">60 Lakh</li>
+                                                <li data-value="65 Lakh">65 Lakh</li>
+                                                <li data-value="70 Lakh">70 Lakh</li>
+                                                <li data-value="75 Lakh">75 Lakh</li>
+                                                <li data-value="80 Lakh">80 Lakh</li>
+                                                <li data-value="85 Lakh">85 Lakh</li>
+                                                <li data-value="90 Lakh">90 Lakh</li>
+                                                <li data-value="95 lakh">95 lakh</li>
+                                                <li data-value="1 Cr">1 Cr</li>
+                                                <li data-value="2 Cr">2 Cr</li>
+                                                <li data-value="3 Cr">3 Cr</li>
+                                                <li data-value="4 Cr">4 Cr</li>
+                                                <li data-value="5 Cr">5 Cr</li>
+                                            </ul>
+                                            <ul id="price-max" class="col-sm-12 price-range text-right list-unstyled hide">
+                                                <li data-value="">Max</li>
+                                                <li data-value="5 Lakh">5 Lakh</li>
+                                                <li data-value="10 Lakh">10 Lakh</li>
+                                                <li data-value="15 Lakh">15 Lakh</li>
+                                                <li data-value="20 Lakh">20 Lakh</li>
+                                                <li data-value="25 Lakh">25 Lakh</li>
+                                                <li data-value="30 Lakh">30 Lakh</li>
+                                                <li data-value="35 Lakh">35 Lakh</li>
+                                                <li data-value="40 Lakh">40 Lakh</li>
+                                                <li data-value="45 Lakh">45 Lakh</li>
+                                                <li data-value="50 Lakh">50 Lakh</li>
+                                                <li data-value="55 Lakh">55 Lakh</li>
+                                                <li data-value="60 Lakh">60 Lakh</li>
+                                                <li data-value="65 Lakh">65 Lakh</li>
+                                                <li data-value="70 Lakh">70 Lakh</li>
+                                                <li data-value="75 Lakh">75 Lakh</li>
+                                                <li data-value="80 Lakh">80 Lakh</li>
+                                                <li data-value="85 Lakh">85 Lakh</li>
+                                                <li data-value="90 Lakh">90 Lakh</li>
+                                                <li data-value="95 lakh">95 lakh</li>
+                                                <li data-value="1 Cr">1 Cr</li>
+                                                <li data-value="2 Cr">2 Cr</li>
+                                                <li data-value="3 Cr">3 Cr</li>
+                                                <li data-value="4 Cr">4 Cr</li>
+                                                <li data-value="5 Cr">5 Cr</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </div>
 						</div>
-						
-						
-						
-						
-						
-						
 						
 						<div class="browse-category col-md-2">
 							
@@ -291,13 +332,6 @@ include_once("analyticstracking.php");
 </div>
 <div class="clearfix"></div>
 
-
-
-
-
-
-
-
 <div class="container">
   <div class="row" id="slider-text">
     <div class="col-md-6" >
@@ -373,6 +407,62 @@ include_once("analyticstracking.php");
 <script type="text/javascript" src="js/jquery.flexisel.js"></script>
 
 <script type="text/javascript">
+    $('#min-max-price-range').click(function (event) {
+        setTimeout(function(){ $('.price-label').first().focus();	},0);
+        var str= $("#minval").val()+" to "+$("#maxval").val();
+        if($("#minval").val() !="" && $("#maxval").val() !="")
+        {
+            $("#bval").html(str);
+            $("#budget").val(str);
+        }
+        else
+        {
+            $("#bval").html("Budget");
+        }
+    });
+    var priceLabelObj;
+    $('.price-label').focus(function (event) {
+        priceLabelObj=$(this);
+        $('.price-range').addClass('hide');
+        $('#'+$(this).data('dropdownId')).removeClass('hide');
+        var minval=$("#minval").val();
+        var res = minval.substring(0, 2);
+        var str= res+" to "+$("#maxval").val();
+         if($("#minval").val() !="" && $("#maxval").val() !="")
+         {
+             $("#bval").html(str);
+             $("#budget").val(str);
+         }
+         else
+         {
+             $("#bval").html("Budget");
+         }
+    });
+    $(".price-range li").click(function(){
+        priceLabelObj.attr('value', $(this).attr('data-value'));
+        var curElmIndex=$( ".price-label" ).index( priceLabelObj );
+        var nextElm=$( ".price-label" ).eq(curElmIndex+1);
+        if(nextElm.length){
+            $( ".price-label" ).eq(curElmIndex+1).focus();
+
+        }else{
+            $('#min-max-price-range').dropdown('toggle');
+        }
+        var minval=$("#minval").val();
+        var res = minval.substring(0, 2);
+        var str= res+" to "+$("#maxval").val();
+        if($("#minval").val() !="" && $("#maxval").val() !="")
+        {
+            $("#bval").html(str);
+            $("#budget").val(str);
+        }
+        else
+        {
+            $("#bval").html("Budget");
+        }
+    });
+
+
     $(document).ready(function() {
 
       	$("#flexiselDemo1").flexisel({

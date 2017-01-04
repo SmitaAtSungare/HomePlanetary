@@ -163,8 +163,136 @@ property_type FROM add_posting WHERE ".$searchparameters;
 
 
 /*
+<div class="container">
+								 <input type="hidden" id="budget1" name="budget1" />
+								 <div class="dropdown">
+									 <button id="min-max-price-range1" class="btn btn-default dropdown-toggle" style="width: 161px;margin-left: -14px;" href="#" data-toggle="dropdown"><span id="bval1"></span><strong class="caret" style="margin-left: 80px;"></strong>
+									 </button>
+									 <div class="dropdown-menu col-sm-2" style="padding:10px;height: 340px;overflow-y: scroll;margin-left: -16px;width: 210px;">
+										 <form class="row">
+											 <div class="col-xs-5">
+												 <input class="form-control price-label" placeholder="Min" id="minval1" style="width: 87px;margin-left: -23px;" data-dropdown-id="price-min1"/>
+											 </div>
+											 <div class="col-xs-2"> - </div>
+											 <div class="col-xs-5">
+												 <input class="form-control price-label" placeholder="Max" id="maxval1" style="width: 84px;margin-left: 7px;margin-top: -20px;" data-dropdown-id="price-max1"/>
+											 </div>
+											 <div class="clearfix"></div>
+											 <ul id="price-min1" class="col-sm-12 price-range list-unstyled">
+												 <li data-value="">Min</li>
+												 <li data-value="5 Lakh">5 Lakh</li>
+												 <li data-value="10 Lakh">10 Lakh</li>
+												 <li data-value="15 Lakh">15 Lakh</li>
+												 <li data-value="20 Lakh">20 Lakh</li>
+												 <li data-value="25 Lakh">25 Lakh</li>
+												 <li data-value="30 Lakh">30 Lakh</li>
+												 <li data-value="35 Lakh">35 Lakh</li>
+												 <li data-value="40 Lakh">40 Lakh</li>
+												 <li data-value="45 Lakh">45 Lakh</li>
+												 <li data-value="50 Lakh">50 Lakh</li>
+												 <li data-value="55 Lakh">55 Lakh</li>
+												 <li data-value="60 Lakh">60 Lakh</li>
+												 <li data-value="65 Lakh">65 Lakh</li>
+												 <li data-value="70 Lakh">70 Lakh</li>
+												 <li data-value="75 Lakh">75 Lakh</li>
+												 <li data-value="80 Lakh">80 Lakh</li>
+												 <li data-value="85 Lakh">85 Lakh</li>
+												 <li data-value="90 Lakh">90 Lakh</li>
+												 <li data-value="95 lakh">95 lakh</li>
+												 <li data-value="1 Cr">1 Cr</li>
+												 <li data-value="2 Cr">2 Cr</li>
+												 <li data-value="3 Cr">3 Cr</li>
+												 <li data-value="4 Cr">4 Cr</li>
+												 <li data-value="5 Cr">5 Cr</li>
+											 </ul>
+											 <ul id="price-max1" class="col-sm-12 price-range text-right list-unstyled hide">
+												 <li data-value="">Max</li>
+												 <li data-value="5 Lakh">5 Lakh</li>
+												 <li data-value="10 Lakh">10 Lakh</li>
+												 <li data-value="15 Lakh">15 Lakh</li>
+												 <li data-value="20 Lakh">20 Lakh</li>
+												 <li data-value="25 Lakh">25 Lakh</li>
+												 <li data-value="30 Lakh">30 Lakh</li>
+												 <li data-value="35 Lakh">35 Lakh</li>
+												 <li data-value="40 Lakh">40 Lakh</li>
+												 <li data-value="45 Lakh">45 Lakh</li>
+												 <li data-value="50 Lakh">50 Lakh</li>
+												 <li data-value="55 Lakh">55 Lakh</li>
+												 <li data-value="60 Lakh">60 Lakh</li>
+												 <li data-value="65 Lakh">65 Lakh</li>
+												 <li data-value="70 Lakh">70 Lakh</li>
+												 <li data-value="75 Lakh">75 Lakh</li>
+												 <li data-value="80 Lakh">80 Lakh</li>
+												 <li data-value="85 Lakh">85 Lakh</li>
+												 <li data-value="90 Lakh">90 Lakh</li>
+												 <li data-value="95 lakh">95 lakh</li>
+												 <li data-value="1 Cr">1 Cr</li>
+												 <li data-value="2 Cr">2 Cr</li>
+												 <li data-value="3 Cr">3 Cr</li>
+												 <li data-value="4 Cr">4 Cr</li>
+												 <li data-value="5 Cr">5 Cr</li>
+											 </ul>
+										 </form>
+									 </div>
+								 </div>
+
+							 </div>
+
+$('#min-max-price-range1').click(function (event) {
+		setTimeout(function(){ $('.price-label').first().focus();	},0);
+		var str= $("#minval1").val()+" to "+$("#maxval1").val();
+		if($("#minval1").val() !="" && $("#maxval1").val() !="")
+		{
+			$("#bval1").html(str);
+			$("#budget1").val(str);
+		}
+		else
+		{
+			$("#bval1").html("Budget");
+		}
+	});
+	var priceLabelObj;
+	$('.price-label').focus(function (event) {
+		priceLabelObj=$(this);
+		$('.price-range').addClass('hide');
+		$('#'+$(this).data('dropdownId')).removeClass('hide');
+		var minval=$("#minval1").val();
+		var res = minval.substring(0, 2);
+		var str= res+" to "+$("#maxval1").val();
+		if($("#minval1").val() !="" && $("#maxval1").val() !="")
+		{
+			$("#bval1").html(str);
+			$("#budget1").val(str);
+		}
+		else
+		{
+			$("#bval1").html("Budget");
+		}
+	});
+	$(".price-range li").click(function(){
+		priceLabelObj.attr('value', $(this).attr('data-value'));
+		var curElmIndex=$( ".price-label" ).index( priceLabelObj );
+		var nextElm=$( ".price-label" ).eq(curElmIndex+1);
+		if(nextElm.length){
+			$( ".price-label" ).eq(curElmIndex+1).focus();
 
 
+		}else{
+			$('#min-max-price-range1').dropdown('toggle');
+		}
+		var minval=$("#minval1").val();
+		var res = minval.substring(0, 2);
+		var str= res+" to "+$("#maxval1").val();
+		if($("#minval1").val() !="" && $("#maxval1").val() !="")
+		{
+			$("#bval1").html(str);
+			$("#budget1").val(str);
+		}
+		else
+		{
+			$("#bval1").html("Budget");
+		}
+	});
 
  if($act=="dynamic_search") {
         $city = $_POST['city'];

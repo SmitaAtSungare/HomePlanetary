@@ -137,7 +137,7 @@ include('header.php');
                   }
 		?>
      <form name="search" action="property_listing.php" method="post" id="search" class="f-right">
-         <div class="city-search2">
+         <div class="city-search23">
              <div class="total-ads main-grid-border">
                  <div class="container">
                      <div class="select-box">
@@ -152,40 +152,91 @@ include('header.php');
                          </div>
 
                          <div class="browse-category col-md-2">
+							 <div class="container">
+								 <input type="hidden" id="budget" name="budget" value="<?php $val = isset($_SESSION["Gbudget"]) && $_SESSION["Gbudget"] != '' ? $_SESSION["Gbudget"] : '';if($val!=""){  echo $val;}?>"/>
+								 <div class="dropdown">
+									 <button id="min-max-price-range" class="btn btn-default dropdown-toggle" style="width: 161px;margin-left: -14px;" href="#" data-toggle="dropdown"><span id="bval"><?php
+											 $val = isset($_SESSION["Gbudget"]) && $_SESSION["Gbudget"] != '' ? $_SESSION["Gbudget"] : '';
+											 if($val!="")
+											 {
+												 echo $val;
+											 }
+											 else
+											 {
+												 echo "Budget";
+											 }
+											 ?></span><strong class="caret" style="margin-left: 80px;"></strong>
+									 </button>
+									 <div class="dropdown-menu col-sm-2" style="padding:10px;height: 340px;overflow-y: scroll;margin-left: -16px;width: 210px;">
+										 <form class="row">
+											 <div class="col-xs-5">
+												 <input class="form-control price-label" placeholder="Min" id="minval" style="width: 87px;margin-left: -23px;" data-dropdown-id="price-min"/>
+											 </div>
+											 <div class="col-xs-2"> - </div>
+											 <div class="col-xs-5">
+												 <input class="form-control price-label" placeholder="Max" id="maxval" style="width: 84px;margin-left: 7px;margin-top: -20px;" data-dropdown-id="price-max"/>
+											 </div>
+											 <div class="clearfix"></div>
+											 <ul id="price-min" class="col-sm-12 price-range list-unstyled">
+												 <li data-value="">Min</li>
+												 <li data-value="5 Lakh">5 Lakh</li>
+												 <li data-value="10 Lakh">10 Lakh</li>
+												 <li data-value="15 Lakh">15 Lakh</li>
+												 <li data-value="20 Lakh">20 Lakh</li>
+												 <li data-value="25 Lakh">25 Lakh</li>
+												 <li data-value="30 Lakh">30 Lakh</li>
+												 <li data-value="35 Lakh">35 Lakh</li>
+												 <li data-value="40 Lakh">40 Lakh</li>
+												 <li data-value="45 Lakh">45 Lakh</li>
+												 <li data-value="50 Lakh">50 Lakh</li>
+												 <li data-value="55 Lakh">55 Lakh</li>
+												 <li data-value="60 Lakh">60 Lakh</li>
+												 <li data-value="65 Lakh">65 Lakh</li>
+												 <li data-value="70 Lakh">70 Lakh</li>
+												 <li data-value="75 Lakh">75 Lakh</li>
+												 <li data-value="80 Lakh">80 Lakh</li>
+												 <li data-value="85 Lakh">85 Lakh</li>
+												 <li data-value="90 Lakh">90 Lakh</li>
+												 <li data-value="95 lakh">95 lakh</li>
+												 <li data-value="1 Cr">1 Cr</li>
+												 <li data-value="2 Cr">2 Cr</li>
+												 <li data-value="3 Cr">3 Cr</li>
+												 <li data-value="4 Cr">4 Cr</li>
+												 <li data-value="5 Cr">5 Cr</li>
+											 </ul>
+											 <ul id="price-max" class="col-sm-12 price-range text-right list-unstyled hide">
+												 <li data-value="">Max</li>
+												 <li data-value="5 Lakh">5 Lakh</li>
+												 <li data-value="10 Lakh">10 Lakh</li>
+												 <li data-value="15 Lakh">15 Lakh</li>
+												 <li data-value="20 Lakh">20 Lakh</li>
+												 <li data-value="25 Lakh">25 Lakh</li>
+												 <li data-value="30 Lakh">30 Lakh</li>
+												 <li data-value="35 Lakh">35 Lakh</li>
+												 <li data-value="40 Lakh">40 Lakh</li>
+												 <li data-value="45 Lakh">45 Lakh</li>
+												 <li data-value="50 Lakh">50 Lakh</li>
+												 <li data-value="55 Lakh">55 Lakh</li>
+												 <li data-value="60 Lakh">60 Lakh</li>
+												 <li data-value="65 Lakh">65 Lakh</li>
+												 <li data-value="70 Lakh">70 Lakh</li>
+												 <li data-value="75 Lakh">75 Lakh</li>
+												 <li data-value="80 Lakh">80 Lakh</li>
+												 <li data-value="85 Lakh">85 Lakh</li>
+												 <li data-value="90 Lakh">90 Lakh</li>
+												 <li data-value="95 lakh">95 lakh</li>
+												 <li data-value="1 Cr">1 Cr</li>
+												 <li data-value="2 Cr">2 Cr</li>
+												 <li data-value="3 Cr">3 Cr</li>
+												 <li data-value="4 Cr">4 Cr</li>
+												 <li data-value="5 Cr">5 Cr</li>
+											 </ul>
+										 </form>
+									 </div>
+								 </div>
 
-                             <select class="selectpicker show-tick" data-live-search="true" id="budget" name="budget">
-                                 <?php
-                                 $val = isset($_SESSION["Gbudget"]) && $_SESSION["Gbudget"] != '' ? $_SESSION["Gbudget"] : '';
-                                 if($val!="")
-                                 {
-                                     echo "<option value='".$val."'>".$val."</option>";
-                                 }
-                                 ?>
-                                 <option value="">Budget</option>
-                                 <option value="5 to 10 Lakh">5 to 10 Lakh</option>
-                                 <option value="11 to 15 Lakh">11 to 15 Lakh</option>
-                                 <option value="15 to 20 Lakh">15 to 20 Lakh</option>
-                                 <option value="21 to 25 Lakh">21 to 25 Lakh</option>
-                                 <option value="25 to 30 Lakh">25 to 30 Lakh</option>
-                                 <option value="31 to 35 Lakh">31 to 35 Lakh</option>
-                                 <option value="35 to 40 Lakh">35 to 40 Lakh</option>
-                                 <option value="41 to 45 Lakh">41 to 45 Lakh</option>
-                                 <option value="45 to 50 Lakh">45 to 50 Lakh</option>
-                                 <option value="51 to 55 Lakh">51 to 55 Lakh</option>
-                                 <option value="55 to 60 Lakh">55 to 60 Lakh</option>
-                                 <option value="61 to 65 Lakh">61 to 65 Lakh</option>
-                                 <option value="65 to 70 Lakh">65 to 70 Lakh</option>
-                                 <option value="71 to 75 Lakh">71 to 75 Lakh</option>
-                                 <option value="75 to 80 Lakh">75 to 80 Lakh</option>
-                                 <option value="81 to 85 Lakh">81 to 85 Lakh</option>
-                                 <option value="85 to 90 Lakh">85 to 90 Lakh</option>
-                                 <option value="91 to 95 Lakh">91 to 95 Lakh</option>
-                                 <option value="95 to 99 lakh">95 to 99 lakh</option>
-                                 <option value="1 to 2 Cr">1 to 2 Cr</option>
-                                 <option value="2 to 3 Cr">2 to 3 Cr</option>
-                                 <option value="3 to 4 Cr">3 to 4 Cr</option>
-                                 <option value="4 to 5 Cr">4 to 5 Cr</option>
-                             </select>
+							 </div>
+
                          </div>
 
 
@@ -264,6 +315,7 @@ include('header.php');
                              </div>
                          </div>
 
+
                          <div class="clearfix"></div>
                      </div>
 
@@ -339,13 +391,6 @@ include('header.php');
 <!--header end-->
 <!--Real estate Start--------------------------------------------------------------------------------------------->
 <!-------------------Slider end-------------------------------------------------------------------->
-  <div class="container" style="margin-top:10px;" onclick="hidesuggetionBoxes()">
-      <ol class="breadcrumb">
-  <li><a href="#">Home</a></li>
-  <li><a href="Post/">Post Property</a></li>
-  <li class="active">List Property</li>
-</ol>
- </div>
 
 <form name="filterfrm" method="post" id="filterfrm">
 
@@ -365,37 +410,87 @@ include('header.php');
 				</div>
 				<ul class="nav navbar-nav">
 					<li class="dropdown" style="width: 200px;">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Budget <span class="caret"></span></a>
-						<!--<div id="budgetDiv"></div>
-						<div id="saletypeDiv"></div>
-						<div id="availabilityDiv"></div>
-						<div id="propertytypeDiv"></div>
-						<div id="subpropertyDiv"></div>-->
-                        <ul class="dropdown-menu" id="budgetDiv" style="height: 213px;overflow-y: scroll;">
-							<li><a href="javascript:dynamic_search('a')"><input type="checkbox" id="budget1" name="dynabudget" value="5 to 10 Lakh">&nbsp;&nbsp;&nbsp;&nbsp;5 to 10 Lakh</a></li>
-							<li><a href="javascript:dynamic_search('a')"><input type="checkbox" id="budget2" name="dynabudget" value="11 to 15 Lakh">&nbsp;&nbsp;&nbsp;&nbsp;11 to 15 Lakh</a></li>
-							<li><a href="javascript:dynamic_search('a')"><input type="checkbox" id="budget3" name="dynabudget" value="15 to 20 Lakh">&nbsp;&nbsp;&nbsp;&nbsp;15 to 20 Lakh</a></li>
-							<li><a href="javascript:dynamic_search('a')"><input type="checkbox" id="budget4" name="dynabudget" value="21 to 25 Lakh">&nbsp;&nbsp;&nbsp;&nbsp;21 to 25 Lakh</a></li>
-							<li><a href="javascript:dynamic_search('a')"><input type="checkbox" id="budget5" name="dynabudget" value="25 to 30 Lakh">&nbsp;&nbsp;&nbsp;&nbsp;25 to 30 Lakh</a></li>
-							<li><a href="javascript:dynamic_search('a')"><input type="checkbox" id="budget6" name="dynabudget" value="31 to 35 Lakh">&nbsp;&nbsp;&nbsp;&nbsp;31 to 35 Lakh</a></li>
-							<li><a href="javascript:dynamic_search('a')"><input type="checkbox" id="budget7" name="dynabudget" value="35 to 40 Lakh">&nbsp;&nbsp;&nbsp;&nbsp;35 to 40 Lakh</a></li>
-							<li><a href="javascript:dynamic_search('a')"><input type="checkbox" id="budget8" name="dynabudget" value="41 to 45 Lakh">&nbsp;&nbsp;&nbsp;&nbsp;41 to 45 Lakh</a></li>
-							<li><a href="javascript:dynamic_search('a')"><input type="checkbox" id="budget9" name="dynabudget" value="45 to 50 Lakh">&nbsp;&nbsp;&nbsp;&nbsp;45 to 50 Lakh</a></li>
-							<li><a href="javascript:dynamic_search('a')"><input type="checkbox" id="budget10" name="dynabudget" value="51 to 55 Lakh">&nbsp;&nbsp;&nbsp;&nbsp;51 to 55 Lakh</a></li>
-							<li><a href="javascript:dynamic_search('a')"><input type="checkbox" id="budget11" name="dynabudget" value="55 to 60 Lakh">&nbsp;&nbsp;&nbsp;&nbsp;55 to 60 Lakh</a></li>
-							<li><a href="javascript:dynamic_search('a')"><input type="checkbox" id="budget12" name="dynabudget" value="61 to 65 Lakh">&nbsp;&nbsp;&nbsp;&nbsp;61 to 65 Lakh</a></li>
-							<li><a href="javascript:dynamic_search('a')"><input type="checkbox" id="budget13" name="dynabudget" value="65 to 70 Lakh">&nbsp;&nbsp;&nbsp;&nbsp;65 to 70 Lakh</a></li>
-							<li><a href="javascript:dynamic_search('a')"><input type="checkbox" id="budget14" name="dynabudget" value="71 to 75 Lakh">&nbsp;&nbsp;&nbsp;&nbsp;71 to 75 Lakh</a></li>
-							<li><a href="javascript:dynamic_search('a')"><input type="checkbox" id="budget15" name="dynabudget" value="75 to 80 Lakh">&nbsp;&nbsp;&nbsp;&nbsp;75 to 80 Lakh</a></li>
-							<li><a href="javascript:dynamic_search('a')"><input type="checkbox" id="budget16" name="dynabudget" value="81 to 85 Lakh">&nbsp;&nbsp;&nbsp;&nbsp;81 to 85 Lakh</a></li>
-							<li><a href="javascript:dynamic_search('a')"><input type="checkbox" id="budget17" name="dynabudget" value="85 to 90 Lakh">&nbsp;&nbsp;&nbsp;&nbsp;85 to 90 Lakh</a></li>
-							<li><a href="javascript:dynamic_search('a')"><input type="checkbox" id="budget18" name="dynabudget" value="91 to 95 Lakh">&nbsp;&nbsp;&nbsp;&nbsp;91 to 95 Lakh</a></li>
-							<li><a href="javascript:dynamic_search('a')"><input type="checkbox" id="budget19" name="dynabudget" value="95 to 99 lakh">&nbsp;&nbsp;&nbsp;&nbsp;95 to 99 lakh</a></li>
-							<li><a href="javascript:dynamic_search('a')"><input type="checkbox" id="budget20" name="dynabudget" value="1 to 2 Cr">&nbsp;&nbsp;&nbsp;&nbsp;1 to 2 Cr</a></li>
-							<li><a href="javascript:dynamic_search('a')"><input type="checkbox" id="budget21" name="dynabudget" value="2 to 3 Cr">&nbsp;&nbsp;&nbsp;&nbsp;2 to 3 Cr</a></li>
-							<li><a href="javascript:dynamic_search('a')"><input type="checkbox" id="budget22" name="dynabudget" value="3 to 4 Cr">&nbsp;&nbsp;&nbsp;&nbsp;3 to 4 Cr</a></li>
-							<li><a href="javascript:dynamic_search('a')"><input type="checkbox" id="budget23" name="dynabudget" value="4 to 5 Cr">&nbsp;&nbsp;&nbsp;&nbsp;4 to 5 Cr</a></li>
-						</ul>
+						<div class="container">
+							<input type="hidden" id="budget1" name="budget1" />
+
+								<ul class="nav navbar-nav">
+									<li class="dropdown" style="width: 200px;">
+								<!-- <button id="min-max-price-range1" class="dropdown-toggle" style="width: 161px;margin-left: -14px;" href="#" data-toggle="dropdown"><span id="bval1">Budget</span><strong class="caret" style="margin-left: 80px;"></strong>
+								</button>-->
+
+								<a id="min-max-price-range1" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span id="bval1">Budget</span><strong class="caret" style="margin-left: 80px;"></strong></a>
+
+								<div class="dropdown-menu" style="padding:10px;height: 340px;overflow-y: scroll;margin-left: -16px;width: 210px;">
+									<form class="row">
+										<div class="col-xs-5">
+											<input class="form-control price-label1" placeholder="Min" id="minval1" style="width: 87px;margin-left: -23px;" data-dropdown-id="price-min1"/>
+										</div>
+										<div class="col-xs-2"> - </div>
+										<div class="col-xs-5">
+											<input class="form-control price-label1" placeholder="Max" id="maxval1" style="width: 84px;margin-left: 7px;margin-top: -20px;" data-dropdown-id="price-max1"/>
+										</div>
+										<div class="clearfix"></div>
+										<ul id="price-min1" class="col-sm-12 price-range1 list-unstyled">
+											<li data-value="">Min</li>
+											<li data-value="5 Lakh">5 Lakh</li>
+											<li data-value="10 Lakh">10 Lakh</li>
+											<li data-value="15 Lakh">15 Lakh</li>
+											<li data-value="20 Lakh">20 Lakh</li>
+											<li data-value="25 Lakh">25 Lakh</li>
+											<li data-value="30 Lakh">30 Lakh</li>
+											<li data-value="35 Lakh">35 Lakh</li>
+											<li data-value="40 Lakh">40 Lakh</li>
+											<li data-value="45 Lakh">45 Lakh</li>
+											<li data-value="50 Lakh">50 Lakh</li>
+											<li data-value="55 Lakh">55 Lakh</li>
+											<li data-value="60 Lakh">60 Lakh</li>
+											<li data-value="65 Lakh">65 Lakh</li>
+											<li data-value="70 Lakh">70 Lakh</li>
+											<li data-value="75 Lakh">75 Lakh</li>
+											<li data-value="80 Lakh">80 Lakh</li>
+											<li data-value="85 Lakh">85 Lakh</li>
+											<li data-value="90 Lakh">90 Lakh</li>
+											<li data-value="95 lakh">95 lakh</li>
+											<li data-value="1 Cr">1 Cr</li>
+											<li data-value="2 Cr">2 Cr</li>
+											<li data-value="3 Cr">3 Cr</li>
+											<li data-value="4 Cr">4 Cr</li>
+											<li data-value="5 Cr">5 Cr</li>
+										</ul>
+										<ul id="price-max1" class="col-sm-12 price-range1 text-right list-unstyled hide">
+											<li data-value="">Max</li>
+											<li data-value="5 Lakh">5 Lakh</li>
+											<li data-value="10 Lakh">10 Lakh</li>
+											<li data-value="15 Lakh">15 Lakh</li>
+											<li data-value="20 Lakh">20 Lakh</li>
+											<li data-value="25 Lakh">25 Lakh</li>
+											<li data-value="30 Lakh">30 Lakh</li>
+											<li data-value="35 Lakh">35 Lakh</li>
+											<li data-value="40 Lakh">40 Lakh</li>
+											<li data-value="45 Lakh">45 Lakh</li>
+											<li data-value="50 Lakh">50 Lakh</li>
+											<li data-value="55 Lakh">55 Lakh</li>
+											<li data-value="60 Lakh">60 Lakh</li>
+											<li data-value="65 Lakh">65 Lakh</li>
+											<li data-value="70 Lakh">70 Lakh</li>
+											<li data-value="75 Lakh">75 Lakh</li>
+											<li data-value="80 Lakh">80 Lakh</li>
+											<li data-value="85 Lakh">85 Lakh</li>
+											<li data-value="90 Lakh">90 Lakh</li>
+											<li data-value="95 lakh">95 lakh</li>
+											<li data-value="1 Cr">1 Cr</li>
+											<li data-value="2 Cr">2 Cr</li>
+											<li data-value="3 Cr">3 Cr</li>
+											<li data-value="4 Cr">4 Cr</li>
+											<li data-value="5 Cr">5 Cr</li>
+										</ul>
+									</form>
+								</div>
+
+									</li>
+								</ul>
+
+						</div>
 					</li>
 				</ul>
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -674,10 +769,6 @@ include('header.php');
 
 	function dynamic_search(stype)
     {
-        var budgets = [];
-        $('#budgetDiv input:checked').each(function() {
-            budgets.push(this.value);
-        });
         var saletypes = [];
         $('#saletypeDiv input:checked').each(function() {
             saletypes.push(this.value);
@@ -701,7 +792,7 @@ include('header.php');
         frmdata.append('budget',$("#budget").val());
         frmdata.append('property_type',$("#property_type").val());
         frmdata.append('bedroom',$("#bedroom").val());
-        frmdata.append('budgetlist',budgets);
+        frmdata.append('budgetlist',$("#budget1").val());
         frmdata.append('saletypelist',saletypes);
         frmdata.append('availabilitylist',availabilitys);
         frmdata.append('property_typelist',propertys);
@@ -751,5 +842,116 @@ include('header.php');
             }
         });
     }
+	$('#min-max-price-range').click(function (event) {
+		setTimeout(function(){ $('.price-label').first().focus();	},0);
+		var str= $("#minval").val()+" to "+$("#maxval").val();
+		if($("#minval").val() !="" && $("#maxval").val() !="")
+		{
+			$("#bval").html(str);
+			$("#budget").val(str);
+		}
+		else
+		{
+			$("#bval").html("Budget");
+		}
+	});
+	var priceLabelObj;
+	$('.price-label').focus(function (event) {
+		priceLabelObj=$(this);
+		$('.price-range').addClass('hide');
+		$('#'+$(this).data('dropdownId')).removeClass('hide');
+		var minval=$("#minval").val();
+		var res = minval.substring(0, 2);
+		var str= res+" to "+$("#maxval").val();
+		if($("#minval").val() !="" && $("#maxval").val() !="")
+		{
+			$("#bval").html(str);
+			$("#budget").val(str);
+		}
+		else
+		{
+			$("#bval").html("Budget");
+		}
+	});
+	$(".price-range li").click(function(){
+		priceLabelObj.attr('value', $(this).attr('data-value'));
+		var curElmIndex=$( ".price-label" ).index( priceLabelObj );
+		var nextElm=$( ".price-label" ).eq(curElmIndex+1);
+		if(nextElm.length){
+			$( ".price-label" ).eq(curElmIndex+1).focus();
 
+		}else{
+			$('#min-max-price-range').dropdown('toggle');
+		}
+		var minval=$("#minval").val();
+		var res = minval.substring(0, 2);
+		var str= res+" to "+$("#maxval").val();
+		if($("#minval").val() !="" && $("#maxval").val() !="")
+		{
+			$("#bval").html(str);
+			$("#budget").val(str);
+		}
+		else
+		{
+			$("#bval").html("Budget");
+		}
+	});
+
+	$('#min-max-price-range1').click(function (event) {
+		setTimeout(function(){ $('.price-label1').first().focus();	},0);
+		var str= $("#minval1").val()+" to "+$("#maxval1").val();
+		if($("#minval1").val() !="" && $("#maxval1").val() !="")
+		{
+			$("#bval1").html(str);
+			$("#budget1").val(str);
+			dynamic_search('a');
+		}
+		else
+		{
+			$("#bval1").html("Budget");
+		}
+	});
+	var priceLabelObj;
+	$('.price-label1').focus(function (event) {
+		priceLabelObj=$(this);
+		$('.price-range1').addClass('hide');
+		$('#'+$(this).data('dropdownId')).removeClass('hide');
+		var minval=$("#minval1").val();
+		var res = minval.substring(0, 2);
+		var str= res+" to "+$("#maxval1").val();
+		if($("#minval1").val() !="" && $("#maxval1").val() !="")
+		{
+			$("#bval1").html(str);
+			$("#budget1").val(str);
+			dynamic_search('a');
+		}
+		else
+		{
+			$("#bval1").html("Budget");
+		}
+	});
+	$(".price-range1 li").click(function(){
+		priceLabelObj.attr('value', $(this).attr('data-value'));
+		var curElmIndex=$( ".price-label1" ).index( priceLabelObj );
+		var nextElm=$( ".price-label1" ).eq(curElmIndex+1);
+		if(nextElm.length){
+			$( ".price-label1" ).eq(curElmIndex+1).focus();
+
+		}else{
+			$('#min-max-price-range1').dropdown('toggle');
+		}
+		var minval=$("#minval1").val();
+		var res = minval.substring(0, 2);
+		var str= res+" to "+$("#maxval1").val();
+		if($("#minval1").val() !="" && $("#maxval1").val() !="")
+		{
+			$("#bval1").html(str);
+			$("#budget1").val(str);
+			dynamic_search('a');
+		}
+		else
+		{
+			$("#bval1").html("Budget");
+		}
+	});
 </script>
