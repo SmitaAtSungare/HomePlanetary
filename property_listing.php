@@ -853,6 +853,7 @@ include('header.php');
 		else
 		{
 			$("#bval").html("Budget");
+			$("#budget").val("");
 		}
 	});
 	var priceLabelObj;
@@ -871,6 +872,7 @@ include('header.php');
 		else
 		{
 			$("#bval").html("Budget");
+			$("#budget").val("");
 		}
 	});
 	$(".price-range li").click(function(){
@@ -894,6 +896,7 @@ include('header.php');
 		else
 		{
 			$("#bval").html("Budget");
+			$("#budget").val("");
 		}
 	});
 
@@ -909,6 +912,7 @@ include('header.php');
 		else
 		{
 			$("#bval1").html("Budget");
+			$("#budget1").val("");
 		}
 	});
 	var priceLabelObj;
@@ -928,6 +932,7 @@ include('header.php');
 		else
 		{
 			$("#bval1").html("Budget");
+			$("#budget1").val("");
 		}
 	});
 	$(".price-range1 li").click(function(){
@@ -952,6 +957,7 @@ include('header.php');
 		else
 		{
 			$("#bval1").html("Budget");
+			$("#budget1").val("");
 		}
 	});
 </script>

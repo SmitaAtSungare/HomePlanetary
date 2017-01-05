@@ -591,6 +591,7 @@ $user_id=$_SESSION['user_id'];
         else
         {
             $("#bval").html("Budget");
+            $("#budget").val("");
         }
     });
     var priceLabelObj;
@@ -609,6 +610,7 @@ $user_id=$_SESSION['user_id'];
         else
         {
             $("#bval").html("Budget");
+            $("#budget").val("");
         }
     });
     $(".price-range li").click(function(){
@@ -632,6 +634,7 @@ $user_id=$_SESSION['user_id'];
         else
         {
             $("#bval").html("Budget");
+            $("#budget").val("");
         }
     });
 

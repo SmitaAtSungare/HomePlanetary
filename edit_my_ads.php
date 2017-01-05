@@ -1139,6 +1139,7 @@ if(isset($_SESSION['login_user'])) {
             else
             {
                 $("#bval").html("Budget");
+                $("#budget").val("");
             }
         });
         var priceLabelObj;
@@ -1157,6 +1158,7 @@ if(isset($_SESSION['login_user'])) {
             else
             {
                 $("#bval").html("Budget");
+                $("#budget").val("");
             }
         });
         $(".price-range li").click(function(){
@@ -1180,6 +1182,7 @@ if(isset($_SESSION['login_user'])) {
             else
             {
                 $("#bval").html("Budget");
+                $("#budget").val("");
             }
         });
     </script>

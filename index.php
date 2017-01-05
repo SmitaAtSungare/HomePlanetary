@@ -418,6 +418,7 @@ include_once("analyticstracking.php");
         else
         {
             $("#bval").html("Budget");
+            $("#budget").val("");
         }
     });
     var priceLabelObj;
@@ -436,6 +437,7 @@ include_once("analyticstracking.php");
          else
          {
              $("#bval").html("Budget");
+             $("#budget").val("");
          }
     });
     $(".price-range li").click(function(){
@@ -459,6 +461,7 @@ include_once("analyticstracking.php");
         else
         {
             $("#bval").html("Budget");
+            $("#budget").val("");
         }
     });
 
