@@ -3,7 +3,7 @@ session_start();
 include 'config.php';
 if(isset($_SESSION["ausername"]))
 {
-  header("Location: Home/");
+  header("Location: index.php");
 }
 if(isset($_POST["submit"]))
   { 
@@ -19,7 +19,7 @@ if(isset($_POST["submit"]))
         if($password == $pass)
         {
           $_SESSION["ausername"] = $row["username"];
-          header("Location:Home/");
+          header("Location:index.php");
         }
         else
         {
@@ -60,7 +60,7 @@ if(isset($_POST["submit"]))
       <div class="clearfix"></div>
     </div>
     </div>
-    <center><a href="../Home/">Home</a></center>
+    <center><a href="../index.php">Home</a></center>
       <div class="login-form">
         <div class="login-inner">
           <h2>ADMIN-LOGIN</h2>

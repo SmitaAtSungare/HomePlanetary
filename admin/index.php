@@ -37,7 +37,7 @@ include 'header.php';
                 <div class="icon">
                   <i class="ion ion-bag"></i>
                 </div>
-                <a href="Unapproved/" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                <a href="unapproved.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
               </div>
             </div>
             <div class="col-lg-3 col-xs-6">
@@ -49,7 +49,7 @@ include 'header.php';
                 <div class="icon">
                   <i class="ion ion-stats-bars"></i>
                 </div>
-                <a href="NewPropertyList/" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                <a href="approved_list.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
               </div>
             </div>
             <div class="col-lg-3 col-xs-6">
@@ -61,7 +61,7 @@ include 'header.php';
                 <div class="icon">
                   <i class="ion ion-person-add"></i>
                 </div>
-                <a href="UserList/" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                <a href="user_list.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
               </div>
             </div>
             <div class="col-lg-3 col-xs-6">
@@ -73,7 +73,7 @@ include 'header.php';
                 <div class="icon">
                   <i class="ion ion-pie-graph"></i>
                 </div>
-                <a href="ResalePropertyList/" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                <a href="featured_list.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
               </div>
             </div>
            <div class="col-lg-3 col-xs-6">
@@ -85,7 +85,7 @@ include 'header.php';
                 <div class="icon">
                   <i class="ion ion-person-add"></i>
                 </div>
-                <a href="ManageAdvertise/" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                <a href="adlist.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
               </div>
             </div>
            <div class="col-lg-3 col-xs-6">
@@ -97,7 +97,7 @@ include 'header.php';
                 <div class="icon">
                   <i class="ion ion-bag"></i>
                 </div>
-                <a href="Enquiries/" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                <a href="p_enq.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
               </div>
             </div>
           <div class="col-lg-3 col-xs-6">
@@ -109,7 +109,7 @@ include 'header.php';
                 <div class="icon">
                   <i class="ion ion-stats-bars"></i>
                 </div>
-                <a href="AdvertiseRequest/" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                <a href="adrequest.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
               </div>
             </div>
           </div>

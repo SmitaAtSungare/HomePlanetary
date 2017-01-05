@@ -68,13 +68,13 @@
                                                                 <td><?php echo $row['property_details']; ?></td>
                                                                 <td><?php echo $row['name']; ?></td>
                                                                 <td><?php echo $row['mob']; ?></td>
-                                                                <td><a href="EditAds/<?php echo $row['property_id']?>"><input type="button" value="EDIT"></a></td>
+                                                                <td><a href="edit_ads.php?id=<?php echo $row['property_id']?>"><input type="button" value="EDIT"></a></td>
                                                             </tr>
                                                            <?php endwhile; ?>
                                                         </tbody>
                                                       </table>
                                       <div class="modal-footer">
-                                             <a href="NewPropertyList/"><input type="button"  name="" value="Back"/></a>
+                                             <a href="approved_list.php"><input type="button"  name="" value="Back"/></a>
                                             <input type="submit" onsubmit="return deleteConfirm();" name="delete_submit" value="Delete"/>
                                       </div>
                                     </div>
@@ -94,7 +94,7 @@ if ( ! empty( $_POST ) ) {
 		{
 			$qry = "DELETE FROM add_posting WHERE property_id=$property_id";
             $mysqli->query($qry);
-            header('location:'.$base.'NewPropertyList/');
+            header('location:'.$base.'approved_list.php');
 
            // echo '<META HTTP-EQUIV="Refresh" Content="0; approved_list.php">';
         }

@@ -1,6 +1,6 @@
       </div>
       <footer class="main-footer">        
-        <strong>Copyright &copy; 2016 <a href="Home/">Sungare Technologies Pvt. Ltd.</a></strong> All rights reserved.
+        <strong>Copyright &copy; 2016 <a href="index.php">Sungare Technologies Pvt. Ltd.</a></strong> All rights reserved.
       </footer>
       <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
       <script src="bootstrap/js/bootstrap.min.js"></script>

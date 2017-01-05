@@ -59,7 +59,7 @@ include 'header.php';
                                                                         <td><?php echo $row['name']; ?></td>
                                                                         <td><?php echo $row['mob']; ?></td>
                                                                         <td>
-                                                                            <a href="EditAds/<?php echo $row['property_id']?>"><input type="button" value="EDIT"></a>
+                                                                            <a href="edit_ads.php?id=<?php echo $row['property_id']?>"><input type="button" value="EDIT"></a>
                                                                              <input type='button' id=<?php echo $row['property_id'];?> value='Approve' onclick='approve_func(this.id)'>
                                                                         </td>
                                                                     </tr>
@@ -125,7 +125,7 @@ if ( ! empty( $_POST ) ) {
 		{
 			$qry = "DELETE FROM add_posting WHERE property_id=$property_id";
             $mysqli->query($qry);
-            header('location:'.$base.'NewPropertyList/');
+            header('location:'.$base.'approved_list.php');
 
            // echo '<META HTTP-EQUIV="Refresh" Content="0; approved_list.php">';
         }

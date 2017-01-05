@@ -51,7 +51,7 @@ else
     <div class="wrapper">
       <div id="showmessage" style="display:none;height: 35px;"></div>
       <header class="main-header">
-        <a href="Home/" class="logo">
+        <a href="index.php" class="logo">
           <span class="logo-mini"><b>construction</b></span>
           <span class="logo-lg"><b>Homeplanetary</b></span>
         </a>
@@ -82,7 +82,7 @@ else
           </div>
           <ul class="sidebar-menu">
             <li class="active treeview">
-              <a href="Home/">
+              <a href="index.php">
                 <i class="fa fa-dashboard"></i> <span>Dashboard</span></i>
               </a>              
             </li>            
@@ -91,9 +91,9 @@ else
                 <i class="fa fa-share"></i> <span>Property Listing</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">        
-                <li><a href="Unapproved/"><i class="fa fa-circle-o"></i>Un-approved List</a></li>
-                <li><a href="NewPropertyList/"><i class="fa fa-circle-o"></i>New Property List</a></li>
-                <li><a href="ResalePropertyList/"><i class="fa fa-circle-o"></i>Resale Property List</a></li>
+                <li><a href="unapproved.php"><i class="fa fa-circle-o"></i>Un-approved List</a></li>
+                <li><a href="approved_list.php"><i class="fa fa-circle-o"></i>New Property List</a></li>
+                <li><a href="featured_list.php"><i class="fa fa-circle-o"></i>Resale Property List</a></li>
               </ul>
             </li>
             <li class="treeview">
@@ -101,7 +101,7 @@ else
                 <i class="fa fa-share"></i> <span>Registered User List</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">        
-                <li><a href="UserList/"><i class="fa fa-circle-o"></i>User List</a></li>
+                <li><a href="user_list.php"><i class="fa fa-circle-o"></i>User List</a></li>
               </ul>
             </li>
 		   <li class="treeview">
@@ -109,7 +109,7 @@ else
                 <i class="fa fa-share"></i> <span>Enquiries to Property</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">        
-                <li><a href="Enquiries/"><i class="fa fa-circle-o"></i>Enquiries</a></li>
+                <li><a href="p_enq.php"><i class="fa fa-circle-o"></i>Enquiries</a></li>
               </ul>
             </li>
 		   <li class="treeview">
@@ -117,9 +117,9 @@ else
                 <i class="fa fa-share"></i> <span>Advertise</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
                <ul class="treeview-menu">        
-                 <li><a href="AdvertiseRequest/"><i class="fa fa-circle-o"></i>Advertise Request</a></li>
-                 <li><a href="PutAdvertise/"><i class="fa fa-circle-o"></i>Put Advertise</a></li>
-	             <li><a href="ManageAdvertise/"><i class="fa fa-circle-o"></i>Manage Advertise</a></li>
+                 <li><a href="adrequest.php"><i class="fa fa-circle-o"></i>Advertise Request</a></li>
+                 <li><a href="add_advertise.php"><i class="fa fa-circle-o"></i>Put Advertise</a></li>
+	             <li><a href="adlist.php"><i class="fa fa-circle-o"></i>Manage Advertise</a></li>
               </ul>
             </li>
           </ul>

@@ -72,7 +72,7 @@ if ( ! empty( $_POST ) ) {
         $idArr = $_POST['checked_id'];
         foreach($idArr as $property_id){
             $mysqli->query("DELETE FROM add_posting WHERE property_id=$property_id");
-            header('location:'.$base.'NewPropertyList/');
+            header('location:'.$base.'approved_list.php');
 
           //  echo '<META HTTP-EQUIV="Refresh" Content="0;approved_list.php">';
         }

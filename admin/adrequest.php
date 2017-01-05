@@ -82,7 +82,7 @@ if ( ! empty( $_POST ) ) {
         foreach($idArr as $user_id){
             $qry="DELETE FROM advertise_req WHERE a_id=$user_id";
 	         $insert = $mysqli->query($qry);
-            header('location:'.$base.'AdvertiseRequest/');
+            header('location:'.$base.'adrequest.php');
 
            // echo '<META HTTP-EQUIV="Refresh" Content="0;adrequest.php">';
         }

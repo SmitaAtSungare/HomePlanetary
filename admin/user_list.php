@@ -71,7 +71,7 @@ if ( ! empty( $_POST ) ) {
 		{
 			$qry = "DELETE FROM signup WHERE user_id=$user_id";
             $mysqli->query($qry);
-            header('location:'.$base.'UserList/');
+            header('location:'.$base.'user_list.php');
 
             //echo '<META HTTP-EQUIV="Refresh" Content="0; user_list.php">';
         }

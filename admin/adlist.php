@@ -72,8 +72,8 @@ if ( ! empty( $_POST ) ) {
         foreach($idArr as $user_id){
         $qry="DELETE FROM add_advertise WHERE p_id=$user_id";
 	    $insert = $mysqli->query($qry);
-            header('location:'.$base.'ManageAdvertise/');
-//        echo '<META HTTP-EQUIV="Refresh" Content="0;ManageAdvertise/">';
+            header('location:'.$base.'adlist.php');
+//        echo '<META HTTP-EQUIV="Refresh" Content="0;adlist.php">';
         }
     }
 }
